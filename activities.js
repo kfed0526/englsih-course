@@ -5,8 +5,8 @@ import {skeleton} from './mascot.js';
 // One controller per round. A revision prevents interrupted speech or timers
 // from changing a later page or a newly started round.
 export class Activity {
-  constructor({unit,count,speak,delay,render,complete,active}) {
-    Object.assign(this,{unit,count,speak,delay,redraw:render,complete,active});
+  constructor({unit,count,speak,delay,render,complete,active,success=async()=>true}) {
+    Object.assign(this,{unit,count,speak,delay,redraw:render,complete,active,success});
     this.type=unit.games.type;
     this.results=unit.words.map(w=>({kind:this.type,target:w.id,attempts:0,hint:false}));
     this.order=shuffle(unit.words.map(w=>w.id));
@@ -34,17 +34,17 @@ export class Activity {
     if(this.open.length===1){this.phase='answer';this.redraw();return;}
     const [a,b]=this.open.map(i=>this.board[i].word);
     this.result(a).attempts++;if(a!==b)this.result(b).attempts++;
-    if(a===b){this.pending=a;this.phase='feedback';await this.resolveFeedback();}
+    if(a===b){this.pending=a;this.pendingSound=true;this.phase='feedback';await this.resolveFeedback();}
     else{this.misses++;this.phase='mismatch';this.locked=true;this.message='再看一看，找兩張一樣的 ♡';this.redraw();const r=++this.revision;if(!await this.delay(1400)||!this.valid(r))return;this.open=[];this.help=false;this.phase='answer';this.locked=false;this.redraw();}
   }
   async choose(word){if(this.locked||this.phase!=='answer')return;
     const result=this.result(this.target);result.attempts++;
     if(word!==this.target){this.misses++;this.message='再試一次 ♡';this.wrong=word;this.phase='retry';if(!await this.audio(this.misses===2?[this.unit.question,this.target]:[{text:'再試一次',lang:'zh-TW'}]))return;this.phase='answer';this.wrong=null;this.redraw();return;}
-    this.pending=word;this.phase='feedback';if(this.type==='map')this.room=word;else this.dressed=word;
+    this.pending=word;this.pendingSound=true;this.phase='feedback';if(this.type==='map')this.room=word;else this.dressed=word;
     await this.resolveFeedback();
   }
   async resolveFeedback(){this.phase='feedback';this.locked=true;this.message=this.type==='map'?'✓ 到了！一起說說看':'✓ 找到了！一起說說看';this.redraw();
-    const r=++this.revision;const ok=await this.speak([this.unit.answer.replace('{word}',this.pending)]);
+    const r=++this.revision;if(this.pendingSound){this.pendingSound=false;if(!await this.success()||!this.valid(r))return;}const ok=await this.speak([this.unit.answer.replace('{word}',this.pending)]);
     if(!ok||!this.valid(r)||!await this.delay(1800)||!this.valid(r))return;
     if(this.type==='memory'){this.found.add(this.pending);this.open=[];}else this.step++;
     if(this.done===this.unit.words.length){this.complete(this.results);return;}
