@@ -1,0 +1,309 @@
+{
+  "id": "all-about-my-body",
+  "name": "All About My Body",
+  "order": 2,
+  "icon": "🧒",
+  "units": [
+    {
+      "id": "week-1",
+      "week": 1,
+      "theme": "My Face",
+      "title": "我的臉",
+      "status": "ready",
+      "words": [
+        {
+          "id": "eyes",
+          "zh": "眼睛",
+          "image": "svg:eyes",
+          "plural": "eyes",
+          "number": "two",
+          "count": 2
+        },
+        {
+          "id": "ears",
+          "zh": "耳朵",
+          "image": "svg:ears",
+          "plural": "ears",
+          "number": "two",
+          "count": 2
+        },
+        {
+          "id": "mouth",
+          "zh": "嘴巴",
+          "image": "svg:mouth",
+          "plural": "mouths",
+          "number": "one",
+          "count": 1
+        },
+        {
+          "id": "nose",
+          "zh": "鼻子",
+          "image": "svg:nose",
+          "plural": "noses",
+          "number": "one",
+          "count": 1
+        },
+        {
+          "id": "head",
+          "zh": "頭",
+          "image": "svg:head",
+          "plural": "heads",
+          "number": "one",
+          "count": 1
+        }
+      ],
+      "question": "How many {plural} do you have?",
+      "answer": "I have {number} {word}.",
+      "homework": [],
+      "source": {
+        "sentences": "How many _eyes_ do you have? I have _two_ _eyes_ <-代入"
+      },
+      "notes": "以一般人體例子教學：眼睛和耳朵各二，嘴巴、鼻子和頭各一。How many 後使用複數，回答一個時使用單數。數字 one／two 為句型代入內容。",
+      "games": {
+        "type": "face-count",
+        "title": "我的臉數數看",
+        "intro": "看一看亮起的臉部部位，數一數，再點一個或兩個。",
+        "story": "Panda 班的鏡子任務",
+        "completion": "臉上的小幫手都數對了！",
+        "roundLength": 5
+      },
+      "audio": {
+        "再試一次": "assets/audio/line-14.wav",
+        "看一看亮起的臉部部位，數一數，再點一個或兩個。": "assets/audio/body/week-1-0.wav",
+        "eyes": "assets/audio/body/week-1-1.wav",
+        "ears": "assets/audio/body/week-1-2.wav",
+        "mouth": "assets/audio/body/week-1-3.wav",
+        "nose": "assets/audio/body/week-1-4.wav",
+        "head": "assets/audio/body/week-1-5.wav",
+        "How many eyes do you have?": "assets/audio/body/week-1-6.wav",
+        "How many ears do you have?": "assets/audio/body/week-1-7.wav",
+        "How many mouths do you have?": "assets/audio/body/week-1-8.wav",
+        "How many noses do you have?": "assets/audio/body/week-1-9.wav",
+        "How many heads do you have?": "assets/audio/body/week-1-10.wav",
+        "I have two eyes.": "assets/audio/body/week-1-11.wav",
+        "I have two ears.": "assets/audio/body/week-1-12.wav",
+        "I have one mouth.": "assets/audio/body/week-1-13.wav",
+        "I have one nose.": "assets/audio/body/week-1-14.wav",
+        "I have one head.": "assets/audio/body/week-1-15.wav",
+        "one": "assets/audio/body/week-1-16.wav",
+        "two": "assets/audio/body/week-1-17.wav"
+      }
+    },
+    {
+      "id": "week-2",
+      "week": 2,
+      "theme": "Smaller Body Parts",
+      "title": "小小身體部位",
+      "status": "ready",
+      "words": [
+        {
+          "id": "toes",
+          "zh": "腳趾",
+          "image": "svg:toes"
+        },
+        {
+          "id": "fingers",
+          "zh": "手指",
+          "image": "svg:fingers"
+        },
+        {
+          "id": "hands",
+          "zh": "雙手",
+          "image": "svg:hands"
+        },
+        {
+          "id": "feet",
+          "zh": "雙腳",
+          "image": "svg:feet"
+        }
+      ],
+      "question": "What can you touch?",
+      "answer": "I can touch my {word}.",
+      "homework": [],
+      "source": {
+        "sentences": "What can you youch? I can touch my ______ <-代入"
+      },
+      "notes": "家長原文 youch 視為 touch 的筆誤；原文保留於 source。問句後另播放目標單字，讓點選有明確目標。手指與手掌、腳趾與整隻腳用不同近景圖片呈現。",
+      "games": {
+        "type": "body-touch",
+        "title": "身體點點樂",
+        "intro": "聽一聽要找哪個部位，點圖片，再跟著摸摸自己的身體。",
+        "story": "動動手指，動動腳趾",
+        "completion": "小小身體部位都找到了！",
+        "roundLength": 4
+      },
+      "audio": {
+        "再試一次": "assets/audio/line-14.wav",
+        "聽一聽要找哪個部位，點圖片，再跟著摸摸自己的身體。": "assets/audio/body/week-2-0.wav",
+        "toes": "assets/audio/body/week-2-1.wav",
+        "fingers": "assets/audio/body/week-2-2.wav",
+        "hands": "assets/audio/body/week-2-3.wav",
+        "feet": "assets/audio/body/week-2-4.wav",
+        "What can you touch?": "assets/audio/body/week-2-5.wav",
+        "I can touch my toes.": "assets/audio/body/week-2-6.wav",
+        "I can touch my fingers.": "assets/audio/body/week-2-7.wav",
+        "I can touch my hands.": "assets/audio/body/week-2-8.wav",
+        "I can touch my feet.": "assets/audio/body/week-2-9.wav"
+      }
+    },
+    {
+      "id": "week-3",
+      "week": 3,
+      "theme": "Bigger Body Parts",
+      "title": "機器人的大部位",
+      "status": "ready",
+      "words": [
+        {
+          "id": "knees",
+          "zh": "膝蓋",
+          "image": "svg:knees"
+        },
+        {
+          "id": "legs",
+          "zh": "雙腿",
+          "image": "svg:legs"
+        },
+        {
+          "id": "arms",
+          "zh": "雙臂",
+          "image": "svg:arms"
+        },
+        {
+          "id": "shoulders",
+          "zh": "肩膀",
+          "image": "svg:shoulders"
+        }
+      ],
+      "question": "Can you touch your {word}?",
+      "answer": "Yes, I can touch my {word}.",
+      "negativeAnswer": "No, I cannot touch my {word}.",
+      "homework": [
+        "Help the cook.",
+        "Help your child count and color the cook's cookies."
+      ],
+      "source": {
+        "sentences": "Can you touch your _knees_? Yes, I can youch my _knees_. No, I cannot touch my _knees_ <-代入",
+        "homework": [
+          "Help the cook.",
+          "Help your child count and color the cock's cookies"
+        ],
+        "gameSuggestion": "Robot Matching"
+      },
+      "notes": "家長原文 youch 校正為 touch；cock's cookies 暫按前句 Help the cook 校正為 cook's cookies。餅乾作業是否屬本週、數量及指定顏色仍待確認；沒有自行新增數餅乾遊戲。配對四次後，用機器人有／缺部位的畫面各練習兩次 Yes／No；回答代表畫面中的機器人。",
+      "games": {
+        "type": "robot-matching",
+        "title": "Robot Matching",
+        "intro": "先點零件，再點機器人的對應位置。裝好後，看看它的部位在不在，幫它回答可以或還不行。",
+        "story": "幫機器人裝好身體！",
+        "completion": "機器人的零件任務完成了！",
+        "roundLength": 8
+      },
+      "audio": {
+        "再試一次": "assets/audio/line-14.wav",
+        "先點零件，再點機器人的對應位置。裝好後，看看它的部位在不在，幫它回答可以或還不行。": "assets/audio/body/week-3-0.wav",
+        "knees": "assets/audio/body/week-3-1.wav",
+        "legs": "assets/audio/body/week-3-2.wav",
+        "arms": "assets/audio/body/week-3-3.wav",
+        "shoulders": "assets/audio/body/week-3-4.wav",
+        "Can you touch your knees?": "assets/audio/body/week-3-5.wav",
+        "Can you touch your legs?": "assets/audio/body/week-3-6.wav",
+        "Can you touch your arms?": "assets/audio/body/week-3-7.wav",
+        "Can you touch your shoulders?": "assets/audio/body/week-3-8.wav",
+        "Yes, I can touch my knees.": "assets/audio/body/week-3-9.wav",
+        "Yes, I can touch my legs.": "assets/audio/body/week-3-10.wav",
+        "Yes, I can touch my arms.": "assets/audio/body/week-3-11.wav",
+        "Yes, I can touch my shoulders.": "assets/audio/body/week-3-12.wav",
+        "No, I cannot touch my knees.": "assets/audio/body/week-3-13.wav",
+        "No, I cannot touch my legs.": "assets/audio/body/week-3-14.wav",
+        "No, I cannot touch my arms.": "assets/audio/body/week-3-15.wav",
+        "No, I cannot touch my shoulders.": "assets/audio/body/week-3-16.wav",
+        "看機器人這個部位在不在，選可以或還不行。": "assets/audio/body/week-3-17.wav"
+      }
+    },
+    {
+      "id": "week-4",
+      "week": 4,
+      "theme": "Senses",
+      "title": "五感小偵探",
+      "status": "ready",
+      "words": [
+        {
+          "id": "see",
+          "zh": "看",
+          "image": "svg:see",
+          "organ": "eyes",
+          "object": "rainbow",
+          "objectZh": "彩虹"
+        },
+        {
+          "id": "hear",
+          "zh": "聽",
+          "image": "svg:hear",
+          "organ": "ears",
+          "object": "drum",
+          "objectZh": "鼓"
+        },
+        {
+          "id": "taste",
+          "zh": "嚐",
+          "image": "svg:taste",
+          "organ": "mouth",
+          "object": "soup",
+          "objectZh": "湯"
+        },
+        {
+          "id": "smell",
+          "zh": "聞",
+          "image": "svg:smell",
+          "organ": "nose",
+          "object": "spoiled-fish",
+          "objectZh": "臭掉的魚"
+        },
+        {
+          "id": "feel",
+          "zh": "觸摸",
+          "image": "svg:feel",
+          "organ": "hands",
+          "object": "cat",
+          "objectZh": "貓"
+        }
+      ],
+      "question": "What do you {word} with?",
+      "answer": "I {word} with my {organ}.",
+      "homework": [],
+      "source": {
+        "sentences": "What do you _hear_ with? I _hear_ with my _ears_ <-代入",
+        "gameSuggestion": "連連看，hear(耳朵)->鼓 smell(鼻子)->臭掉的魚 taste(嘴)->湯 feel(手)->貓 see(眼)->彩虹"
+      },
+      "notes": "連線對照依家長提供：hear／ears→鼓、smell／nose→臭魚、taste／mouth→湯、feel／hands→貓、see／eyes→彩虹。物品是情境圖，不列為新增必學單字；不鼓勵實際接觸臭魚或未經允許觸摸動物。",
+      "games": {
+        "type": "senses-link",
+        "title": "五感連連看",
+        "intro": "聽一聽，先點左邊的感官，再點右邊的物品，幫它們連起來。",
+        "story": "一起找到五感的線索！",
+        "completion": "五感和線索全部連起來了！",
+        "roundLength": 5
+      },
+      "audio": {
+        "再試一次": "assets/audio/line-14.wav",
+        "聽一聽，先點左邊的感官，再點右邊的物品，幫它們連起來。": "assets/audio/body/week-4-0.wav",
+        "see": "assets/audio/body/week-4-1.wav",
+        "hear": "assets/audio/body/week-4-2.wav",
+        "taste": "assets/audio/body/week-4-3.wav",
+        "smell": "assets/audio/body/week-4-4.wav",
+        "feel": "assets/audio/body/week-4-5.wav",
+        "What do you see with?": "assets/audio/body/week-4-6.wav",
+        "What do you hear with?": "assets/audio/body/week-4-7.wav",
+        "What do you taste with?": "assets/audio/body/week-4-8.wav",
+        "What do you smell with?": "assets/audio/body/week-4-9.wav",
+        "What do you feel with?": "assets/audio/body/week-4-10.wav",
+        "I see with my eyes.": "assets/audio/body/week-4-11.wav",
+        "I hear with my ears.": "assets/audio/body/week-4-12.wav",
+        "I taste with my mouth.": "assets/audio/body/week-4-13.wav",
+        "I smell with my nose.": "assets/audio/body/week-4-14.wav",
+        "I feel with my hands.": "assets/audio/body/week-4-15.wav"
+      }
+    }
+  ],
+  "subtitle": "我的身體小探險"
+}

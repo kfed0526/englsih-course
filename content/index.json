@@ -1,1 +1,6 @@
-{"books":["my-school.json"]}
+{
+  "books": [
+    "my-school.json",
+    "all-about-my-body.json"
+  ]
+}

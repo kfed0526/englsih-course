@@ -1,3 +1,4 @@
+import {bodyArt} from './body-art.js';
 import {CHARACTERS,characterImage} from './characters.js';
 import {shapeSVG} from './game.js';
 const ink='#685239';
@@ -21,6 +22,7 @@ const drawings={
  bathroom:'<path d="M26 39h66v17q-33 24-66 0Z" fill="#d1e8ec"/><path d="M55 63v40h18V63M61 39V24q0-16 17-10v13" fill="#fff"/><rect x="23" y="7" width="25" height="24" rx="6" fill="#b3dce7"/><path d="M15 108h90"/>'
 };
 export function illustration(word,{silhouette=false}={}){
+ const body=bodyArt(word);if(body)return body;
  if(CHARACTERS[word])return characterImage(word);
  if(['circle','square','triangle','star'].includes(word))return shapeSVG(word);
  if(!drawings[word])throw Error('Missing illustration: '+word);

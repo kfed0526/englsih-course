@@ -1,0 +1,25 @@
+{
+  "school": "河馬學校",
+  "className": "Panda",
+  "source": "依家長提供的學校與班級創作的遊戲情境故事，非正式課本內容。",
+  "stories": [
+    {
+      "id": "panda-morning",
+      "title": "早安，Panda 班！",
+      "text": "早安，Nickson！歡迎來到河馬學校的 Panda 班。背好小書包，和朋友揮揮手。今天我們一起聽英文、找線索。準備好了嗎？選一本課本，一起出發吧！",
+      "audio": "assets/audio/stories/panda-morning.wav"
+    },
+    {
+      "id": "body-team",
+      "title": "我的身體小隊",
+      "text": "Nickson，Panda 班今天有個小任務！照照鏡子，找找眼睛、耳朵和鼻子。再動動手指和腳趾。原來我的身體有這麼多好幫手！跟著聲音，慢慢找，一定能找到。",
+      "audio": "assets/audio/stories/body-team.wav"
+    },
+    {
+      "id": "robot-visitor",
+      "title": "機器人來做客",
+      "text": "河馬學校的 Panda 班來了一位小機器人！Nickson，我們一起幫它找到手臂、肩膀和膝蓋。裝好零件，再帶它看彩虹、聽鼓聲、聞一聞、摸一摸。每次找到一點點，就離成功更近了！",
+      "audio": "assets/audio/stories/robot-visitor.wav"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # Nickson 的英文小冒險
 
-My School 四週可玩的英文複習遊戲。純 HTML／CSS／JavaScript，無套件依賴、登入、付費或外部追蹤。
+My School 與 All About My Body 兩本、八週可玩的英文複習遊戲。純 HTML／CSS／JavaScript，無套件依賴、登入、付費或外部追蹤。
 
 ## 啟動與測試
 
@@ -34,9 +34,14 @@ npm test
 ## 教材與擴充
 
 - `LEARNING_CONTENT.md`：教材全文、Nickson 喜好、家長補充與版本對照。
+- `CODE_MAP.md`：模組依賴、資料來源與遊戲狀態流程 Mermaid 圖譜。
 - `DESIGN_SPEC_V1.md`：第一版原始規格，保留當時 Week 2–4 準備中的歷史範圍。
 - `content/index.json`：課本檔案清單。
 - `content/my-school.json`：獨立課本資料，包含全部四週單字、句型、作業、遊戲設定、素材映射。
+- `content/all-about-my-body.json`：第二本18個單字、數量／器官／物件映射、問答與原文註記。
+- `content/school-stories.json`、`school-story.js`：河馬學校 Panda 班首頁故事資料與畫面。
+- `body-activities.js`、`body-art.js`、`body.css`：第二本四種遊戲、精準身體圖與版面。
+- `lesson-text.js`：遊戲、題庫及家長試聽共用句型代入。
 - `game.js`：形狀回合生成及向量圖。
 - `activities.js`：配對、角色、地圖遊戲控制器。
 - `campus.js`：校園點選區、小女孩與中央走廊路線。
@@ -48,19 +53,19 @@ npm test
 
 新增課本：建立獨立 JSON，給予唯一 `id`、`name`、`order`，加入 index.json 的 books。每個單元需唯一 `id`、`week`、`theme`、`title`、`status`、`words`、`question`、`answer`、`homework`、`games` 與 `audio`。
 
-`games.type` 支援 `shapes`、`memory`、`roles`、`map`。參照既有單元提供 `title`、`intro`、`story`、`completion`。新增詞彙時須在 illustrations.js 增加對應 SVG，為單字、問句、模板代入後的完整答句及中文指示提供音檔映射。形狀型仍以四個既有形狀與指定顏色組合為規則。角色型若新增角色也需補對應人物素材。地圖型目前為四區學校布局，最後到 classroom；其他地圖主題需要調整終點規則與版面。
+`games.type` 支援 `shapes`、`memory`、`roles`、`map`、`face-count`、`body-touch`、`robot-matching`、`senses-link`。參照既有單元提供 `title`、`intro`、`story`、`completion`。新增詞彙時須提供對應 SVG 或人物素材，為單字、問句、模板代入後的完整答句及中文指示提供音檔映射。形狀型仍以四個既有形狀與指定顏色組合為規則。角色型若新增角色也需補對應人物素材。地圖型目前為四區學校布局，最後到 classroom；其他地圖主題需要調整終點規則與版面。身體遊戲的額外欄位參照第二本 JSON；句型 `{word}` 代入單字 ID，其餘變數代入同一單字資料欄位。
 
 只需保存摘要的未完成單元設 `status: "coming"`。既有四週已改為 `ready`，這是原始第一版之後的擴充。
 
 ## 音訊與素材
 
-49 段 WAV 位於 assets/audio，來自 Microsoft Zira Desktop（英文）與 Hanhan Desktop（中文）系統合成語音，非真人老師錄音。JSON 的 audio 以完整語句映射路徑，可換成自行授權的家長／老師錄音。`generate-unit-audio.ps1` 可在有對應 Windows 語音的電腦生成 Week 2–4 音檔；正常遊玩不需要執行此腳本。
+114 段 WAV 位於 assets/audio（原有49段、身體教材62段、故事3段），來自 Microsoft Zira Desktop（英文）與 Hanhan Desktop（中文）系統合成語音，非真人老師錄音。JSON 的 audio 以完整語句映射路徑，可換成自行授權的家長／老師錄音。`generate-unit-audio.ps1` 可生成第一本 Week 2–4 音檔；`generate-content-audio.ps1` 依教材與故事映射補齊缺少的音檔，不覆寫既有檔案。需有對應 Windows 語音，正常遊玩不需要執行腳本。
 
 開始前檢查必要音檔。預設優先使用裝置提供的中英文語音，偏好標示 Natural／Enhanced／Premium／Neural 或 Google 的聲音，並優先匹配美式英文、臺灣國語；名稱是挑選線索，不保證實際音質。家長可分別選擇中英文聲音，或固定使用內建音檔。裝置語音不可用或播放失敗時自動回到預錄備援；兩者都失敗才顯示重試與返回並鎖定答案。語音不與舞蹈音樂重疊。答對時先播約0.42秒的清脆提示音，再播放教材答句，不遮住英文。跳舞時有旋律、節奏鼓、拍手與滑音，完成時有短拍手收尾。音樂與音效在孩子點按時啟用共用 Web Audio 播放器，避免到慶祝時才建立播放器被行動瀏覽器阻擋。家長的慶祝音樂與音效開關同時控制答對提示音及舞蹈音效，教學語音保持開啟。返回、背景切換、略過慶祝與語音重播都停止正在播放或排程中的音效。
 
 ## 資料與範圍
 
-只以 localStorage 保存設定、完成數、日期、每個目標嘗試及提示。索引為 `${book.id}/${unit.id}`，形狀、顏色、配對、角色及場所分開記錄。未完成回合不計入；重新整理回書架。不宣稱跨裝置同步，儲存不可用仍可玩。
+只以 localStorage 保存設定、完成數、日期、每個目標嘗試及提示。索引為 `${book.id}/${unit.id}`，兩本同名 Week 不混用，機器人裝配與肯定／否定任務也分別記錄。未完成回合不計入；重新整理回書架。不宣稱跨裝置同步，儲存不可用仍可玩。
 
 Week 4 地圖為遊戲示意，不是課本原圖或真實學校布局。沒有數餅乾、正式描線、正式上色、語音評分或微型鏡頭功能。Week 3 的 cook's cookies 作業說明完整保留，未自行新增數字範圍。
 
@@ -124,3 +129,18 @@ Week 1 改為花園舞會找形狀，Week 2 改為教室木桌紙卡翻翻配，
 
 此更新依家長通知發布為 20261018.v1。原始主角照片保存在本機參考資料夾，不納入網站。
 主角最後依家長提供形象調整：薄荷綠外套為日常姿勢，雙手比耶為答對與完成慶祝姿勢；其餘五個人物與場景保持原設計。
+
+## 第二本與 Panda 班故事（本機）
+
+| 單元 | 玩法 | 一回合 |
+| --- | --- | --- |
+| Week 1 My Face | 看亮起的部位，點一個／兩個數量圖卡 | 五個部位各一次 |
+| Week 2 Smaller Body Parts | 聽目標單字，點身體近景圖片 | 四個部位各一次 |
+| Week 3 Bigger Body Parts | Robot Matching，配零件到位置，再答可以／還不行 | 四次配對＋四次肯定／否定 |
+| Week 4 Senses | 感官／器官連到指定物件，成功連線保留 | 五組各一次 |
+
+全部使用同份教材問答，保留家長原文並註記 touch／cook's 的筆誤整理。數餅乾及上色作業只保存說明，沒有自行加入未提供的要求。2／3選項設定仍只適用原有形狀與角色題；第二本使用各玩法固定版面。
+
+首頁「先聽一個小故事」有三段原創中文引導，代入 Nickson、河馬學校 Panda 班。點按才播放，可停止，沿用1–5級語速；背景暫停後需按繼續。故事與家長題庫試聽皆不改變課程或進度。家長紀錄可切換兩本課本，題庫可查看兩本35個單字及代入後的肯定／否定句。
+
+本次內容依家長通知納入20261018.v2發布：第二本四週遊戲、Panda班故事、教材紀錄與程式圖譜。後續仍等家長通知才推送與部署。
