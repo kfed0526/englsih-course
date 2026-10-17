@@ -1,6 +1,6 @@
-import {illustration} from './illustrations.js';
-import {shapeSVG,colors} from './game.js';
-import {questionFor,answersFor} from './lesson-text.js';
+import {illustration} from './illustrations.js?v=20261018.v3';
+import {shapeSVG,colors} from './game.js?v=20261018.v3';
+import {questionFor,answersFor} from './lesson-text.js?v=20261018.v3';
 const escape=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const types={shapes:'聽音找形狀／顏色形狀',memory:'教室物品翻翻配',roles:'角色辨認',map:'學校地圖探索','face-count':'臉部數數','body-touch':'身體點點樂','robot-matching':'Robot Matching','senses-link':'五感連連看'};
 function rules(unit){

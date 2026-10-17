@@ -22,6 +22,11 @@ export function release(root = process.cwd(), now = new Date()) {
   html = html.replace(/href="(style|storybook|body)\.css(?:\?v=[^"]*)?"/g,(_,name)=>`href="${name}.css?v=${result.version}"`);
   html = html.replace(/src="app\.js(?:\?v=[^"]*)?"/,`src="app.js?v=${result.version}"`);
   fs.writeFileSync(index,html);
+  for (const name of fs.readdirSync(root).filter(name=>name.endsWith('.js'))) {
+    const moduleFile=path.join(root,name);
+    const source=fs.readFileSync(moduleFile,'utf8');
+    fs.writeFileSync(moduleFile,source.replace(/(\bfrom\s+['"])(\.\/[^'"?]+\.js)(?:\?v=[^'"]*)?(['"])/g,(_,prefix,file,quote)=>`${prefix}${file}?v=${result.version}${quote}`));
+  }
   fs.writeFileSync(file,JSON.stringify(result,null,2)+'\n');
   return result;
 }
