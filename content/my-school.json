@@ -1,0 +1,276 @@
+{
+  "id": "my-school",
+  "name": "My School",
+  "order": 1,
+  "units": [
+    {
+      "id": "week-1",
+      "week": 1,
+      "theme": "Shapes at school",
+      "title": "學校裡的形狀",
+      "status": "ready",
+      "words": [
+        {
+          "id": "circle",
+          "zh": "圓形",
+          "image": "svg:circle",
+          "audio": null
+        },
+        {
+          "id": "square",
+          "zh": "正方形",
+          "image": "svg:square",
+          "audio": null
+        },
+        {
+          "id": "triangle",
+          "zh": "三角形",
+          "image": "svg:triangle",
+          "audio": null
+        },
+        {
+          "id": "star",
+          "zh": "星形",
+          "image": "svg:star",
+          "audio": null
+        }
+      ],
+      "question": "What shape can you see?",
+      "answer": "I can see a {word}.",
+      "homework": [
+        "Help child trace and color the shape."
+      ],
+      "combinations": [
+        {
+          "color": "red",
+          "shape": "circle"
+        },
+        {
+          "color": "blue",
+          "shape": "square"
+        },
+        {
+          "color": "orange",
+          "shape": "star"
+        },
+        {
+          "color": "blue",
+          "shape": "triangle"
+        }
+      ],
+      "games": {
+        "type": "shapes",
+        "roundLength": 6,
+        "defaultOptions": 2
+      },
+      "audio": {
+        "blue square.": "assets/audio/line-10.wav",
+        "What shape can you see?": "assets/audio/line-4.wav",
+        "orange star.": "assets/audio/line-11.wav",
+        "幫骨頭人找形狀，一起準備舞會！聽一聽，點選形狀。": "assets/audio/line-13.wav",
+        "square": "assets/audio/line-1.wav",
+        "I can see a triangle.": "assets/audio/line-7.wav",
+        "star": "assets/audio/line-3.wav",
+        "I can see a square.": "assets/audio/line-6.wav",
+        "I can see a circle.": "assets/audio/line-5.wav",
+        "再試一次": "assets/audio/line-14.wav",
+        "triangle": "assets/audio/line-2.wav",
+        "circle": "assets/audio/line-0.wav",
+        "red circle.": "assets/audio/line-9.wav",
+        "blue triangle.": "assets/audio/line-12.wav",
+        "I can see a star.": "assets/audio/line-8.wav"
+      }
+    },
+    {
+      "id": "week-2",
+      "week": 2,
+      "theme": "In the Classroom",
+      "title": "教室裡的物品",
+      "status": "ready",
+      "words": [
+        {
+          "id": "chair",
+          "zh": "椅子",
+          "image": "svg:chair",
+          "audio": "assets/audio/week-2-0.wav"
+        },
+        {
+          "id": "table",
+          "zh": "桌子",
+          "image": "svg:table",
+          "audio": "assets/audio/week-2-1.wav"
+        },
+        {
+          "id": "schoolbag",
+          "zh": "書包",
+          "image": "svg:schoolbag",
+          "audio": "assets/audio/week-2-2.wav"
+        },
+        {
+          "id": "cup",
+          "zh": "杯子",
+          "image": "svg:cup",
+          "audio": "assets/audio/week-2-3.wav"
+        },
+        {
+          "id": "bowl",
+          "zh": "碗",
+          "image": "svg:bowl",
+          "audio": "assets/audio/week-2-4.wav"
+        }
+      ],
+      "question": "What is this?",
+      "answer": "This is a {word}.",
+      "homework": [
+        "Help your child match the items.",
+        "What's on the table?",
+        "桌上物品：cup、bowl、schoolbag。"
+      ],
+      "notes": "後續：物品配對、教室找東西、桌上物品任務。",
+      "games": {
+        "type": "memory",
+        "title": "教室物品翻翻配",
+        "intro": "翻開卡片，找到兩張一樣的物品。",
+        "story": "幫骨頭人整理教室！",
+        "completion": "教室整理好了，謝謝你！",
+        "roundLength": 5
+      },
+      "audio": {
+        "再試一次": "assets/audio/line-14.wav",
+        "chair": "assets/audio/week-2-0.wav",
+        "This is a chair.": "assets/audio/week-2-answer-0.wav",
+        "table": "assets/audio/week-2-1.wav",
+        "This is a table.": "assets/audio/week-2-answer-1.wav",
+        "schoolbag": "assets/audio/week-2-2.wav",
+        "This is a schoolbag.": "assets/audio/week-2-answer-2.wav",
+        "cup": "assets/audio/week-2-3.wav",
+        "This is a cup.": "assets/audio/week-2-answer-3.wav",
+        "bowl": "assets/audio/week-2-4.wav",
+        "This is a bowl.": "assets/audio/week-2-answer-4.wav",
+        "What is this?": "assets/audio/week-2-question.wav",
+        "翻開卡片，找到兩張一樣的物品。": "assets/audio/week-2-intro.wav"
+      }
+    },
+    {
+      "id": "week-3",
+      "week": 3,
+      "theme": "People at School",
+      "title": "學校裡的人",
+      "status": "ready",
+      "words": [
+        {
+          "id": "teacher",
+          "zh": "老師",
+          "image": "svg:teacher",
+          "audio": "assets/audio/week-3-0.wav"
+        },
+        {
+          "id": "friend",
+          "zh": "朋友",
+          "image": "svg:friend",
+          "audio": "assets/audio/week-3-1.wav"
+        },
+        {
+          "id": "bus driver",
+          "zh": "校車司機",
+          "image": "svg:bus driver",
+          "audio": "assets/audio/week-3-2.wav"
+        },
+        {
+          "id": "cook",
+          "zh": "廚師",
+          "image": "svg:cook",
+          "audio": "assets/audio/week-3-3.wav"
+        }
+      ],
+      "question": "Who is that?",
+      "answer": "That is my {word}.",
+      "homework": [
+        "Help the cook.",
+        "Help your child count and color the cook's cookies."
+      ],
+      "notes": "cook's cookies 是廚師工作的情境圖片，不是額外目標單字或句型。餅乾數量、數字範圍與指定顏色待教材確認。後續：人物辨認、角色扮演、觀察廚師工作。",
+      "games": {
+        "type": "roles",
+        "title": "今天我來當",
+        "intro": "聽一聽，選道具，幫骨頭人扮演學校裡的人。",
+        "story": "今天骨頭人要扮演誰呢？",
+        "completion": "學校的好幫手都認識了！",
+        "roundLength": 4
+      },
+      "audio": {
+        "再試一次": "assets/audio/line-14.wav",
+        "teacher": "assets/audio/week-3-0.wav",
+        "That is my teacher.": "assets/audio/week-3-answer-0.wav",
+        "friend": "assets/audio/week-3-1.wav",
+        "That is my friend.": "assets/audio/week-3-answer-1.wav",
+        "bus driver": "assets/audio/week-3-2.wav",
+        "That is my bus driver.": "assets/audio/week-3-answer-2.wav",
+        "cook": "assets/audio/week-3-3.wav",
+        "That is my cook.": "assets/audio/week-3-answer-3.wav",
+        "Who is that?": "assets/audio/week-3-question.wav",
+        "聽一聽，選道具，幫骨頭人扮演學校裡的人。": "assets/audio/week-3-intro.wav"
+      }
+    },
+    {
+      "id": "week-4",
+      "week": 4,
+      "theme": "Places Around School",
+      "title": "學校周圍的地方",
+      "status": "ready",
+      "words": [
+        {
+          "id": "play area",
+          "zh": "遊戲區",
+          "image": "svg:play area",
+          "audio": "assets/audio/week-4-0.wav"
+        },
+        {
+          "id": "classroom",
+          "zh": "教室",
+          "image": "svg:classroom",
+          "audio": "assets/audio/week-4-1.wav"
+        },
+        {
+          "id": "kitchen",
+          "zh": "廚房",
+          "image": "svg:kitchen",
+          "audio": "assets/audio/week-4-2.wav"
+        },
+        {
+          "id": "bathroom",
+          "zh": "廁所",
+          "image": "svg:bathroom",
+          "audio": "assets/audio/week-4-3.wav"
+        }
+      ],
+      "question": "Where are you?",
+      "answer": "I am in the {word}.",
+      "homework": [
+        "Help the girl find the classroom."
+      ],
+      "notes": "未來製作包含四個區域的學校地圖，建立地點與英文對應，幫女孩找到教室。實際地圖布局尚未決定。 本遊戲地圖是示意布局，並非課本原圖或真實學校位置。",
+      "games": {
+        "type": "map",
+        "title": "學校探險小地圖",
+        "intro": "聽一聽，點地圖，帶小女孩找到教室。",
+        "story": "陪小女孩逛逛學校！",
+        "completion": "找到教室了，小女孩可以上課囉！",
+        "roundLength": 4
+      },
+      "audio": {
+        "再試一次": "assets/audio/line-14.wav",
+        "play area": "assets/audio/week-4-0.wav",
+        "I am in the play area.": "assets/audio/week-4-answer-0.wav",
+        "classroom": "assets/audio/week-4-1.wav",
+        "I am in the classroom.": "assets/audio/week-4-answer-1.wav",
+        "kitchen": "assets/audio/week-4-2.wav",
+        "I am in the kitchen.": "assets/audio/week-4-answer-2.wav",
+        "bathroom": "assets/audio/week-4-3.wav",
+        "I am in the bathroom.": "assets/audio/week-4-answer-3.wav",
+        "Where are you?": "assets/audio/week-4-question.wav",
+        "聽一聽，點地圖，帶小女孩找到教室。": "assets/audio/week-4-intro.wav"
+      }
+    }
+  ]
+}

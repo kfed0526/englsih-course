@@ -1,0 +1,4 @@
+node_modules/
+.DS_Store
+*.log
+repository-created.png
