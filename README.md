@@ -67,3 +67,20 @@ Week 4 地圖為遊戲示意，不是課本原圖或真實學校布局。沒有�
 ## GitHub Pages 部署
 
 此專案可直接部署為靜態網站。GitHub 儲存庫 Settings → Pages → Deploy from a branch，選 main 與 / (root) 後儲存。根目錄 .nojekyll 讓 Pages 直接發布靜態素材。啟用後的網址為 https://kfed0526.github.io/englsih-course/ 。每次推送 main 會更新網站。
+
+## 版本號與發布
+
+右上角顯示已發布版本，格式為 `yyyyMMdd.vN`，使用 Asia/Taipei 日期。同一天的第一個版本為 v1，再發布依序 v2、v3；隔天重新從 v1 開始。本次導入版本為 20261017.v1，先前未編號版本不回補。
+
+每個要發布的新版本，在提交與推送前執行一次：
+
+```sh
+npm run release
+npm test
+```
+
+release.json 保存目前發布版本；腳本更新 index.html 的版號及 CSS／JavaScript 入口版本參數。重新整理不遞增版本，重複測試同一發布也不要重跑 release。請將生成檔與功能修改一同提交推送。
+
+## 家長查看題庫
+
+家長設定 → 查看目前題庫。依課本與單元展開，可看全部單字圖片、中文參考意思、完整問答句、顏色形狀組合、出題規則、課本作業與備註。單字、問句、答句及顏色短語都能試聽。此頁直接使用教材 JSON，試聽不改變課程選擇或寫入學習紀錄。
