@@ -1,4 +1,4 @@
-# Nickson 英文學習與教材紀錄
+# panda-school｜Nickson 英文學習與教材紀錄
 
 更新日期：2026-10-18
 

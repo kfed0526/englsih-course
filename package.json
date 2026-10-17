@@ -1,4 +1,5 @@
 {
+  "name": "panda-school",
   "type": "module",
   "scripts": {
     "start": "node server.mjs",

@@ -1,13 +1,13 @@
-import {BodyActivity,BODY_TYPES} from './body-activities.js?v=20261018.v3';
-import {questionFor,answersFor} from './lesson-text.js?v=20261018.v3';
-import {storySectionHTML} from './school-story.js?v=20261018.v3';
-import {LessonSpeech,SPEECH_LEVELS,speechLevel,availableVoices,voiceId,chooseVoice} from './speech.js?v=20261018.v3';
-import {questionBankHTML} from './question-bank.js?v=20261018.v3';
-import {GameSounds} from './sounds.js?v=20261018.v3';
-import {Activity} from './activities.js?v=20261018.v3';
-import {illustration} from './illustrations.js?v=20261018.v3';
-import {makeRound,shapeSVG} from './game.js?v=20261018.v3';
-import {companion,CHARACTER_ASSETS} from './characters.js?v=20261018.v3';
+import {BodyActivity,BODY_TYPES} from './body-activities.js?v=20261018.v4';
+import {questionFor,answersFor} from './lesson-text.js?v=20261018.v4';
+import {storySectionHTML} from './school-story.js?v=20261018.v4';
+import {LessonSpeech,SPEECH_LEVELS,speechLevel,availableVoices,voiceId,chooseVoice} from './speech.js?v=20261018.v4';
+import {questionBankHTML} from './question-bank.js?v=20261018.v4';
+import {GameSounds} from './sounds.js?v=20261018.v4';
+import {Activity} from './activities.js?v=20261018.v4';
+import {illustration} from './illustrations.js?v=20261018.v4';
+import {makeRound,shapeSVG} from './game.js?v=20261018.v4';
+import {companion,CHARACTER_ASSETS} from './characters.js?v=20261018.v4';
 const VERSION=document.documentElement.dataset.version||'開發版';
 const contentURL=file=>`${file}?v=${encodeURIComponent(VERSION)}`;
 const versionBadge=()=>`<span class="app-version" aria-label="版本 ${VERSION}">${VERSION}</span>`;
@@ -23,9 +23,9 @@ function stop(){activity?.cancel();epoch++;speechPlayer.cancel();timers.forEach(
 function delay(ms){const e=epoch;return new Promise(resolve=>{const t=setTimeout(()=>{timers.delete(t);resolve(e===epoch);},ms);timers.add(t);});}
 const escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function go(next){storyState=null;if(next==='question-bank')bankSpeech=null;document.body.classList.remove('paused');stop();page=next;paused=false;celebrating=false;render();}
-function header(back='home'){return `<header class="top"><button class="small" data-go="${back}">← 返回${({home:'課本',units:'課程',settings:'家長設定'})[back]||'課程'}</button><span class="brand">NICKSON'S LITTLE ADVENTURE</span></header>`;}
+function header(back='home'){return `<header class="top"><button class="small" data-go="${back}">← 返回${({home:'課本',units:'課程',settings:'家長設定'})[back]||'課程'}</button><span class="brand">PANDA SCHOOL</span></header>`;}
 function wrap(html){app.innerHTML=`<div class="shell storybook-shell">${versionBadge()}${html}</div>`;}
-function render(){if(page==='question-bank'){wrap(`${header('settings')}${questionBankHTML(catalog)}`);return;}if(page==='activity'){wrap(`${header('units')}${activity.render()}`);return;}if(page==='home'){wrap(`<div class="top"><span class="brand">✦ LITTLE LEARNER · BIG ADVENTURE</span><button id="parent" class="small">⚙ 家長設定 <span class="parent-access">長按 2 秒</span></button></div><section class="hero"><div><div class="eyebrow">HELLO, NICKSON!</div><h1>英文小冒險，<br>一起出發吧！</h1><p>和小夥伴找一找、聽一聽，<br>準備一場好玩的學校舞會。</p><span class="badge">🌿 Nickson 的英文小冒險</span></div>${companion()}</section>${storySectionHTML(schoolStories,storyState)}<div class="section-title"><h2>我的小書架</h2><span class="muted">選一本課本開始</span></div>${catalog.map(b=>`<button class="book" data-book="${b.id}"><span class="book-icon">${escape(b.icon||'🏫')}</span><span><strong>${escape(b.name)}</strong><p class="muted">${b.units.length} 個小單元</p><span class="badge">${b.units.filter(u=>u.status==='ready').length} 個單元可以玩囉！</span></span><span style="margin-left:auto">→</span></button>`).join('')}<details><summary class="parent-access">家長／鍵盤與輔助操作入口</summary><button data-go="settings">開啟家長設定</button></details><footer>每次一點點，快樂練習英文 ♡</footer>`);bindParent();}
+function render(){if(page==='question-bank'){wrap(`${header('settings')}${questionBankHTML(catalog)}`);return;}if(page==='activity'){wrap(`${header('units')}${activity.render()}`);return;}if(page==='home'){wrap(`<div class="top"><span class="brand">🐼 PANDA SCHOOL · LITTLE ADVENTURE</span><button id="parent" class="small">⚙ 家長設定 <span class="parent-access">長按 2 秒</span></button></div><section class="hero"><div><div class="eyebrow">HELLO, NICKSON!</div><h1>英文小冒險，<br>一起出發吧！</h1><p>和小夥伴找一找、聽一聽，<br>準備一場好玩的學校舞會。</p><span class="badge">🐼 panda-school · Nickson 的英文小冒險</span></div>${companion()}</section>${storySectionHTML(schoolStories,storyState)}<div class="section-title"><h2>我的小書架</h2><span class="muted">選一本課本開始</span></div>${catalog.map(b=>`<button class="book" data-book="${b.id}"><span class="book-icon">${escape(b.icon||'🏫')}</span><span><strong>${escape(b.name)}</strong><p class="muted">${b.units.length} 個小單元</p><span class="badge">${b.units.filter(u=>u.status==='ready').length} 個單元可以玩囉！</span></span><span style="margin-left:auto">→</span></button>`).join('')}<details><summary class="parent-access">家長／鍵盤與輔助操作入口</summary><button data-go="settings">開啟家長設定</button></details><footer>每次一點點，快樂練習英文 ♡</footer>`);bindParent();}
 else if(page==='units'){wrap(`${header()}<p class="eyebrow">${escape(book.name)} · ${escape(book.subtitle||'我的小學校')}</p><h1>今天想玩哪一週？</h1><p class="muted">慢慢探索，每一週都不需要成績解鎖。</p><div class="units">${book.units.map(u=>`<article class="unit ${u.status==='ready'?'ready':''}"><span class="badge">WEEK ${u.week} · ${u.status==='ready'?'可以玩':'準備中'}</span><h2>${u.title}</h2><p>${u.theme}</p>${u.games.title?`<span class="badge">${u.games.title}</span>`:''}<p class="muted">${u.words.map(w=>w.id).join(' · ')}</p><div class="actions">${u.status==='ready'?`<button data-unit="${u.id}" data-action="cards">${u.games.type==='shapes'?'先認識形狀':'先認識單字'}</button><button data-unit="${u.id}" class="primary" data-action="intro">開始冒險 →</button>`:`<button data-summary="${u.id}">查看教材摘要</button>`}</div></article>`).join('')}</div>`);}
 else if(page==='summary'){const u=book.units.find(u=>u.id===app.dataset.unit);wrap(`${header('units')}<div class="panel"><span class="badge">Week ${u.week} · ${u.status==='ready'?'教材摘要':'準備中'}</span><h1>${u.title}</h1><p>${u.theme}</p><p>${u.words.map(w=>`${w.id}（${w.zh}）`).join('、')}</p><p>${u.question}<br>${u.answer.replace('{word}','______')}</p><h2>作業與家長補充</h2>${u.homework.map(x=>`<p>${escape(x)}</p>`).join('')}<p>${u.notes}</p></div>`);}
 else if(page==='cards'){const w=unit.words[card];wrap(`${header('units')}<div class="center"><p class="eyebrow">MEET NEW FRIENDS · 單字好朋友</p><h1>聽聽看，這是什麼？</h1><button class="card-shape" data-action="word" aria-label="播放 ${w.id}">${illustration(w.id)}</button><h2>${w.id}</h2><button class="speaker" data-action="word">🔊 再聽一次</button><div class="dots">${unit.words.map((_,i)=>`<span class="dot ${i===card?'active':''}"></span>`).join('')}</div><div class="actions"><button data-action="prev">← 上一張</button><button data-action="next">下一張 →</button></div><p><button class="primary" data-action="intro">開始冒險 ✦</button></p><div id="audio-status" role="alert"></div></div>`);}

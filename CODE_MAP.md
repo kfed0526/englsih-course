@@ -1,4 +1,4 @@
-# 程式圖譜
+# panda-school 程式圖譜
 
 此圖譜先於第二本遊戲實作建立，現已同步至完成的實作。專案為靜態 HTML／CSS／JavaScript，沒有後端。
 

@@ -11,3 +11,7 @@ Deploy only when the user explicitly asks to deploy or publish. Routine feature 
 ## Protagonist reference library
 
 The user asked to retain all six supplied protagonist images for suitable future use. Original JPGs and a usage index are saved in `.local-assets/nickson-references/`, which is ignored by Git. Consult that index when adding protagonist poses or related activities. Keep originals intact; put game-ready derived assets in `assets/characters/`.
+
+## Project identity
+
+Project name: panda-school. Local repository: H:/project/panda-school. Remote: https://github.com/kfed0526/panda-school.git. Pages: https://kfed0526.github.io/panda-school/.

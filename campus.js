@@ -1,4 +1,4 @@
-import {characterImage} from './characters.js?v=20261018.v3';
+import {characterImage} from './characters.js?v=20261018.v4';
 // Coordinates are percentages of the painted 1536x1024 floor plan.
 export const CAMPUS_ROOMS={
  'play area':{left:5,top:5,width:37,height:34,point:[38,30]},

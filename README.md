@@ -1,10 +1,12 @@
-# Nickson 的英文小冒險
+# panda-school
+
+Nickson 的英文小冒險 · 河馬學校 Panda 班。
 
 My School 與 All About My Body 兩本、八週可玩的英文複習遊戲。純 HTML／CSS／JavaScript，無套件依賴、登入、付費或外部追蹤。
 
 ## 啟動與測試
 
-需要 Node.js 18 或以上。在專案目錄執行：
+需要 Node.js 18 或以上。本機專案目錄為 `H:\project\panda-school`。在此目錄執行：
 
 ```sh
 npm start
@@ -73,7 +75,7 @@ Week 4 地圖為遊戲示意，不是課本原圖或真實學校布局。沒有�
 
 ## GitHub Pages 部署
 
-此專案可直接部署為靜態網站。GitHub 儲存庫 Settings → Pages → Deploy from a branch，選 main 與 / (root) 後儲存。根目錄 .nojekyll 讓 Pages 直接發布靜態素材。啟用後的網址為 https://kfed0526.github.io/englsih-course/ 。每次推送 main 會更新網站。
+此專案可直接部署為靜態網站。GitHub 儲存庫 Settings → Pages → Deploy from a branch，選 main 與 / (root) 後儲存。根目錄 .nojekyll 讓 Pages 直接發布靜態素材。儲存庫為 https://github.com/kfed0526/panda-school ，網站為 https://kfed0526.github.io/panda-school/ 。每次推送 main 會更新網站。
 
 ## 版本號與發布
 
@@ -130,7 +132,7 @@ Week 1 改為花園舞會找形狀，Week 2 改為教室木桌紙卡翻翻配，
 此更新依家長通知發布為 20261018.v1。原始主角照片保存在本機參考資料夾，不納入網站。
 主角最後依家長提供形象調整：薄荷綠外套為日常姿勢，雙手比耶為答對與完成慶祝姿勢；其餘五個人物與場景保持原設計。
 
-## 第二本與 Panda 班故事（本機）
+## 第二本與 Panda 班故事
 
 | 單元 | 玩法 | 一回合 |
 | --- | --- | --- |
