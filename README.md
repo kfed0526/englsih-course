@@ -62,3 +62,7 @@ npm test
 Week 4 地圖為遊戲示意，不是課本原圖或真實學校布局。沒有數餅乾、正式描線、正式上色、語音評分或微型鏡頭功能。Week 3 的 cook's cookies 作業說明完整保留，未自行新增數字範圍。
 
 實際驗證與實機限制見 VALIDATION.md。
+
+## GitHub Pages 部署
+
+此專案可直接部署為靜態網站。GitHub 儲存庫 Settings → Pages → Deploy from a branch，選 main 與 / (root) 後儲存。根目錄 .nojekyll 讓 Pages 直接發布靜態素材。啟用後的網址為 https://kfed0526.github.io/englsih-course/ 。每次推送 main 會更新網站。
