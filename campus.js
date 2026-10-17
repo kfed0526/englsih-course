@@ -1,3 +1,4 @@
+import {characterImage} from './characters.js';
 // Coordinates are percentages of the painted 1536x1024 floor plan.
 export const CAMPUS_ROOMS={
  'play area':{left:5,top:5,width:37,height:34,point:[38,30]},
@@ -12,7 +13,7 @@ export function campusRoute(from,to){
  if(!end)throw Error('Unknown school room');
  return {start:[...start],end:[...end],points:[[...start],[50,start[1]],[50,end[1]],[...end]]};
 }
-export function girlSprite(){return `<svg viewBox="0 0 60 90" aria-hidden="true"><ellipse cx="30" cy="83" rx="18" ry="5" fill="#544531" opacity=".25"/><g class="girl-body" stroke="#624b42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path class="girl-leg left-leg" d="m24 65-2 13-6 1" fill="none" stroke-width="5"/><path class="girl-leg right-leg" d="m35 65 4 13 6 1" fill="none" stroke-width="5"/><rect x="14" y="40" width="32" height="25" rx="9" fill="#e5b05b"/><path d="m23 42-8 12m22-12 8 12" stroke="#f4d1ac" stroke-width="6"/><path d="M23 40h14l9 28H14Z" fill="#cd8581"/><path d="M15 28Q10 3 30 3q23 0 16 29Z" fill="#654a40"/><ellipse cx="30" cy="26" rx="16" ry="17" fill="#f6d9b6"/><path d="M14 19Q17 2 31 5q16 0 16 16l-10-7-7 5-8-5Z" fill="#654a40"/><circle cx="24" cy="27" r="1.8" fill="#624b42" stroke="none"/><circle cx="36" cy="27" r="1.8" fill="#624b42" stroke="none"/><path d="M26 34q4 3 8 0" fill="none"/><circle cx="18" cy="32" r="3" fill="#e6aba0" stroke="none"/><circle cx="42" cy="32" r="3" fill="#e6aba0" stroke="none"/><path d="m42 11 7-3-1 9-7-3Z" fill="#d7857b"/></g></svg>`;}
+export function girlSprite(){return characterImage('girl',{decorative:true});}
 const escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export function campusHTML({unit,room,route,moving,locked,help,target,wrong}){
  const point=route?.start||CAMPUS_ROOMS[room]?.point||CAMPUS_ENTRANCE;

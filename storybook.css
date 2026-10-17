@@ -1,0 +1,141 @@
+/* Hand-painted school scenes. Learning cards stay opaque for clear answers. */
+.storybook-shell{color:#594b3a}
+.storybook-shell .muted{color:#81745f}
+.storybook-shell .brand{color:#6e7754}
+.storybook-shell .primary{background:#718360;box-shadow:0 4px 0 #506446}
+.storybook-shell .speaker{background:#f0d7a1;color:#594b3a;border:1px solid #d5b97d;box-shadow:0 3px 0 #d8c28f}
+.storybook-shell .progress span{background:#e5ddc9}
+.storybook-shell .progress .done{background:#8b9b70}
+.storybook-shell button:focus-visible{outline-color:#536b43}
+.storybook-shell .unit.ready{background:#f8f1dd;border-color:#daceaa;box-shadow:0 4px 0 #e8dfca}
+.storybook-shell .unit .badge{background:#e7ecd8;color:#586b49}
+.storybook-shell .book,.storybook-shell .panel{background:#fffdf4;border-color:#e2d8bd}
+.storybook-shell .hero .mascot{background:radial-gradient(ellipse,#e1e8cf,#f7efd900 70%)}
+.storybook-shell .book-icon{background:#edf0da}
+.storybook-shell .activity.memory,.storybook-shell .activity.roles,.storybook-shell .game{position:relative;isolation:isolate;border:2px solid #cdb98d;border-radius:24px;box-shadow:0 6px 0 #e0d4b9;background-color:#eee2c2;background-size:cover;background-position:center;padding:20px 24px 10px;margin:10px auto 0}
+.storybook-shell .game{background-image:url('assets/shapes-veranda-watercolor.png')}
+.storybook-shell .activity.memory{background-image:url('assets/memory-table-watercolor.png')}
+.storybook-shell .activity.roles{background-image:url('assets/roles-theater-watercolor.png')}
+.storybook-shell .game .bubble,.storybook-shell .activity-guide p{background:#fffaf0ed;border:1px solid #ddcfaa;border-radius:18px;padding:9px 18px;box-shadow:0 2px 6px #5e492317;line-height:1.5;color:#635339;font-size:18px}
+.storybook-shell .game .bubble{width:fit-content;max-width:100%}
+.storybook-shell .activity-guide{min-height:96px;gap:16px}
+.storybook-shell .activity-guide .mascot{width:80px;filter:drop-shadow(0 3px 1px #6354332b)}
+.storybook-shell .game .mascot{width:150px;filter:drop-shadow(0 3px 1px #6354332b)}
+.storybook-shell .activity-toolbar{min-height:70px}
+.storybook-shell .answer:not(.campus-room){background:linear-gradient(140deg,#fffdf6,#fbf3df);border:2px solid #cdb98e;border-radius:18px;box-shadow:0 5px 0 #a9956e,0 7px 9px #5c482322;position:relative;overflow:hidden}
+.storybook-shell .answer:not(.campus-room)::after{content:'';position:absolute;inset:4px;border:1px solid #e7dcc2;border-radius:13px;pointer-events:none}
+.storybook-shell .answer:not(.campus-room):hover:enabled{background:#fffdf3;border-color:#958657}
+.storybook-shell .answer:not(.campus-room).hint{border:4px solid #dfac44;outline:3px solid #fae2a1;background:#fff5d6}
+.storybook-shell .answer:not(.campus-room).correct,.storybook-shell .memory-card.matched{background:#eaf0dd;border-color:#83985f;box-shadow:0 4px 0 #687c4f}
+.storybook-shell .answer:not(.campus-room).wrong{border-color:#c08266}
+.storybook-shell .lesson-art{filter:drop-shadow(0 2px 1px #69533320)}
+.storybook-shell .memory-board{max-width:620px;gap:12px}
+.storybook-shell .memory-card.answer{height:112px;padding:12px}
+.storybook-shell .card-back{position:relative;background:radial-gradient(ellipse at 30% 25%,#95a475,#697e54);border:1px solid #c8d2a8;border-radius:10px;font-size:36px;color:#fff1be}
+.storybook-shell .card-back::before,.storybook-shell .card-back::after{content:'';position:absolute;left:15%;right:15%;top:17%;bottom:17%;border:1px solid #d8dfbd80;border-radius:50%;transform:rotate(35deg)}
+.storybook-shell .card-back::after{transform:rotate(-35deg)}
+.storybook-shell .memory-card.matched svg{opacity:.65}
+.storybook-shell .match-tick{background:#f5f8e9;border-radius:50%;width:25px;height:25px;line-height:25px;top:4px;right:4px;color:#526c37;font-size:18px;z-index:1}
+.storybook-shell .role-stage{background:transparent;border:none;box-shadow:none;min-height:185px;margin:0 auto 4px;gap:28px}
+.storybook-shell .role-stage .mascot{width:155px;filter:drop-shadow(0 3px 1px #63543330)}
+.storybook-shell .stage-label{background:#fffaf0ed;border:1px solid #dccba5;border-radius:18px;padding:12px 18px;font-size:22px;color:#635339;box-shadow:0 3px 7px #6d52231c}
+.storybook-shell .stage-label small{color:#847356;font-size:13px}
+.storybook-shell .role-options{gap:14px}
+.storybook-shell .role-card.answer{width:148px;height:148px;padding:15px}
+.storybook-shell .role-card>span{background:#e9eacb;font-size:18px;bottom:3px;right:3px;z-index:1;padding:3px}
+.storybook-shell .game .status,.storybook-shell .activity:not(.map) .activity-status{width:fit-content;max-width:100%;min-height:28px;background:#fffaf0ee;border:1px solid #e2d4b6;border-radius:14px;padding:5px 14px;margin:14px auto 4px;font-size:14px;line-height:1.5}
+.storybook-shell .game #audio-status:empty,.storybook-shell .activity:not(.map) #audio-status:empty{display:none}
+.storybook-shell .game .status:empty{visibility:hidden}
+.storybook-shell .game .answer{width:160px;height:160px;padding:22px}
+.storybook-shell .card-shape{background:#fffbef;border:2px solid #d8c59d;box-shadow:0 5px 0 #d7c6a1}
+.storybook-shell .dots .dot{background:#e1dac5}
+.storybook-shell .dots .dot.active{background:#8d9f73}
+.storybook-shell .complete{border:2px solid #d8c59d;border-radius:24px;background:linear-gradient(#fff9e8dd,#fff9e8ee),url('assets/shapes-veranda-watercolor.png') center/cover;padding:20px}
+@media(max-width:600px){
+ .storybook-shell .activity.memory,.storybook-shell .activity.roles,.storybook-shell .game{padding:12px 10px 8px;border-radius:20px}
+ .storybook-shell .activity-guide{min-height:65px;gap:7px}
+ .storybook-shell .activity-guide .mascot{width:52px}
+ .storybook-shell .activity-guide p{font-size:14px;padding:8px 10px;margin:6px 0;flex:1}
+ .storybook-shell .game .bubble{font-size:15px;padding:7px 10px}
+ .storybook-shell .game .scene .mascot{width:110px}
+ .storybook-shell .game .answers{gap:9px;flex-wrap:nowrap}
+ .storybook-shell .game .answer,.storybook-shell .game .answers.three .answer{width:100%;height:112px;padding:12px;min-width:0}
+ .storybook-shell .game .answers.three .answer{height:92px;padding:9px}
+ .storybook-shell .game .answers.three{gap:8px}
+ .storybook-shell .memory-board{gap:9px;max-width:360px}
+ .storybook-shell .memory-card.answer{height:72px;padding:7px;border-radius:14px}
+ .storybook-shell .card-back{font-size:25px;border-radius:8px}
+ .storybook-shell .answer:not(.campus-room)::after{inset:3px;border-radius:10px}
+ .storybook-shell .activity-toolbar{min-height:68px;gap:8px}
+ .storybook-shell .role-stage{min-height:165px;gap:10px}
+ .storybook-shell .role-stage .mascot{width:120px}
+ .storybook-shell .stage-label{font-size:17px;padding:9px 10px}
+ .storybook-shell .stage-label small{font-size:11px}
+ .storybook-shell .role-options{gap:8px}
+ .storybook-shell .role-card.answer{width:calc((100% - 16px)/3);height:104px;min-width:64px;padding:7px}
+ .storybook-shell .role-options.two .role-card.answer{width:calc((100% - 8px)/2);max-width:130px}
+ .storybook-shell .role-card>span{font-size:14px}
+ .storybook-shell .role-character .costume{width:58px;height:58px;right:-12px;bottom:15px}
+ .storybook-shell .role-cook .costume,.storybook-shell .role-bus-driver .costume{width:58px;height:58px;right:27px;top:-4px}
+ .storybook-shell .role-friend .costume{right:-18px;top:10px;height:72px;width:48px}
+ .storybook-shell .game .status,.storybook-shell .activity:not(.map) .activity-status{font-size:12px;margin:10px auto 3px;padding:4px 8px}
+}
+@media(max-height:550px) and (orientation:landscape){
+ .storybook-shell .game,.storybook-shell .activity.memory,.storybook-shell .activity.roles{padding:8px 14px 6px;margin-top:4px}
+ .storybook-shell .game{grid-template-columns:1fr 1.6fr;gap:0 14px;align-items:center}
+ .storybook-shell .game .scene{grid-row:1/4}
+ .storybook-shell .game .scene .mascot{width:100px}
+ .storybook-shell .game .bubble{font-size:14px;margin-bottom:0;padding:6px 10px}
+ .storybook-shell .game .speaker{margin:0 auto 8px;min-height:64px}
+ .storybook-shell .game .answer,.storybook-shell .game .answers.three .answer{width:108px;height:106px;padding:12px}
+ .storybook-shell .game .answers{gap:10px}
+ .storybook-shell .game .status{font-size:12px;margin:10px auto 0;padding:3px 10px;min-height:24px}
+ .storybook-shell .activity.memory{gap:5px 12px}
+ .storybook-shell .activity.memory .activity-guide{min-height:0}
+ .storybook-shell .activity.memory .activity-guide p{font-size:14px;margin:0;padding:7px 12px}
+ .storybook-shell .activity.memory .activity-toolbar{min-height:64px}
+ .storybook-shell .activity.memory .memory-board{gap:9px;max-width:600px}
+ .storybook-shell .activity.memory .memory-card.answer{height:74px;padding:7px}
+ .storybook-shell .activity.memory .activity-status{margin:5px auto 0;min-height:24px;padding:3px 10px}
+ .storybook-shell .activity.roles{display:grid;grid-template-columns:1fr 1.5fr;gap:0 14px;align-items:center}
+ .storybook-shell .activity.roles .role-stage{float:none;width:100%;grid-column:1;grid-row:1/4;margin:0;min-height:180px;gap:5px}
+ .storybook-shell .activity.roles .role-stage .mascot{width:100px}
+ .storybook-shell .activity.roles .stage-label{font-size:16px;padding:8px}
+ .storybook-shell .activity.roles .stage-label small{font-size:11px}
+ .storybook-shell .activity.roles .activity-toolbar{grid-column:2;min-height:64px}
+ .storybook-shell .activity.roles .role-options{grid-column:2;gap:8px}
+ .storybook-shell .activity.roles .role-card.answer{width:100px;height:110px;padding:10px}
+ .storybook-shell .activity.roles .role-options.two .role-card.answer{width:110px}
+ .storybook-shell .activity.roles .activity-status{grid-column:2;margin:8px auto 0;padding:3px 10px;min-height:24px;font-size:12px}
+ .storybook-shell .activity.roles #audio-status{grid-column:1/-1}
+ .storybook-shell .role-cook .costume,.storybook-shell .role-bus-driver .costume{width:48px;height:48px;right:23px;top:-3px}
+ .storybook-shell .role-friend .costume{width:42px;height:65px;right:-14px;top:8px}
+}
+@media(max-width:360px) and (orientation:portrait){
+ .storybook-shell .memory-card.answer{height:68px}
+ .storybook-shell .activity.memory .activity-guide p{font-size:13px;padding:7px 8px}
+}
+/* Human watercolor companions retain the same game/animation hooks. */
+.character-art{display:block;width:100%;height:100%;object-fit:contain;user-select:none;pointer-events:none}
+.human-figure{aspect-ratio:220/250;display:flex;align-items:flex-end;justify-content:center;transform-origin:50% 95%}
+.mascot .human-figure .character-art{width:100%;height:100%;object-fit:contain;object-position:center bottom;filter:drop-shadow(0 3px 2px #59482c2e)}
+.mascot .human-figure .companion-celebrate{display:none}
+.mascot.dance .human-figure .companion-normal,.mascot.dance2 .human-figure .companion-normal,.mascot.boing .human-figure .companion-normal{display:none}
+.mascot.dance .human-figure .companion-celebrate,.mascot.dance2 .human-figure .companion-celebrate,.mascot.boing .human-figure .companion-celebrate{display:block}
+.mascot.wave .human-figure{animation:human-greet 3.5s ease-in-out infinite}
+.mascot.dance .human-figure{animation:human-dance .7s ease-in-out infinite alternate}
+.mascot.dance2 .human-figure{animation:human-twirl .85s ease-in-out infinite alternate}
+.mascot.boing .human-figure{animation:human-hop .5s ease-out 2}
+.mascot.tilt .human-figure,.mascot.wink .human-figure{animation:human-nod .5s ease-in-out 2}
+.role-card .character-art{padding-bottom:2px}
+.card-shape .character-art{padding:5px}
+.bank-art .character-art{object-position:center}
+.campus-girl .character-art{height:auto;filter:drop-shadow(0 2px 1px #58452d55)}
+.is-walking .campus-girl .character-art{animation:human-walk .2s ease-in-out infinite alternate;transform-origin:50% 95%}
+@keyframes human-greet{0%,100%{transform:rotate(-1deg)}50%{transform:rotate(1deg) translateY(-2px)}}
+@keyframes human-dance{from{transform:rotate(-5deg) translate(-5px,0)}to{transform:rotate(5deg) translate(5px,-9px)}}
+@keyframes human-twirl{from{transform:rotate(5deg) translateX(5px)}to{transform:rotate(-5deg) translate(-5px,-7px)}}
+@keyframes human-hop{50%{transform:translateY(-10px) rotate(2deg)}}
+@keyframes human-nod{50%{transform:rotate(3deg) translateY(2px)}}
+@keyframes human-walk{from{transform:rotate(-2deg)}to{transform:rotate(2deg) translateY(-1px)}}
+@media(prefers-reduced-motion:reduce){.mascot .human-figure,.campus-girl .character-art{animation:none!important}}

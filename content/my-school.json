@@ -67,7 +67,6 @@
         "blue square.": "assets/audio/line-10.wav",
         "What shape can you see?": "assets/audio/line-4.wav",
         "orange star.": "assets/audio/line-11.wav",
-        "幫骨頭人找形狀，一起準備舞會！聽一聽，點選形狀。": "assets/audio/line-13.wav",
         "square": "assets/audio/line-1.wav",
         "I can see a triangle.": "assets/audio/line-7.wav",
         "star": "assets/audio/line-3.wav",
@@ -78,7 +77,8 @@
         "circle": "assets/audio/line-0.wav",
         "red circle.": "assets/audio/line-9.wav",
         "blue triangle.": "assets/audio/line-12.wav",
-        "I can see a star.": "assets/audio/line-8.wav"
+        "I can see a star.": "assets/audio/line-8.wav",
+        "和小夥伴找形狀，一起準備舞會！聽一聽，點選形狀。": "assets/audio/shapes-companion-intro.wav"
       }
     },
     {
@@ -131,7 +131,7 @@
         "type": "memory",
         "title": "教室物品翻翻配",
         "intro": "翻開卡片，找到兩張一樣的物品。",
-        "story": "幫骨頭人整理教室！",
+        "story": "和小夥伴整理教室！",
         "completion": "教室整理好了，謝謝你！",
         "roundLength": 5
       },
@@ -193,8 +193,8 @@
       "games": {
         "type": "roles",
         "title": "今天我來當",
-        "intro": "聽一聽，選道具，幫骨頭人扮演學校裡的人。",
-        "story": "今天骨頭人要扮演誰呢？",
+        "intro": "聽一聽，選人物，認識學校裡的人。",
+        "story": "今天會遇到誰呢？",
         "completion": "學校的好幫手都認識了！",
         "roundLength": 4
       },
@@ -209,7 +209,7 @@
         "cook": "assets/audio/week-3-3.wav",
         "That is my cook.": "assets/audio/week-3-answer-3.wav",
         "Who is that?": "assets/audio/week-3-question.wav",
-        "聽一聽，選道具，幫骨頭人扮演學校裡的人。": "assets/audio/week-3-intro.wav"
+        "聽一聽，選人物，認識學校裡的人。": "assets/audio/roles-people-intro.wav"
       }
     },
     {
