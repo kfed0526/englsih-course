@@ -25,7 +25,7 @@ npm test
 | Week 3 People at School | 聽角色名稱，選角色圖片幫骨頭人變身 | 四角色各一次，搭配書本、氣球、司機帽或廚師帽 |
 | Week 4 Places Around School | 點地圖帶小女孩前往各區 | 四地點各一次，最後找到 classroom |
 
-每週都能先看單字卡。翻卡時播放單字，配對成功播放答句；角色及地圖先播教材問句與目標單字，再於成功時示範答句。圖片全部為專案內 SVG，不依賴閱讀。
+每週都能先看單字卡。翻卡時播放單字，配對成功播放答句；角色及地圖先播教材問句與目標單字，再於成功時示範答句。單字圖片為專案內 SVG；Week 4 使用內建 imagegen 生成並保存於專案的水彩校園背景，搭配可點選房間與向量小女孩，不依賴閱讀。
 
 錯誤可無限重試，第三次後出現「幫幫我」，點擊才標示提示。配對錯誤時兩張卡會翻回，位置不改變。所有完成回合都有骨頭人舞蹈，可略過。返回與背景切換會取消聲音、計時與尚未執行的動作，回前景要按「繼續」。
 
@@ -39,6 +39,7 @@ npm test
 - `content/my-school.json`：獨立課本資料，包含全部四週單字、句型、作業、遊戲設定、素材映射。
 - `game.js`：形狀回合生成及向量圖。
 - `activities.js`：配對、角色、地圖遊戲控制器。
+- `campus.js`：校園點選區、小女孩與中央走廊路線。
 - `illustrations.js`：物品、人物、場所及角色道具 SVG。
 - `mascot.js`：白骨深紫描邊骨頭人與可動畫部位。
 - `app.js`：頁面路由、共用音訊、家長設定及本機紀錄。
@@ -103,3 +104,9 @@ release.json 保存目前發布版本；腳本更新 index.html 的版號及 CSS
 聲音清單由瀏覽器／作業系統提供，可能是內建或系統線上語音。無可用聲音時顯示使用內建音檔。此更新沒有新增付費語音API、後端服務或真人教師錄音，不宣稱每台裝置都會得到相同音質。
 
 API參考：[SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis)、[voiceschanged](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis/voiceschanged_event)、[preservesPitch](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/preservesPitch)。
+
+## 水彩校園地圖
+
+Week 4 改為吉卜利感的溫暖手繪校園，包含遊戲區、教室、廚房、洗手間與相通走廊。孩子直接點房間，答對後小女孩沿走廊前進，再播放成功提示音與英文答句。行走期間鎖定點選，切背景後可繼續；系統「減少動態效果」開啟時直接抵達。
+
+背景由內建 imagegen 生成，實際素材為 `assets/school-map-watercolor.png`（1536×1024），生成提示詞存於同目錄 `.prompt.txt`。這是虛構學校示意，並非課本原圖或真實校舍。

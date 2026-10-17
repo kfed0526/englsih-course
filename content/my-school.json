@@ -249,14 +249,15 @@
       "homework": [
         "Help the girl find the classroom."
       ],
-      "notes": "未來製作包含四個區域的學校地圖，建立地點與英文對應，幫女孩找到教室。實際地圖布局尚未決定。 本遊戲地圖是示意布局，並非課本原圖或真實學校位置。",
+      "notes": "遊戲包含四個區域的學校地圖，建立地點與英文對應，幫女孩找到教室。 本遊戲地圖是示意布局，並非課本原圖或真實學校位置。 地圖更新為溫暖水彩手繪校園，包含中央走廊與各房間設備；小女孩沿走廊移動。",
       "games": {
         "type": "map",
         "title": "學校探險小地圖",
         "intro": "聽一聽，點地圖，帶小女孩找到教室。",
         "story": "陪小女孩逛逛學校！",
         "completion": "找到教室了，小女孩可以上課囉！",
-        "roundLength": 4
+        "roundLength": 4,
+        "mapAsset": "assets/school-map-watercolor.png"
       },
       "audio": {
         "再試一次": "assets/audio/line-14.wav",
