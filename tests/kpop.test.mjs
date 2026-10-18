@@ -1,10 +1,10 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {KPOP_SONGS,KpopSession,kpopLibraryHTML,kpopRoomHTML} from '../kpop.js';
+import {DANCE_POSES,KPOP_SONGS,KpopSession,kpopLibraryHTML,kpopRoomHTML} from '../kpop.js';
 import {worldMapHTML} from '../adventure-map.js';
 function setup(loadFailure=false,song=KPOP_SONGS[0]){
  const nodes=new Map();const node=s=>{if(!nodes.has(s))nodes.set(s,{textContent:'',dataset:{},attrs:{},classList:{toggle(k,on){this[k]=on;}},setAttribute(k,v){this.attrs[k]=v;}});return nodes.get(s);};
- const buttons=['sway','bounce','turn'].map(p=>{const b=node(p);b.dataset.kpopPose=p;return b;});const root={querySelector:node,querySelectorAll:()=>buttons};let options,created=0,paused=0,destroyed=0,hidden=false,observerCallback,disconnected=false;
+ const buttons=DANCE_POSES.map(({id:p})=>{const b=node(p);b.dataset.kpopPose=p;return b;});const root={querySelector:node,querySelectorAll:()=>buttons};let options,created=0,paused=0,destroyed=0,hidden=false,observerCallback,disconnected=false;
  class Observer{constructor(cb){observerCallback=cb;}observe(){}disconnect(){disconnected=true;}}
  class Player{constructor(el,opts){options=opts;created++;}pauseVideo(){paused++;}destroy(){destroyed++;}}
  const session=new KpopSession({root,song,origin:'http://localhost:4173',hidden:()=>hidden,Observer,load:()=>loadFailure?Promise.reject(Error('offline')):Promise.resolve({Player})});
@@ -30,6 +30,14 @@ test('slow API cannot create an orphan player after leaving; blocked video retai
 
 
 test('SOYEON selection renders and embeds the exact supplied stage video without radio autoplay',async()=>{
- const song=KPOP_SONGS.find(s=>s.id==='toesa');assert.equal(song.videoId,'6MTxeUvX7VI');assert.equal(new Set(KPOP_SONGS.map(s=>s.id)).size,2);assert.match(kpopLibraryHTML(),/data-kpop="toesa"/);assert.match(kpopRoomHTML(song),/I’m gonna TOESA/);assert.match(kpopRoomHTML(song),/SOYEON/);assert.match(kpopRoomHTML(song),/YouTube 官方舞台/);assert.match(kpopRoomHTML(song),/watch\?v=6MTxeUvX7VI/);assert.doesNotMatch(kpopRoomHTML(song),/start_radio|list=RD/);
+ const song=KPOP_SONGS.find(s=>s.id==='toesa');assert.equal(song.videoId,'6MTxeUvX7VI');assert.equal(new Set(KPOP_SONGS.map(s=>s.id)).size,3);assert.match(kpopLibraryHTML(),/data-kpop="toesa"/);assert.match(kpopRoomHTML(song),/I’m gonna TOESA/);assert.match(kpopRoomHTML(song),/SOYEON/);assert.match(kpopRoomHTML(song),/YouTube 官方舞台/);assert.match(kpopRoomHTML(song),/watch\?v=6MTxeUvX7VI/);assert.doesNotMatch(kpopRoomHTML(song),/start_radio|list=RD/);
  const h=setup(false,song);await h.session.mount();assert.equal(h.get().options.videoId,'6MTxeUvX7VI');assert.equal(h.get().options.playerVars.autoplay,0);h.session.destroy();
+});
+
+
+test('Malatanghulu embeds the supplied official MV and starts with the new stepping move',async()=>{
+ const song=KPOP_SONGS.find(s=>s.id==='malatanghulu');assert.equal(song.videoId,'0zd6WZ1PLVs');assert.match(kpopLibraryHTML(),/data-kpop="malatanghulu"/);assert.match(kpopRoomHTML(song),/麻辣燙葫蘆/);assert.match(kpopRoomHTML(song),/data-pose="step"/);assert.match(kpopRoomHTML(song),/data-kpop-pose="step" aria-pressed="true"/);
+ const h=setup(false,song);await h.session.mount();assert.equal(h.get().options.videoId,'0zd6WZ1PLVs');assert.equal(h.session.pose,'step');h.get().options.events.onStateChange({data:1});
+ for(const pose of ['step','groove','hop-turn']){h.session.setPose(pose);assert.equal(h.node('.dance-studio').dataset.pose,pose);assert.equal(h.node('.dance-studio').classList['is-dancing'],true);assert.equal(h.buttons.filter(b=>b.attrs['aria-pressed']==='true').length,1);}
+ h.get().options.events.onStateChange({data:2});assert.equal(h.session.pose,'hop-turn');assert.equal(h.node('.dance-studio').classList['is-dancing'],false);h.session.setPose('unknown');assert.equal(h.session.pose,'hop-turn');h.session.togglePreview();assert.equal(h.session.playing,false);assert.equal(h.session.preview,true);h.session.destroy();
 });

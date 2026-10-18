@@ -111,3 +111,8 @@ test('switching between two song cards uses the selected video and preserves bot
  await handlers.click({target:{closest:()=>({dataset:{kpop:'toesa'}})}});assert.equal(api.get().page,'kpop-room');assert.match(node('app').innerHTML,/I’m gonna TOESA/);assert.match(node('app').innerHTML,/6MTxeUvX7VI/);assert.doesNotMatch(node('app').innerHTML,/7HDeem-JaSY/);
  api.go('kpop');await handlers.click({target:{closest:()=>({dataset:{kpop:'queencard'}})}});assert.match(node('app').innerHTML,/Queencard/);assert.match(node('app').innerHTML,/7HDeem-JaSY/);assert.doesNotMatch(node('app').innerHTML,/6MTxeUvX7VI/);assert.equal(Object.keys(api.get().records).length,0);
 });
+
+
+test('third song opens independently and all six moves remain selectable without scoring',async()=>{
+ const {api,handlers,node}=await harness();api.go('kpop');assert.match(node('app').innerHTML,/data-kpop="malatanghulu"/);await handlers.click({target:{closest:()=>({dataset:{kpop:'malatanghulu'}})}});assert.equal(api.get().page,'kpop-room');assert.match(node('app').innerHTML,/0zd6WZ1PLVs/);assert.match(node('app').innerHTML,/data-kpop-pose="hop-turn"/);assert.doesNotMatch(node('app').innerHTML,/7HDeem-JaSY/);assert.equal(Object.keys(api.get().records).length,0);
+});
