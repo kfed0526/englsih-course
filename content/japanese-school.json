@@ -1,0 +1,222 @@
+{
+  "id": "japanese-school",
+  "name": "日文課 · 日本語",
+  "subtitle": "跟著 Nickson 到日本，認識12個日文單字",
+  "language": "ja-JP",
+  "unitLabel": "主題",
+  "order": 3,
+  "icon": "🌸",
+  "source": "家長提供：3個主題，共12個單字；未提供正式句型。",
+  "units": [
+    {
+      "id": "topic-classroom",
+      "week": 1,
+      "theme": "我的教室",
+      "title": "我的教室",
+      "status": "ready",
+      "language": "ja-JP",
+      "words": [
+        {
+          "id": "chair",
+          "zh": "椅子",
+          "kana": "いす",
+          "kanji": "椅子",
+          "romaji": "isu",
+          "en": "chair",
+          "image": "svg:chair",
+          "audio": "assets/audio/japanese/chair.mp3"
+        },
+        {
+          "id": "desk",
+          "zh": "桌子",
+          "kana": "つくえ",
+          "kanji": "机",
+          "romaji": "tsukue",
+          "en": "desk",
+          "image": "svg:desk",
+          "audio": "assets/audio/japanese/desk.mp3"
+        },
+        {
+          "id": "pencil",
+          "zh": "鉛筆",
+          "kana": "えんぴつ",
+          "kanji": "鉛筆",
+          "romaji": "enpitsu",
+          "en": "pencil",
+          "image": "svg:pencil",
+          "audio": "assets/audio/japanese/pencil.mp3"
+        },
+        {
+          "id": "crayon",
+          "zh": "蠟筆",
+          "kana": "クレヨン",
+          "kanji": "—",
+          "romaji": "kureyon",
+          "en": "crayon",
+          "image": "svg:crayon",
+          "audio": "assets/audio/japanese/crayon.mp3"
+        }
+      ],
+      "question": "",
+      "answer": "{kana}",
+      "homework": [],
+      "notes": "完整保存家長提供的五欄單字。羅馬拼音與英文供家長參考，教學發音使用日文假名。未提供正式句型；遊戲只練習本主題單字。",
+      "games": {
+        "type": "ja-listen",
+        "title": "教室尋寶",
+        "intro": "聽一聽日文，幫我找到教室裡的東西。",
+        "story": "到日本的教室找一找",
+        "completion": "教室裡的東西都找到了！",
+        "roundLength": 4
+      },
+      "audio": {
+        "再試一次": "assets/audio/line-14.wav",
+        "聽一聽日文，幫我找到教室裡的東西。": "assets/audio/japanese/topic-classroom-intro.wav",
+        "いす": "assets/audio/japanese/chair.mp3",
+        "つくえ": "assets/audio/japanese/desk.mp3",
+        "えんぴつ": "assets/audio/japanese/pencil.mp3",
+        "クレヨン": "assets/audio/japanese/crayon.mp3"
+      }
+    },
+    {
+      "id": "topic-food",
+      "week": 2,
+      "theme": "好吃的食物",
+      "title": "好吃的食物",
+      "status": "ready",
+      "language": "ja-JP",
+      "words": [
+        {
+          "id": "rice",
+          "zh": "白飯",
+          "kana": "ごはん",
+          "kanji": "御飯",
+          "romaji": "gohan",
+          "en": "rice",
+          "image": "svg:rice",
+          "audio": "assets/audio/japanese/rice.mp3"
+        },
+        {
+          "id": "vegetables",
+          "zh": "菜",
+          "kana": "やさい",
+          "kanji": "野菜",
+          "romaji": "yasai",
+          "en": "vegetables",
+          "image": "svg:vegetables",
+          "audio": "assets/audio/japanese/vegetables.mp3"
+        },
+        {
+          "id": "meat",
+          "zh": "肉",
+          "kana": "にく",
+          "kanji": "肉",
+          "romaji": "niku",
+          "en": "meat",
+          "image": "svg:meat",
+          "audio": "assets/audio/japanese/meat.mp3"
+        },
+        {
+          "id": "fish",
+          "zh": "魚",
+          "kana": "さかな",
+          "kanji": "魚",
+          "romaji": "sakana",
+          "en": "fish",
+          "image": "svg:fish",
+          "audio": "assets/audio/japanese/fish.mp3"
+        }
+      ],
+      "question": "",
+      "answer": "{kana}",
+      "homework": [],
+      "notes": "完整保存家長提供的五欄單字。羅馬拼音與英文供家長參考，教學發音使用日文假名。未提供正式句型；遊戲只練習本主題單字。",
+      "games": {
+        "type": "ja-bento",
+        "title": "我的日文便當",
+        "intro": "聽一聽日文，選一樣食物，放進我的便當。",
+        "story": "一起準備好吃的便當",
+        "completion": "便當準備好了，謝謝小幫手！",
+        "roundLength": 4
+      },
+      "audio": {
+        "再試一次": "assets/audio/line-14.wav",
+        "聽一聽日文，選一樣食物，放進我的便當。": "assets/audio/japanese/topic-food-intro.wav",
+        "ごはん": "assets/audio/japanese/rice.mp3",
+        "やさい": "assets/audio/japanese/vegetables.mp3",
+        "にく": "assets/audio/japanese/meat.mp3",
+        "さかな": "assets/audio/japanese/fish.mp3"
+      }
+    },
+    {
+      "id": "topic-colors",
+      "week": 3,
+      "theme": "彩色的世界",
+      "title": "彩色的世界",
+      "status": "ready",
+      "language": "ja-JP",
+      "words": [
+        {
+          "id": "red",
+          "zh": "紅色",
+          "kana": "あか",
+          "kanji": "赤",
+          "romaji": "aka",
+          "en": "red",
+          "image": "svg:red",
+          "audio": "assets/audio/japanese/red.mp3"
+        },
+        {
+          "id": "blue",
+          "zh": "藍色",
+          "kana": "あお",
+          "kanji": "青",
+          "romaji": "ao",
+          "en": "blue",
+          "image": "svg:blue",
+          "audio": "assets/audio/japanese/blue.mp3"
+        },
+        {
+          "id": "yellow",
+          "zh": "黃色",
+          "kana": "きいろ",
+          "kanji": "黄色",
+          "romaji": "kiiro",
+          "en": "yellow",
+          "image": "svg:yellow",
+          "audio": "assets/audio/japanese/yellow.mp3"
+        },
+        {
+          "id": "green",
+          "zh": "綠色",
+          "kana": "みどり",
+          "kanji": "緑",
+          "romaji": "midori",
+          "en": "green",
+          "image": "svg:green",
+          "audio": "assets/audio/japanese/green.mp3"
+        }
+      ],
+      "question": "",
+      "answer": "{kana}",
+      "homework": [],
+      "notes": "完整保存家長提供的五欄單字。羅馬拼音與英文供家長參考，教學發音使用日文假名。未提供正式句型；遊戲只練習本主題單字。",
+      "games": {
+        "type": "ja-colors",
+        "title": "彩色花園",
+        "intro": "聽一聽日文，選對顏色，讓花園開花。",
+        "story": "讓花園開滿彩色花朵",
+        "completion": "四種顏色都找到，花園開花了！",
+        "roundLength": 4
+      },
+      "audio": {
+        "再試一次": "assets/audio/line-14.wav",
+        "聽一聽日文，選對顏色，讓花園開花。": "assets/audio/japanese/topic-colors-intro.wav",
+        "あか": "assets/audio/japanese/red.mp3",
+        "あお": "assets/audio/japanese/blue.mp3",
+        "きいろ": "assets/audio/japanese/yellow.mp3",
+        "みどり": "assets/audio/japanese/green.mp3"
+      }
+    }
+  ]
+}

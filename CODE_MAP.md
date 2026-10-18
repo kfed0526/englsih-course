@@ -5,16 +5,22 @@
 ```mermaid
 flowchart TD
   HTML["index.html · 版本與入口"] --> APP["app.js · 路由／設定／紀錄"]
-  HTML --> CSS["style.css + storybook.css + body.css · 響應版面"]
+  HTML --> CSS["style.css + storybook.css + body.css + adventure.css · 響應版面"]
   APP --> MANIFEST["content/index.json · 課本清單"]
   MANIFEST --> SCHOOL["content/my-school.json · 第一本四週"]
   MANIFEST --> BODY["content/all-about-my-body.json · 第二本四週"]
+  MANIFEST --> JAPANESE["content/japanese-school.json · 三主題／五欄單字"]
+  APP --> ADVENTURE["adventure-map.js · 七個場景／台日飛行"]
+  ADVENTURE --> MAPPAINT["assets/ · 小鎮／旅行／熊貓帽主角"]
+  APP --> JAPANESEGAME["japanese-activities.js · 尋寶／便當／花園"]
+  JAPANESEGAME --> JAART["japanese-art.js · 教學圖／正確顏色"]
+  BANK --> JAART
   APP --> SHAPES["game.js · 形狀出題"]
   APP --> ACTIVITY["activities.js · 翻牌／角色／地圖"]
   APP --> BODYGAME["body-activities.js · 臉部／觸碰／機器人／感官"]
   ACTIVITY --> CAMPUS["campus.js · 校園路線與點選區"]
   APP --> BANK["question-bank.js · 家長教材預覽"]
-  APP --> SPEECH["speech.js · 裝置語音／五級語速／WAV備援"]
+  APP --> SPEECH["speech.js · 中英日裝置語音／五級語速／WAV與MP3備援"]
   APP --> SOUND["sounds.js · 答對音效／慶祝音樂"]
   APP --> CHARACTERS["characters.js · 主角與人物素材"]
   APP --> ART["illustrations.js · 教材圖像"]
@@ -32,7 +38,13 @@ flowchart TD
 
 ```mermaid
 flowchart LR
-  HOME["首頁：故事／課本"] --> UNITS["選課本的週次"]
+  HOME["首頁：七場景大地圖／故事"] --> SCHOOLENTRY["學校：My School／All About My Body"]
+  SCHOOLENTRY --> UNITS["選課本週次或日文主題"]
+  HOME --> WORLD["世界地圖：台灣／日本"]
+  WORLD --> FLIGHT["點日本：飛機動畫"]
+  FLIGHT --> UNITS
+  FLIGHT -->|離開或背景| CANCELFLIGHT["取消舊抵達；繼續後重新出發"]
+  HOME --> OTHER["其他五場景：準備中"]
   HOME --> STORYPLAY["點按故事播放／停止；不寫入進度"]
   STORYPLAY --> HOME
   UNITS --> CARDS["認識單字"]

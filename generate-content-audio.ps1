@@ -6,6 +6,7 @@ $taskRoot=(Get-Location).Path
 $taskAudioRoot=[IO.Path]::GetFullPath((Join-Path $taskRoot 'assets/audio'))+[IO.Path]::DirectorySeparatorChar
 $taskGenerated=0
 function Save-TeachingAudio($taskText,$taskFile){
+ if([IO.Path]::GetExtension($taskFile) -ne '.wav'){return}
  $taskDestination=[IO.Path]::GetFullPath((Join-Path $taskRoot $taskFile))
  if(-not $taskDestination.StartsWith($taskAudioRoot,[StringComparison]::OrdinalIgnoreCase)){throw 'Audio destination must stay in assets/audio'}
  if(Test-Path -LiteralPath $taskDestination){return}

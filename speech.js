@@ -10,6 +10,7 @@ export function voiceId(voice){return voice.voiceURI||`${voice.lang}|${voice.nam
 function matching(voice,language){
   const lang=voice.lang?.replaceAll('_','-').toLowerCase()||'';
   if(language==='en-US')return /^en(?:-|$)/.test(lang);
+  if(language==='ja-JP')return /^ja(?:-|$)/.test(lang);
   // Mandarin instructions should not silently switch to Cantonese.
   return /^(?:zh|cmn)(?:-|$)/.test(lang)&&!/(?:-hk|-yue)/.test(lang)&&!/cantonese|廣東|粤语|粵語/i.test(voice.name);
 }
