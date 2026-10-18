@@ -24,7 +24,7 @@
           "romaji": "isu",
           "en": "chair",
           "image": "svg:chair",
-          "audio": "assets/audio/japanese/chair.mp3"
+          "audio": "assets/audio/japanese/normalized/chair.mp3"
         },
         {
           "id": "desk",
@@ -34,7 +34,7 @@
           "romaji": "tsukue",
           "en": "desk",
           "image": "svg:desk",
-          "audio": "assets/audio/japanese/desk.mp3"
+          "audio": "assets/audio/japanese/normalized/desk.mp3"
         },
         {
           "id": "pencil",
@@ -44,7 +44,7 @@
           "romaji": "enpitsu",
           "en": "pencil",
           "image": "svg:pencil",
-          "audio": "assets/audio/japanese/pencil.mp3"
+          "audio": "assets/audio/japanese/normalized/pencil.mp3"
         },
         {
           "id": "crayon",
@@ -54,7 +54,7 @@
           "romaji": "kureyon",
           "en": "crayon",
           "image": "svg:crayon",
-          "audio": "assets/audio/japanese/crayon.mp3"
+          "audio": "assets/audio/japanese/normalized/crayon.mp3"
         }
       ],
       "question": "",
@@ -72,10 +72,10 @@
       "audio": {
         "再試一次": "assets/audio/line-14.wav",
         "聽一聽日文，幫我找到教室裡的東西。": "assets/audio/japanese/topic-classroom-intro.wav",
-        "いす": "assets/audio/japanese/chair.mp3",
-        "つくえ": "assets/audio/japanese/desk.mp3",
-        "えんぴつ": "assets/audio/japanese/pencil.mp3",
-        "クレヨン": "assets/audio/japanese/crayon.mp3"
+        "いす": "assets/audio/japanese/normalized/chair.mp3",
+        "つくえ": "assets/audio/japanese/normalized/desk.mp3",
+        "えんぴつ": "assets/audio/japanese/normalized/pencil.mp3",
+        "クレヨン": "assets/audio/japanese/normalized/crayon.mp3"
       }
     },
     {
@@ -94,7 +94,7 @@
           "romaji": "gohan",
           "en": "rice",
           "image": "svg:rice",
-          "audio": "assets/audio/japanese/rice.mp3"
+          "audio": "assets/audio/japanese/normalized/rice.mp3"
         },
         {
           "id": "vegetables",
@@ -104,7 +104,7 @@
           "romaji": "yasai",
           "en": "vegetables",
           "image": "svg:vegetables",
-          "audio": "assets/audio/japanese/vegetables.mp3"
+          "audio": "assets/audio/japanese/normalized/vegetables.mp3"
         },
         {
           "id": "meat",
@@ -114,7 +114,7 @@
           "romaji": "niku",
           "en": "meat",
           "image": "svg:meat",
-          "audio": "assets/audio/japanese/meat.mp3"
+          "audio": "assets/audio/japanese/normalized/meat.mp3"
         },
         {
           "id": "fish",
@@ -124,7 +124,7 @@
           "romaji": "sakana",
           "en": "fish",
           "image": "svg:fish",
-          "audio": "assets/audio/japanese/fish.mp3"
+          "audio": "assets/audio/japanese/normalized/fish.mp3"
         }
       ],
       "question": "",
@@ -142,10 +142,10 @@
       "audio": {
         "再試一次": "assets/audio/line-14.wav",
         "聽一聽日文，選一樣食物，放進我的便當。": "assets/audio/japanese/topic-food-intro.wav",
-        "ごはん": "assets/audio/japanese/rice.mp3",
-        "やさい": "assets/audio/japanese/vegetables.mp3",
-        "にく": "assets/audio/japanese/meat.mp3",
-        "さかな": "assets/audio/japanese/fish.mp3"
+        "ごはん": "assets/audio/japanese/normalized/rice.mp3",
+        "やさい": "assets/audio/japanese/normalized/vegetables.mp3",
+        "にく": "assets/audio/japanese/normalized/meat.mp3",
+        "さかな": "assets/audio/japanese/normalized/fish.mp3"
       }
     },
     {
@@ -164,7 +164,7 @@
           "romaji": "aka",
           "en": "red",
           "image": "svg:red",
-          "audio": "assets/audio/japanese/red.mp3"
+          "audio": "assets/audio/japanese/normalized/red.mp3"
         },
         {
           "id": "blue",
@@ -174,7 +174,7 @@
           "romaji": "ao",
           "en": "blue",
           "image": "svg:blue",
-          "audio": "assets/audio/japanese/blue.mp3"
+          "audio": "assets/audio/japanese/normalized/blue.mp3"
         },
         {
           "id": "yellow",
@@ -184,7 +184,7 @@
           "romaji": "kiiro",
           "en": "yellow",
           "image": "svg:yellow",
-          "audio": "assets/audio/japanese/yellow.mp3"
+          "audio": "assets/audio/japanese/normalized/yellow.mp3"
         },
         {
           "id": "green",
@@ -194,7 +194,7 @@
           "romaji": "midori",
           "en": "green",
           "image": "svg:green",
-          "audio": "assets/audio/japanese/green.mp3"
+          "audio": "assets/audio/japanese/normalized/green.mp3"
         }
       ],
       "question": "",
@@ -212,10 +212,10 @@
       "audio": {
         "再試一次": "assets/audio/line-14.wav",
         "聽一聽日文，選對顏色，讓花園開花。": "assets/audio/japanese/topic-colors-intro.wav",
-        "あか": "assets/audio/japanese/red.mp3",
-        "あお": "assets/audio/japanese/blue.mp3",
-        "きいろ": "assets/audio/japanese/yellow.mp3",
-        "みどり": "assets/audio/japanese/green.mp3"
+        "あか": "assets/audio/japanese/normalized/red.mp3",
+        "あお": "assets/audio/japanese/normalized/blue.mp3",
+        "きいろ": "assets/audio/japanese/normalized/yellow.mp3",
+        "みどり": "assets/audio/japanese/normalized/green.mp3"
       }
     }
   ]

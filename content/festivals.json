@@ -1,0 +1,17 @@
+{
+  "title": "慶典廣場",
+  "description": "Nickson 的一年小慶典；課外親子遊戲，全年都能玩。",
+  "dateSource": "https://www.anws.gov.tw/FileDownload/Activities/20250623134229050085725.pdf",
+  "dateNote": "標註節日本日，不是連假或補假日期。農曆以台北時區換算，閏月不重複過節。",
+  "events": [
+    {"id":"new-year","name":"過年節","rule":{"calendar":"lunar","month":1,"day":1},"dateLabel":"農曆正月初一","game":"new-year","title":"鞭炮響，年獸跑！","description":"點響鞭炮，再敲敲調皮年獸，一起迎接新年。","color":"#b94c38"},
+    {"id":"dad-may","name":"Nickson 爸爸生日","rule":{"calendar":"solar","month":5,"day":26},"dateLabel":"每年 5/26","game":"birthday","title":"送給爸爸的生日驚喜","description":"裝飾蛋糕、點亮蠟燭，再送出生日禮物。","color":"#b87641"},
+    {"id":"dragon-boat","name":"端午節","rule":{"calendar":"lunar","month":5,"day":5},"dateLabel":"農曆五月初五","game":"dragon-boat","title":"龍舟出發，粽子開動！","description":"左右划槳到終點，解開粽葉，吃一口香香的粽子。","color":"#3d8075"},
+    {"id":"mid-autumn","name":"中秋節","rule":{"calendar":"lunar","month":8,"day":15},"dateLabel":"農曆八月十五","game":"mid-autumn","title":"月餅與柚子帽","description":"挑月餅、分著吃，再為 Nickson 戴上柚子帽。","color":"#9e7337"},
+    {"id":"double-ten","name":"雙十節","rule":{"calendar":"solar","month":10,"day":10},"dateLabel":"每年 10/10","game":"fireworks","title":"我的煙火天空","description":"選煙火顏色，點天空施放，完成自己的煙火畫。","color":"#555d94"},
+    {"id":"halloween","name":"萬聖節","rule":{"calendar":"solar","month":10,"day":31},"dateLabel":"每年 10/31","game":"skeleton","title":"骨頭人的南瓜舞會","description":"幫友善骨頭人找到身體，再跟著姿勢跳舞。","color":"#a96c32"},
+    {"id":"mom-nov","name":"Nickson 媽媽生日","rule":{"calendar":"solar","month":11,"day":10},"dateLabel":"每年 11/10","game":"birthday","title":"媽媽的生日派對","description":"裝飾蛋糕、點亮蠟燭，把心意裝進禮物裡。","color":"#936b91"},
+    {"id":"nickson","name":"Nickson 生日","rule":{"calendar":"solar","month":11,"day":18},"dateLabel":"每年 11/18","game":"birthday","title":"Nickson，生日快樂！","description":"做一個喜歡的蛋糕，許個願，再打開生日禮物。","color":"#63834f"},
+    {"id":"christmas","name":"聖誕節","rule":{"calendar":"solar","month":12,"day":25},"dateLabel":"每年 12/25","game":"christmas","title":"麋鹿車送禮小隊","description":"開著麋鹿車拜訪三間小屋，幫聖誕老人送對禮物。","color":"#4b7d63"}
+  ]
+}

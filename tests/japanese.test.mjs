@@ -36,8 +36,8 @@ test('reduced motion arrives without the flight delay; background cannot auto-na
  const durations=[];let arrivals=0;const f=new JapanFlight({delay:async ms=>{durations.push(ms);return true;},active:()=>true,arrive:()=>arrivals++,render:()=>{},reducedMotion:true});await f.begin();assert.deepEqual(durations,[0]);assert.equal(arrivals,1);
  const inactive=new JapanFlight({delay:async()=>true,active:()=>false,arrive:()=>arrivals++,render:()=>{}});await inactive.begin();assert.equal(arrivals,1);
 });
-test('seven destinations, Japan route and real image assets remain available',()=>{
- assert.deepEqual(SCENES.map(s=>s.name),['家裡','學校','公園','親子館','舞蹈教室','音樂教室','世界地圖']);assert.equal(new Set(SCENES.map(s=>s.id)).size,7);assert.match(homeMapHTML(),/data-destination="school"/);assert.match(worldMapHTML({phase:'flying'}),/is-flying/);
+test('eight destinations, Japan route and real image assets remain available',()=>{
+ assert.deepEqual(SCENES.map(s=>s.name),['家裡','學校','公園','親子館','舞蹈教室','音樂教室','世界地圖','慶典廣場']);assert.equal(new Set(SCENES.map(s=>s.id)).size,8);assert.match(homeMapHTML(),/data-destination="school"/);assert.match(worldMapHTML({phase:'flying'}),/is-flying/);
  for(const file of ADVENTURE_ASSETS){const data=fs.readFileSync(file);assert.equal(data.toString('ascii',1,4),'PNG');}
 });
 test('parent bank derives all Japanese columns from JSON and has no invented formal question',()=>{
@@ -50,6 +50,7 @@ test('Japanese speech selects only Japanese voices and otherwise uses its MP3 ba
  assert.equal(chooseVoice(voices,'ja-JP').voiceURI,'ja');assert.equal(chooseVoice(voices.slice(0,2),'ja-JP'),null);
  const utterances=[],clips=[];class Utterance{constructor(text){this.text=text;}}class Audio{play(){clips.push(this);queueMicrotask(()=>this.onended());return Promise.resolve();}pause(){}}
  const synth={getVoices:()=>voices,speak:u=>{utterances.push(u);queueMicrotask(()=>u.onend());},cancel(){}};
- const p=new LessonSpeech({synth,Utterance,Audio});assert.equal(await p.play('いす',{lang:'ja-JP',clip:'chair.mp3',level:4}),true);assert.equal(utterances[0].voice.lang,'ja-JP');
+ const p=new LessonSpeech({synth,Utterance,Audio});assert.equal(await p.play('いす',{lang:'ja-JP',clip:'chair.mp3',level:4}),true);assert.equal(utterances.length,0);assert.equal(clips[0].volume,1);
+ assert.equal(await p.play('いす',{lang:'ja-JP',clip:'chair.mp3',level:4,selection:'ja'}),true);assert.equal(utterances[0].voice.lang,'ja-JP');assert.equal(utterances[0].volume,1);
  synth.getVoices=()=>voices.slice(0,2);assert.equal(await p.play('いす',{lang:'ja-JP',clip:'chair.mp3',level:4}),true);assert.equal(clips[0].src,'chair.mp3');assert.equal(clips[0].playbackRate,1.125);assert.equal(clips[0].preservesPitch,true);
 });

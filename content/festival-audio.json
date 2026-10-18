@@ -1,0 +1,33 @@
+{
+  "language": "zh-TW",
+  "source": "Microsoft Hanhan Desktop，開發時產生的中文合成語音；非真人錄音。",
+  "audio": {
+    "讓鞭炮劈哩啪啦響！。點響三串鞭炮，迎接新年。": "assets/audio/festivals/b0cdef705c5e0b63.wav",
+    "年獸躲在哪裡？。找到調皮年獸，敲敲牠四次，請牠回山上過年。": "assets/audio/festivals/b6f45c15db4f8c1d.wav",
+    "一起裝飾生日蛋糕。點選三種裝飾，把蛋糕變得香香甜甜。": "assets/audio/festivals/1ece9645b07dab30.wav",
+    "點亮生日蠟燭。點亮三根小蠟燭。": "assets/audio/festivals/7353305cef596df6.wav",
+    "許個願，吹蠟燭！。準備好了，點一下，把願望輕輕吹出去。": "assets/audio/festivals/7f930a0ed5fbd0e6.wav",
+    "生日禮物時間。選一個禮物，看看裡面藏著什麼！": "assets/audio/festivals/ae2f093d6d76ff3a.wav",
+    "一起划龍舟！。跟著節奏，這次划「左」邊。": "assets/audio/festivals/556a8b594dde3485.wav",
+    "一起划龍舟！。跟著節奏，這次划「右」邊。": "assets/audio/festivals/66f2308d113b9055.wav",
+    "龍舟到站，粽子開動！。先解開粽繩。": "assets/audio/festivals/413ea8e94df6fde5.wav",
+    "龍舟到站，粽子開動！。打開綠綠的粽葉。": "assets/audio/festivals/50808716af11174d.wav",
+    "龍舟到站，粽子開動！。吃一口香香的粽子！": "assets/audio/festivals/c3bdc7c967cfd222.wav",
+    "月圓了，分享月餅！。點月餅，分三口慢慢吃。": "assets/audio/festivals/58e0f8add218c900.wav",
+    "給 Nickson 戴柚子帽。把綠色柚子帽戴在頭上，一起賞月。": "assets/audio/festivals/d9cee0170e1d30e0.wav",
+    "點亮雙十的夜空。先選顏色，再點天空放煙火。放六朵，完成你的煙火畫！": "assets/audio/festivals/e6118accd034affb.wav",
+    "骨頭人，準備出發！。幫骨頭人找到「頭骨」。": "assets/audio/festivals/ac7e251f377eb5d5.wav",
+    "骨頭人，準備出發！。幫骨頭人找到「胸骨」。": "assets/audio/festivals/18b9343662c1688e.wav",
+    "骨頭人，準備出發！。幫骨頭人找到「手臂」。": "assets/audio/festivals/3448ba732e475028.wav",
+    "骨頭人，準備出發！。幫骨頭人找到「雙腿」。": "assets/audio/festivals/4b6ae4e64c23a87e.wav",
+    "一起跳南瓜舞！。跟著骨頭人：雙手舉高。": "assets/audio/festivals/39a2cfa1e2529b94.wav",
+    "一起跳南瓜舞！。跟著骨頭人：向兩邊伸手。": "assets/audio/festivals/11e81813ded94dff.wav",
+    "一起跳南瓜舞！。跟著骨頭人：蹲低搖一搖。": "assets/audio/festivals/1544bd7477f67213.wav",
+    "麋鹿車，出發！。往右開到第 1 間亮燈的小屋。": "assets/audio/festivals/a64f1a3ec3f1968f.wav",
+    "聖誕老人送禮物。這間小屋想收到「紅色皮球」。": "assets/audio/festivals/6dc362bfa9583f35.wav",
+    "麋鹿車，出發！。往右開到第 2 間亮燈的小屋。": "assets/audio/festivals/45dee5473c4a052d.wav",
+    "聖誕老人送禮物。這間小屋想收到「黃色小熊」。": "assets/audio/festivals/df736a079c4fb516.wav",
+    "麋鹿車，出發！。往右開到第 3 間亮燈的小屋。": "assets/audio/festivals/b9d603ffe3267625.wav",
+    "聖誕老人送禮物。這間小屋想收到「綠色故事書」。": "assets/audio/festivals/b878fc9b6f5bc37c.wav"
+  }
+}

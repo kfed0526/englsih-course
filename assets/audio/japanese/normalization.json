@@ -1,0 +1,174 @@
+{
+  "tool": "FFmpeg 7.1 gain and peak limiter, development only",
+  "filter": "volume=6dB,alimiter=limit=0.84:level=false",
+  "clips": [
+    {
+      "word": "chair",
+      "source": "assets/audio/japanese/chair.mp3",
+      "output": "assets/audio/japanese/normalized/chair.mp3",
+      "before": {
+        "mean_volume": -23.2,
+        "max_volume": -4.2
+      },
+      "after": {
+        "mean_volume": -19.0,
+        "max_volume": -1.9
+      },
+      "sha256": "a23dea3d8bb94510da7db6d5222dc79d2d9249ad278e02b5392344bd4900814e"
+    },
+    {
+      "word": "desk",
+      "source": "assets/audio/japanese/desk.mp3",
+      "output": "assets/audio/japanese/normalized/desk.mp3",
+      "before": {
+        "mean_volume": -20.3,
+        "max_volume": -4.6
+      },
+      "after": {
+        "mean_volume": -16.1,
+        "max_volume": -1.9
+      },
+      "sha256": "84f7c5d760298d6b0643168ba9e1f6336c0841ee361234224c9e14f0df335a4c"
+    },
+    {
+      "word": "pencil",
+      "source": "assets/audio/japanese/pencil.mp3",
+      "output": "assets/audio/japanese/normalized/pencil.mp3",
+      "before": {
+        "mean_volume": -19.7,
+        "max_volume": -3.0
+      },
+      "after": {
+        "mean_volume": -15.6,
+        "max_volume": -1.8
+      },
+      "sha256": "ba6ee61bde323485f8d4d4bb750a3e34d71eba4a7a599520ead7dd6cb5b5f63a"
+    },
+    {
+      "word": "crayon",
+      "source": "assets/audio/japanese/crayon.mp3",
+      "output": "assets/audio/japanese/normalized/crayon.mp3",
+      "before": {
+        "mean_volume": -18.7,
+        "max_volume": -4.9
+      },
+      "after": {
+        "mean_volume": -13.8,
+        "max_volume": -1.9
+      },
+      "sha256": "8ce6c5a5c1bf99b8f7077aae2b466392c83fa2ae90c90d26d62b0e333efcf106"
+    },
+    {
+      "word": "rice",
+      "source": "assets/audio/japanese/rice.mp3",
+      "output": "assets/audio/japanese/normalized/rice.mp3",
+      "before": {
+        "mean_volume": -20.2,
+        "max_volume": -3.5
+      },
+      "after": {
+        "mean_volume": -16.0,
+        "max_volume": -1.9
+      },
+      "sha256": "2a9a279ca3cba9f3ac922078232444fbb6a9cbb91067cdfa0979ec8398574b65"
+    },
+    {
+      "word": "vegetables",
+      "source": "assets/audio/japanese/vegetables.mp3",
+      "output": "assets/audio/japanese/normalized/vegetables.mp3",
+      "before": {
+        "mean_volume": -21.2,
+        "max_volume": -4.8
+      },
+      "after": {
+        "mean_volume": -16.3,
+        "max_volume": -1.9
+      },
+      "sha256": "3e9486172a6d03bb7ce76c82e1fcfbd022859880108285ec934efe04a87ba8b9"
+    },
+    {
+      "word": "meat",
+      "source": "assets/audio/japanese/meat.mp3",
+      "output": "assets/audio/japanese/normalized/meat.mp3",
+      "before": {
+        "mean_volume": -21.4,
+        "max_volume": -4.5
+      },
+      "after": {
+        "mean_volume": -17.8,
+        "max_volume": -1.9
+      },
+      "sha256": "f5177f5205197bd7c4ca8f871c418d0fa0930dd9b11ee3b034db26b8813a67e7"
+    },
+    {
+      "word": "fish",
+      "source": "assets/audio/japanese/fish.mp3",
+      "output": "assets/audio/japanese/normalized/fish.mp3",
+      "before": {
+        "mean_volume": -19.7,
+        "max_volume": -3.5
+      },
+      "after": {
+        "mean_volume": -14.7,
+        "max_volume": -1.9
+      },
+      "sha256": "d50cc73b55911acb64956125c2d9f8db4c5813ef8b5ba9075abb6a859deb6f70"
+    },
+    {
+      "word": "red",
+      "source": "assets/audio/japanese/red.mp3",
+      "output": "assets/audio/japanese/normalized/red.mp3",
+      "before": {
+        "mean_volume": -23.9,
+        "max_volume": -4.2
+      },
+      "after": {
+        "mean_volume": -19.7,
+        "max_volume": -1.8
+      },
+      "sha256": "f0d8c691c7da5d1eb2f268d3d04e7e8309904c3d0d3248b9d5e44cc2f5b199a3"
+    },
+    {
+      "word": "blue",
+      "source": "assets/audio/japanese/blue.mp3",
+      "output": "assets/audio/japanese/normalized/blue.mp3",
+      "before": {
+        "mean_volume": -22.1,
+        "max_volume": -5.0
+      },
+      "after": {
+        "mean_volume": -17.3,
+        "max_volume": -1.9
+      },
+      "sha256": "0ff24bc2868577db58f56a52a4ef846b22310c38f6191ced4b42b16206c4759b"
+    },
+    {
+      "word": "yellow",
+      "source": "assets/audio/japanese/yellow.mp3",
+      "output": "assets/audio/japanese/normalized/yellow.mp3",
+      "before": {
+        "mean_volume": -19.3,
+        "max_volume": -5.2
+      },
+      "after": {
+        "mean_volume": -14.6,
+        "max_volume": -1.9
+      },
+      "sha256": "28c8b5e214f3fc700ead5b4f50a506e15cd262d60f715ead227ad413557c02cd"
+    },
+    {
+      "word": "green",
+      "source": "assets/audio/japanese/green.mp3",
+      "output": "assets/audio/japanese/normalized/green.mp3",
+      "before": {
+        "mean_volume": -19.5,
+        "max_volume": -4.5
+      },
+      "after": {
+        "mean_volume": -15.1,
+        "max_volume": -1.8
+      },
+      "sha256": "3137a4ad9ae83ffea9c86154fd4d0738be7386f5adc0ac6d6b36e8e24a9ed9c7"
+    }
+  ]
+}

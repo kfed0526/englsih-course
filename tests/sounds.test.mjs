@@ -20,3 +20,8 @@ test('celebration schedules rhythm, claps and slides within nine seconds; skip c
  context.state='suspended';s.unlock();assert.equal(context.state,'running');assert.equal(context.resumes,2);
 });
 test('unsupported Web Audio does not block the game',()=>{const s=new GameSounds(()=>{throw Error('unsupported');});assert.doesNotThrow(()=>s.unlock());assert.equal(s.correct(),0);assert.doesNotThrow(()=>s.dance(9));});
+test('festival effects use the shared mute and cancellation controls',()=>{
+ const context=fakeContext(),s=new GameSounds(()=>context);s.unlock();
+ for(const effect of ['pop','firework','drum','row','bite','rustle','wish','correct']){s.festival(effect);assert.ok(s.nodes.size>0);const old=[...s.nodes];s.stop();assert.ok(old.every(n=>n.stopped));}
+ s.enabled=false;const starts=context.events.filter(e=>e.action==='start').length;s.festival('firework');assert.equal(context.events.filter(e=>e.action==='start').length,starts);
+});

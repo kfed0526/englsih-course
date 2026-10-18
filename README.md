@@ -2,7 +2,9 @@
 
 Nickson 的學習小冒險 · 河馬學校 Panda 班。
 
-兩本英文課、三個日文主題與可點選的大地圖。純 HTML／CSS／JavaScript，正常遊玩無套件依賴、登入、付費或外部追蹤。
+兩本英文課、三個日文主題、八場景大地圖與九個節日／生日慶典遊戲。純 HTML／CSS／JavaScript，正常遊玩無套件依賴、登入、付費或外部追蹤。慶典日期、玩法與資料來源見 [FESTIVALS.md](FESTIVALS.md)。
+
+已加入日文音量加強、熊貓網站／主畫面捷徑圖示與iPad橫向課程配置，詳見 [IPAD_AND_AUDIO.md](IPAD_AND_AUDIO.md)。
 
 ## 啟動與測試
 

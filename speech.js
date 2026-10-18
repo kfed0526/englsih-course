@@ -61,12 +61,14 @@ export class LessonSpeech {
   async play(text,{lang='en-US',clip,level=3,selection='auto'}={}){
     this.cancel();const token=this.generation;
     const speed=SPEECH_LEVELS[speechLevel(level)-1];
-    const voice=chooseVoice(this.voices(),lang,selection);
+    // Bundled Nanami recordings have consistent loudness across iPad and desktop.
+    // An explicitly selected device voice still takes precedence over recordings.
+    const voice=lang==='ja-JP'&&selection==='auto'&&clip?null:chooseVoice(this.voices(),lang,selection);
     const timeout=Math.max(15000,Math.ceil(text.length*200/speed.tts));
     if(voice&&this.Utterance&&this.synth?.speak){
       const ok=await this.attempt(token,finish=>{
         const utterance=new this.Utterance(text);this.utterance=utterance;
-        utterance.voice=voice;utterance.lang=voice.lang||lang;utterance.rate=speed.tts;utterance.pitch=1;
+        utterance.voice=voice;utterance.lang=voice.lang||lang;utterance.rate=speed.tts;utterance.pitch=1;utterance.volume=1;
         utterance.onend=()=>finish(true);utterance.onerror=()=>finish(false);
         this.synth.resume?.();this.synth.speak(utterance);
         return ()=>{utterance.onend=null;utterance.onerror=null;if(this.utterance===utterance)this.utterance=null;};
@@ -78,7 +80,7 @@ export class LessonSpeech {
     if(!clip||!this.Audio||token!==this.generation)return false;
     return this.attempt(token,finish=>{
       this.audio??=new this.Audio();const audio=this.audio;
-      audio.src=clip;audio.playbackRate=speed.audio;audio.preservesPitch=true;
+      audio.src=clip;audio.playbackRate=speed.audio;audio.preservesPitch=true;audio.volume=1;
       if('webkitPreservesPitch'in audio)audio.webkitPreservesPitch=true;
       audio.onended=()=>finish(true);audio.onerror=()=>finish(false);
       audio.play().catch(()=>finish(false));

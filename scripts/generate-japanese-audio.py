@@ -20,7 +20,7 @@ async def main():
         raise RuntimeError("Configured Japanese voice is unavailable; do not substitute another language.")
     semaphore = asyncio.Semaphore(2)
     async def save(word):
-        target = (ROOT / word["audio"]).resolve()
+        target = (ROOT / 'assets/audio/japanese' / Path(word['audio']).name).resolve()
         if not target.is_relative_to((ROOT / "assets/audio/japanese").resolve()):
             raise RuntimeError("Audio path left the Japanese asset folder")
         if target.exists() and target.stat().st_size > 1000:

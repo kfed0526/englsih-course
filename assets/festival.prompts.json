@@ -1,0 +1,19 @@
+{
+  "tool": "built-in imagegen",
+  "date": "2026-10-18",
+  "assets": [
+    {
+      "file": "assets/neighborhood-festival-watercolor.png",
+      "mode": "edit",
+      "reference": "assets/neighborhood-map-watercolor.png",
+      "prompt": "Edit this square realistic watercolor neighborhood game map. Preserve warm natural sunlight, painterly paper texture, detailed believable buildings, original entire composition and locations: home upper left, panda school upper center, park upper right, family center middle left, dance studio middle center, music studio middle right, globe airport bottom center and right. Add ONE small celebration plaza at bottom LEFT (center x18%, y84%) replacing only some vegetation and part of the left foreground while keeping stream and bridge recognizable. A small circular stone plaza, wooden festival kiosk, colorful triangular bunting and red lanterns, flowers; plausible integrated landscape paths. Keep all seven original buildings intact and their positions. No text, no labels, no UI buttons, no people. Do not crop. Preserve square aspect ratio. Intended for clickable children's adventure map."
+    },
+    {
+      "file": "assets/festival-actors-watercolor.png",
+      "mode": "generate",
+      "reference": "assets/neighborhood-festival-watercolor.png",
+      "transparent_background": true,
+      "prompt": "Create a new game sprite atlas on a truly transparent background, landscape canvas, exactly THREE equal-width columns with NO panel borders and NO text. Each column contains ONE complete isolated object, centered, well separated and not touching its column edges. LEFT: an adorable friendly Taiwanese New Year Nian beast, a golden furry lion-like mythical creature with small curved horns, big kind eyes, joyful face, four paws, no scary features. MIDDLE: a detailed traditional green and golden dragon boat with red wooden hull, two paddles, and a small cheerful East Asian preschool boy in a mint jacket aboard; side view facing right, entire boat. RIGHT: Santa Claus in a warm red sleigh pulled by one reindeer with antlers, gift sack in back, side view facing right, full sleigh and reindeer. Match the supporting reference's believable hand-painted watercolor, soft golden light, nuanced materials, gentle children's storybook realism. These are separate game objects, not a scene. No floor, no landscape, no shadows outside objects, no typography, no logos. All objects large and readable in their own third. Transparent alpha, not a checkerboard."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "./",
+  "name": "Panda School｜Nickson 的小小世界",
+  "short_name": "Panda School",
+  "lang": "zh-Hant",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fcf7ed",
+  "theme_color": "#718360",
+  "icons": [
+    {"src":"assets/icons/panda-192.png","sizes":"192x192","type":"image/png","purpose":"any"},
+    {"src":"assets/icons/panda-512.png","sizes":"512x512","type":"image/png","purpose":"any"},
+    {"src":"assets/icons/panda-maskable-512.png","sizes":"512x512","type":"image/png","purpose":"maskable"}
+  ]
+}

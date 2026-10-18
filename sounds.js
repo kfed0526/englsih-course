@@ -89,6 +89,24 @@ export class GameSounds {
     } catch { this.stop(); return 0; }
   }
 
+  festival(kind) {
+    this.stop();
+    if (!this.ready()) return;
+    try {
+      if (kind === 'firework' || kind === 'pop') {
+        this.tone(300, 0, .18, .12, 'sine', 850);
+        this.clap(.18, .12); this.clap(.25, .07);
+      } else if (kind === 'drum' || kind === 'row') {
+        this.tone(145, 0, .16, .18, 'sine', 65);
+        this.tone(390, .08, .12, .08, 'triangle');
+      } else if (kind === 'bite' || kind === 'rustle') {
+        this.clap(0, .045); this.tone(760, .07, .1, .055);
+      } else if (kind === 'wish') {
+        [880, 784, 659, 523].forEach((n,i)=>this.tone(n,i*.09,.2,.1));
+      } else this.correct();
+    } catch { this.stop(); }
+  }
+
   dance(seconds = 9) {
     this.stop();
     if (!this.ready()) return;

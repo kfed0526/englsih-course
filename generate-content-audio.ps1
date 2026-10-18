@@ -18,12 +18,16 @@ function Save-TeachingAudio($taskText,$taskFile){
  $script:taskGenerated++
 }
 try{
- $taskManifest=Get-Content content/index.json -Raw | ConvertFrom-Json
+ $taskManifest=Get-Content content/index.json -Raw -Encoding UTF8 | ConvertFrom-Json
  foreach($taskBookFile in $taskManifest.books){
-  $taskBook=Get-Content (Join-Path 'content' $taskBookFile) -Raw | ConvertFrom-Json
+  $taskBook=Get-Content (Join-Path 'content' $taskBookFile) -Raw -Encoding UTF8 | ConvertFrom-Json
   foreach($taskUnit in $taskBook.units){foreach($taskLine in $taskUnit.audio.PSObject.Properties){Save-TeachingAudio $taskLine.Name $taskLine.Value}}
  }
- $taskStories=Get-Content content/school-stories.json -Raw | ConvertFrom-Json
+ $taskStories=Get-Content content/school-stories.json -Raw -Encoding UTF8 | ConvertFrom-Json
  foreach($taskStory in $taskStories.stories){Save-TeachingAudio $taskStory.text $taskStory.audio}
+ if(Test-Path -LiteralPath 'content/festival-audio.json'){
+  $taskFestivalAudio=Get-Content content/festival-audio.json -Raw -Encoding UTF8 | ConvertFrom-Json
+  foreach($taskLine in $taskFestivalAudio.audio.PSObject.Properties){Save-TeachingAudio $taskLine.Name $taskLine.Value}
+ }
 }finally{$taskSpeaker.Dispose()}
 Write-Output "Generated $taskGenerated new teaching/story WAV clips."

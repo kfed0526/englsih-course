@@ -5,12 +5,19 @@
 ```mermaid
 flowchart TD
   HTML["index.html · 版本與入口"] --> APP["app.js · 路由／設定／紀錄"]
-  HTML --> CSS["style.css + storybook.css + body.css + adventure.css · 響應版面"]
+  HTML --> CSS["style.css + storybook.css + body.css + adventure.css + festival.css + tablet.css · 響應版面"]
+  HTML --> ICONS["site.webmanifest + assets/icons/ · 瀏覽器／iPad主畫面圖示"]
   APP --> MANIFEST["content/index.json · 課本清單"]
   MANIFEST --> SCHOOL["content/my-school.json · 第一本四週"]
   MANIFEST --> BODY["content/all-about-my-body.json · 第二本四週"]
   MANIFEST --> JAPANESE["content/japanese-school.json · 三主題／五欄單字"]
-  APP --> ADVENTURE["adventure-map.js · 七個場景／台日飛行"]
+  APP --> ADVENTURE["adventure-map.js · 八個場景／台日飛行"]
+  APP --> FESTIVALCAL["festival-calendar.js · 台北年度／農曆換算／慶典清單"]
+  FESTIVALCAL --> FESTIVALDATA["content/festivals.json · 九個節日與生日"]
+  APP --> FESTIVALGAME["festival-games.js · 七種玩法／九個入口"]
+  FESTIVALGAME --> FESTIVALART["festival-art.js · 水彩角色圖框／互動物件"]
+  APP --> FESTIVALVOICE["content/festival-audio.json · 27 段玩法語音"]
+  APP --> FESTIVALSTORE["localStorage nickson-festivals · 年度/活動ID"]
   ADVENTURE --> MAPPAINT["assets/ · 小鎮／旅行／熊貓帽主角"]
   APP --> JAPANESEGAME["japanese-activities.js · 尋寶／便當／花園"]
   JAPANESEGAME --> JAART["japanese-art.js · 教學圖／正確顏色"]
@@ -20,7 +27,7 @@ flowchart TD
   APP --> BODYGAME["body-activities.js · 臉部／觸碰／機器人／感官"]
   ACTIVITY --> CAMPUS["campus.js · 校園路線與點選區"]
   APP --> BANK["question-bank.js · 家長教材預覽"]
-  APP --> SPEECH["speech.js · 中英日裝置語音／五級語速／WAV與MP3備援"]
+  APP --> SPEECH["speech.js · 中英裝置語音／日文音量加強音檔／五級語速／備援"]
   APP --> SOUND["sounds.js · 答對音效／慶祝音樂"]
   APP --> CHARACTERS["characters.js · 主角與人物素材"]
   APP --> ART["illustrations.js · 教材圖像"]
@@ -38,7 +45,11 @@ flowchart TD
 
 ```mermaid
 flowchart LR
-  HOME["首頁：七場景大地圖／故事"] --> SCHOOLENTRY["學校：My School／All About My Body"]
+  HOME["首頁：八場景大地圖／故事"] --> SCHOOLENTRY["學校：My School／All About My Body"]
+  HOME --> PLAZA["慶典廣場：年度日期／下一個慶典"]
+  PLAZA --> FESTIVALPLAY["自由選節日／生日：全年可玩"]
+  FESTIVALPLAY --> FESTIVALDONE["完成慶祝／按年度保存／再玩一次"]
+  FESTIVALPLAY -->|切背景| FESTIVALPAUSE["取消語音音效；按繼續保留原任務"]
   SCHOOLENTRY --> UNITS["選課本週次或日文主題"]
   HOME --> WORLD["世界地圖：台灣／日本"]
   WORLD --> FLIGHT["點日本：飛機動畫"]
