@@ -79,3 +79,9 @@ flowchart LR
 發布：`scripts/release.mjs` 更新 Asia/Taipei 日期版號與入口快取參數。只在家長通知發布時執行；原始主角照片保留於受 Git 排除的 `.local-assets/nickson-references/`。
 
 驗證：`tests/` 透過 Node test 執行教材、音訊、出題、連點、取消恢復、紀錄與素材檢查；瀏覽器另做實際操作與尺寸檢查。
+
+## 韓國 K-pop 舞蹈教室
+- `adventure-map.js`：韓國入口，保留日本搭機與課程。
+- `kpop.js`：歌曲選單、可見官方 YouTube IFrame Player、Nickson 自由律動。播放狀態控制動畫；切分頁或捲離影片會暫停，離開教室銷毀播放器。只在點歌曲後載入 IFrame API；沒有下載、拆出或另存歌曲音訊。
+- `kpop.css`：繪本舞台、三種動作與手機／iPad 橫向版面。
+- `tests/kpop.test.mjs`：播放、暫停、離開、載入失敗與過期回呼。
