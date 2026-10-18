@@ -5,9 +5,12 @@ export class GameSounds {
   constructor(createContext = () => new (window.AudioContext || window.webkitAudioContext)()) {
     this.createContext = createContext;
     this.enabled = true;
+    this.volume = 1;
     this.nodes = new Set();
     this.context = null;
   }
+
+  setVolume(value) { this.volume=Math.max(0,Math.min(1,Number.isFinite(Number(value))?Number(value):1));if(this.output)this.output.gain.value=.45*this.volume; }
 
   unlock() {
     if (!this.enabled) return;
@@ -15,7 +18,7 @@ export class GameSounds {
       if (!this.context || this.context.state === 'closed') {
         this.context = this.createContext();
         this.output = this.context.createGain();
-        this.output.gain.value = 0.45;
+        this.output.gain.value = 0.45*this.volume;
         this.output.connect(this.context.destination);
       }
       // Run resume synchronously from the click handler, before any speech awaits.

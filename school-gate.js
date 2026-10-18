@@ -5,7 +5,9 @@ export class SchoolGate{
  sync(){try{this.locked=this.storage?.getItem(SCHOOL_GATE_KEY)==='true';}catch{this.storageOK=false;}this.taps=[];return this.locked;}
  save(){try{this.storage?.setItem(SCHOOL_GATE_KEY,String(this.locked));}catch{this.storageOK=false;}}
  tap(now=Date.now()){if(!Number.isFinite(now))return '';if(this.taps.length&&now<this.taps.at(-1))this.taps=[];this.taps=this.taps.filter(t=>now-t<=1000);this.taps.push(now);if(this.taps.length<3)return '';this.taps=[];if(this.locked)return 'unlock';this.locked=true;this.save();return 'locked';}
- unlock(password){if(!this.locked||String(password).trim()!=='666666')return false;this.locked=false;this.taps=[];this.save();return true;}
+ unlock(password){if(!this.locked||!this.checkPassword(password))return false;this.locked=false;this.taps=[];this.save();return true;}
+ checkPassword(value){let pin='666666';try{pin=this.storage?.getItem('panda-school-pin')||pin;}catch{}return String(value).trim()===pin;}
+ changePassword(current,next){if(!this.checkPassword(current)||!/^\d{6}$/.test(next))return false;try{this.storage.setItem('panda-school-pin',next);return true;}catch{this.storageOK=false;return false;}}
  allows(page){return !this.locked||SCHOOL_FOCUS_PAGES.has(page);}
 }
 export function pandaGateButton(locked=false){return `<button class="panda-gate-button" data-school-gate="true" aria-label="熊貓圖示，快速點三下${locked?'開啟密碼解鎖':'進入專心上課模式'}" title="快速點三下${locked?'解鎖':'專心上課'}"><span aria-hidden="true">🐼</span>${locked?'<small aria-hidden="true">🔒</small>':''}</button>`;}

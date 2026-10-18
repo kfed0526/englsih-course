@@ -31,3 +31,11 @@
 .memory-entry{text-align:center;margin:12px 0}.memory-entry button{min-height:48px;font-size:14px;background:#efe3ca;border:1px solid #cbb48c;border-radius:14px;padding:10px 20px}.memory-scene-tabs{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:8px 0 12px}.memory-scene-tabs button{min-height:44px;font-size:14px;padding:8px 16px;border:1px solid #cbb48c;border-radius:14px;background:#f1e7d2}.memory-scene-tabs [aria-pressed=true]{background:#dce7c3;border-color:#a3b17c}.memory-scene-tabs small{margin-left:4px;color:#8a7b60}.memory-heading .eyebrow{line-height:1.6}.memory-controls{flex-wrap:wrap}
 @media(min-width:768px) and (orientation:landscape) and (max-height:1000px){.memory-photo img{height:calc(100svh - 285px)}.memory-heading h1{margin-bottom:8px}.memory-scene-tabs{margin:2px 0 8px}.page-world:has(.memory-entry) .travel-atlas{width:min(100%,calc((100svh - 330px)*1.5))}.memory-entry{margin:8px 0}}
 @media(max-width:600px){.memory-scene-tabs{gap:6px}.memory-scene-tabs button{font-size:12px;padding:8px 12px}.memory-story h2{font-size:22px}.memory-story p{font-size:14px}}
+
+/* Touch feedback also works without hover; reduced-motion keeps the static outline. */
+button:not(:disabled):active{filter:brightness(.92);box-shadow:inset 0 2px 5px #5e51332b}
+.park-picture button[class*="hotspot"]:not(:hover):not(:focus-visible){animation:play-spot-hint 5s ease-in-out infinite}.park-picture button[class*="hotspot"]:nth-of-type(2n){animation-delay:1.5s}.park-picture button[class*="hotspot"]:nth-of-type(3n){animation-delay:3s}
+@keyframes play-spot-hint{0%,65%,100%{border-color:#fff6ce88}78%{border-color:#f2c45f;box-shadow:0 0 0 4px #f7df9c40}}
+@media(prefers-reduced-motion:reduce){.park-picture button[class*="hotspot"]{animation:none!important}}
+
+.scene-still .park-picture button[class*="hotspot"]{animation:none!important}

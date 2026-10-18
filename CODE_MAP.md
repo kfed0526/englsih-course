@@ -156,3 +156,15 @@ flowchart LR
 - content/scene-memories.json＋park-memories.json：新舊照片合併，按場景分類。
 - memories.js：memoryAlbum去重合併、memoryTabs分類及照片翻頁畫面；app保存相簿與返回入口。
 - assets/characters/nickson-photo-usage.json、PHOTO_POSES_AND_MEMORIES.md：逐張用途與素材索引。
+
+## 操作、動作與聲音細節
+- audio-controls.js：三通道音量正規化與家長設定；speech/sounds/scene-life各自控制輸出。
+- speech.js＋app.speak：相同播放共用；life-learning負責音效後答案及取消。
+- slide/swing/trampoline：加速、推動能量、落地回彈；INTERACTION_POLISH.md記錄範圍。
+
+### 複習與家長工具
+- `parent-tools.js`：備份格式驗證、快照／還原、前景休息計時、家長設定表單。
+- `life-learning.js`：教材派生的已學題池、加權不重複抽題、生活複習結果回呼。
+- `memories.js`：縮圖、相簿文字覆寫；`app.js`：放大原生對話框及手勢、照片故事儲存、備份操作與提醒訊息。
+- `school-gate.js`：預設PIN及驗證目前PIN後修改；PIN獨立於備份。
+- `tests/parent-tools.test.mjs`、控制器新增整合測試；功能說明見`FAMILY_TOOLS.md`。

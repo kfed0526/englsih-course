@@ -1,5 +1,5 @@
-import {shuffle} from './game.js?v=20261018.v14';
-import {japaneseArt,gardenFlower,JAPANESE_COLORS} from './japanese-art.js?v=20261018.v14';
+import {shuffle} from './game.js?v=20261018.v15';
+import {japaneseArt,gardenFlower,JAPANESE_COLORS} from './japanese-art.js?v=20261018.v15';
 export const JAPANESE_TYPES=['ja-listen','ja-bento','ja-colors'];
 export class JapaneseActivity{
  constructor({unit,speak,delay,render,complete,active,success=async()=>true}){Object.assign(this,{unit,speak,delay,redraw:render,complete,active,success});this.type=unit.games.type;this.tasks=shuffle(unit.words);this.options=shuffle(unit.words);this.step=0;this.revision=0;this.locked=true;this.phase='prompt';this.misses=0;this.help=false;this.completed=false;this.collected=[];this.message='';this.results=this.tasks.map(w=>({kind:this.type,target:w.kana,attempts:0,hint:false}));}

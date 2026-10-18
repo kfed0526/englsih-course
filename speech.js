@@ -38,11 +38,13 @@ export function chooseVoice(voices,language,selection='auto'){
 export class LessonSpeech {
   constructor({synth,Utterance,Audio,setTimer=(...args)=>globalThis.setTimeout(...args),clearTimer=timer=>globalThis.clearTimeout(timer)}={}){
     Object.assign(this,{synth,Utterance,Audio,setTimer,clearTimer});
-    this.generation=0;this.pending=null;this.audio=null;this.utterance=null;
+    this.volume=1;this.activeKey='';this.playPromise=null;this.generation=0;this.pending=null;this.audio=null;this.utterance=null;
     this.voices(); // Ask the browser to populate delayed voice lists during startup.
   }
   voices(){try{return this.synth?.getVoices?.()||[];}catch{return [];}}
-  cancel(){
+  setVolume(value){this.volume=Math.max(0,Math.min(1,Number.isFinite(Number(value))?Number(value):1));if(this.audio)this.audio.volume=this.volume;if(this.utterance)this.utterance.volume=this.volume;}
+  play(text,options={}){const key=JSON.stringify([text,options.lang,options.clip,options.level,options.selection,this.volume]);if(this.playPromise&&this.activeKey===key)return this.playPromise;const promise=this.playOnce(text,options);this.activeKey=key;this.playPromise=promise;const clear=()=>{if(this.playPromise===promise){this.playPromise=null;this.activeKey='';}};promise.then(clear,clear);return promise;}
+  cancel(){this.playPromise=null;this.activeKey='';
     this.generation++;
     this.pending?.(false);
     try{this.synth?.cancel();}catch{}
@@ -58,8 +60,8 @@ export class LessonSpeech {
       try{cleanup=start(finish)||(()=>{});}catch{finish(false);}
     });
   }
-  async play(text,{lang='en-US',clip,level=3,selection='auto'}={}){
-    this.cancel();const token=this.generation;
+  async playOnce(text,{lang='en-US',clip,level=3,selection='auto'}={}){
+    this.cancel();const token=this.generation;if(this.volume===0)return true;
     const speed=SPEECH_LEVELS[speechLevel(level)-1];
     // Bundled Nanami recordings have consistent loudness across iPad and desktop.
     // An explicitly selected device voice still takes precedence over recordings.
@@ -68,7 +70,7 @@ export class LessonSpeech {
     if(voice&&this.Utterance&&this.synth?.speak){
       const ok=await this.attempt(token,finish=>{
         const utterance=new this.Utterance(text);this.utterance=utterance;
-        utterance.voice=voice;utterance.lang=voice.lang||lang;utterance.rate=speed.tts;utterance.pitch=1;utterance.volume=1;
+        utterance.voice=voice;utterance.lang=voice.lang||lang;utterance.rate=speed.tts;utterance.pitch=1;utterance.volume=this.volume;
         utterance.onend=()=>finish(true);utterance.onerror=()=>finish(false);
         this.synth.resume?.();this.synth.speak(utterance);
         return ()=>{utterance.onend=null;utterance.onerror=null;if(this.utterance===utterance)this.utterance=null;};
@@ -80,7 +82,7 @@ export class LessonSpeech {
     if(!clip||!this.Audio||token!==this.generation)return false;
     return this.attempt(token,finish=>{
       this.audio??=new this.Audio();const audio=this.audio;
-      audio.src=clip;audio.playbackRate=speed.audio;audio.preservesPitch=true;audio.volume=1;
+      audio.src=clip;audio.playbackRate=speed.audio;audio.preservesPitch=true;audio.volume=this.volume;
       if('webkitPreservesPitch'in audio)audio.webkitPreservesPitch=true;
       audio.onended=()=>finish(true);audio.onerror=()=>finish(false);
       audio.play().catch(()=>finish(false));
