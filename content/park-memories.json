@@ -1,0 +1,12 @@
+{
+  "title": "我的回憶",
+  "photos": [
+    {
+      "id": "swing-01",
+      "src": "assets/memories/park/swing-01.jpg",
+      "title": "盪鞦韆的好時光",
+      "caption": "坐上紅色鞦韆，留下 Nickson 開心的笑容。",
+      "alt": "Nickson 穿藍色上衣與淺色短褲，坐在公園的紅色鞦韆上開心微笑"
+    }
+  ]
+}

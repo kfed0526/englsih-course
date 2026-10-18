@@ -1,0 +1,15 @@
+{
+  "tool": "built-in image_gen",
+  "mode": "compositing with family and style references",
+  "references": [
+    {
+      "role": "family identity, clothing and expressions",
+      "file": ".local-assets/nickson-references/S__30834720.jpg"
+    },
+    {
+      "role": "existing warm semi-realistic storybook painting style",
+      "file": "assets/park-nickson-bench-watercolor.png"
+    }
+  ],
+  "output": "assets/home-family-watercolor.png"
+}

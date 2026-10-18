@@ -1,0 +1,11 @@
+{
+  "tool": "built-in image_gen",
+  "mode": "illustration-story with style reference",
+  "references": [
+    {
+      "role": "painting style, warm lighting and wood materials only; exclude people",
+      "file": "assets/home-family-watercolor.png"
+    }
+  ],
+  "output": "assets/family-center-watercolor.png"
+}

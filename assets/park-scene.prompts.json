@@ -1,0 +1,16 @@
+{
+  "tool": "built-in image_gen",
+  "mode": "compositing with subject and style references",
+  "prompt": "Use case: compositing, illustration-story. Asset type: finished landscape background for the inside of Panda School's park scene, not a UI mockup. Input image 1: primary subject/identity and pose reference, Nickson sitting on a wooden bench; preserve the boy's recognizable face, dark bowl-cut hair, brown T-shirt with tiny white dinosaur skeleton on the chest, sage green shorts with small car patterns, cream perforated slip-on shoes, relaxed seated posture and hands resting on the bench. Input image 2: style-only reference for our existing warm, realistic painted storybook world; do not reproduce its town layout. Primary request: create one cohesive inviting green neighborhood park, with the supplied seated Nickson naturally integrated into a wooden bench in the shaded lower-left foreground, not pasted in a rectangular photo. His full body and shoes should be visible and his face clearly recognizable, around 40 percent of picture height, with correct child-to-bench proportions. Remove the original building, glass door and tiled floor; blend his bench into the park stone pathway and match sunlight and shadows. Scene: a single continuous garden park with winding paths and five individually recognizable facilities, all fully visible and not obstructed by the boy: a pretty small blue-water pond with stone rim in the middle-left behind the bench, a two-seat wooden swing set in the middle background, a slide with a small timber play tower near the middle, a sandpit with a bucket and shovel toward the lower-right, and a round recreational trampoline with a dark jumping mat and a fine safety net toward the far-right background. Keep enough space between these five facilities that each reads clearly at tablet size. Trees, grass, soft flowerbeds and a few distant village rooftops tie it to the supplied world. Style: warm semi-realistic hand-painted animation background, natural anatomy and perspective, delicate watercolor and gouache textures, detailed wood grain and foliage, soft golden afternoon light, sage greens, honey wood and muted sky blues; closely preserve the supplied boy illustration style. Composition: wide landscape approximately 16:9, slightly elevated three-quarter view, complete park vista with depth, balanced child foreground and readable facilities, not top-down, not a collage. Constraints: exactly one child, only Nickson; all five requested facilities and Nickson's wooden bench present; no skeleton mascot, no new clothing, no changed facial features, no crop of boy's feet, no giant subject eclipsing equipment, no other people, no text, no labels, no interface elements, no logo or watermark. Opaque full-bleed scene.",
+  "references": [
+    {
+      "role": "Nickson subject, seated pose and clothing",
+      "file": ".local-assets/nickson-references/S__30826527_0.jpg"
+    },
+    {
+      "role": "existing warm realistic storybook palette and painting style",
+      "file": "assets/neighborhood-festival-watercolor.png"
+    }
+  ],
+  "output": "assets/park-nickson-bench-watercolor.png"
+}

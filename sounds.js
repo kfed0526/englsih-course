@@ -89,6 +89,11 @@ export class GameSounds {
     } catch { this.stop(); return 0; }
   }
 
+  sand() {
+    if (!this.ready()) return;
+    try { this.clap(0, .035); this.clap(.04, .02); } catch { this.stop(); }
+  }
+
   festival(kind) {
     this.stop();
     if (!this.ready()) return;

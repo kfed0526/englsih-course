@@ -91,3 +91,43 @@ flowchart LR
 - 第三首 SEO EVE〈麻辣燙葫蘆〉（0zd6WZ1PLVs）預設 `step`。`DANCE_POSES` 定義六種自由律動，三個新增動畫為 step／groove／hop-turn；所有歌曲都可選，暫停仍保留所選動作。
 
 - `CountryFlight` 共用台灣至日本／韓國飛行流程，目的地保存在飛行實例中；`startCountryFlight` 抵達日本開日文課、抵達韓國開 K-pop。背景中斷後保留同一目的地，舊名稱 `JapanFlight` 為相容匯出。
+
+## 公園場景
+- `adventure-map.js`：公園入口已開放；`sceneHTML(park)` 顯示 `parkSceneHTML`，沿用場景返回首頁流程。
+- `assets/park-nickson-bench-watercolor.png`：融合坐木椅的 Nickson 與公園五種設施；提示詞保存於 `assets/park-scene.prompts.json`。
+- `adventure.css`：公園圖與非互動設施列表，手機顯示完整圖片，iPad 橫向以可用高度縮放。
+- 本階段僅場景欣賞，未新增遊戲、正式教材或學習紀錄。
+
+## 家裡場景
+- 首頁「家裡」入口顯示 `homeSceneHTML`，與公園共用完整圖片及響應式場景版面。
+- `assets/home-family-watercolor.png`：融合新全家合照與客廳／餐廳／書桌區；提示詞保存於 `assets/home-scene.prompts.json`，原圖保留在本機參考庫。
+- 本階段僅場景欣賞，尚未加入遊戲、教材或紀錄。
+
+## 親子館場景
+- 首頁「親子館」入口顯示 `familySceneHTML`，沿用公園與家裡的完整圖片及響應式版面。
+- `assets/family-center-watercolor.png`：室內球池、跳跳床、溜滑梯、沙坑區、超市模擬區；完整提示詞保存於 `assets/family-center.prompts.json`。
+- 本階段只做場景欣賞，設施名稱為非互動列表，未加入遊戲、教材或紀錄。
+
+## 公園：我的回憶
+- 公園頁面按「我的回憶」開啟 `park-memories` 相簿；返回公園保留既有場景，瀏覽照片不寫入學習紀錄。
+- `memories.js`：完整照片、標題與描述、張數及上一張／下一張邊界控制。
+- `content/park-memories.json`：相簿唯一內容清單；之後把照片放在 `assets/memories/park/` 並增加 photos 項目即可，無須更動頁面程式。
+- 第一張 `swing-01.jpg` 為使用者提供 S__30834722_0.jpg 的原檔複本，未裁切或重繪。
+
+## 沙坑尋寶
+- 公園「沙坑尋寶」入口 → sandbox 頁面；每回合從 20 樣寶物中不重複抽出 3 樣藏在沙面下，挖出後拖進桶子或點選玩具再點桶子收藏。
+- `sandpit.js`：獨立挖沙覆蓋模型、三個玩具的發現／收藏狀態、Canvas 沙面、Pointer Events 拖曳與點選；視窗縮放按當下畫面座標換算，不改寫課程學習紀錄。
+- `sandpit.css`：公園背景、沙坑木框、小桶子、寶物收藏列與手機／iPad 版面。玩具與小桶子為原生 SVG，沙土與細沙為可互動 Canvas／CSS，沿用既有公園與主角素材，未另用圖片生成。
+- 「幫我找一找」揭露一個玩具，提供鍵盤替代操作；「把沙鋪平，再玩一次」重設狀態與位置。
+- 返回公園保留當次沙坑進度；切分頁只取消手勢及音效，回來可接著玩。`stop()` 銷毀舊指標監聽器與細沙特效，避免舊手勢重複收藏。
+- 挖沙聲共用 GameSounds 與家長音效開關，找到／收藏／完成使用既有短音效。
+
+- `TREASURES` 現有 20 樣，Fisher–Yates 洗牌後抽 3 樣；三個特別指定角色為皮卡丘、麵包超人、骨頭人，沿用原生 SVG 玩具畫法，未新增外部素材下載。
+
+- 公園圖片的沙坑區加入原生 button 熱區（圖幅 x74%–99%、y51%–80%），與頂部按鈕共用 data-sandpit=open；位置隨圖片縮放，鍵盤也可聚焦開啟。其他設施暫未加入遊戲入口。
+
+- `swing.js` / `swing.css`：公園秋千節奏模型、角色動畫、星星收集與生命週期；入口由 `app.js` 和公園圖熱區連接。
+
+- `slide.js` / `slide.css`：公園滑梯貝茲路徑、三顆星檢查點、暫停清理與響應式介面；`tests/slide.test.mjs` 驗證停靠、收集及抵達流程。
+
+- `trampoline.js` / `trampoline.css`：跳跳床蓄力與拋物線模型、逐步摘星、觸控／鍵盤操作、暫停及事件清理。

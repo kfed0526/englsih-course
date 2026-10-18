@@ -25,3 +25,8 @@ test('festival effects use the shared mute and cancellation controls',()=>{
  for(const effect of ['pop','firework','drum','row','bite','rustle','wish','correct']){s.festival(effect);assert.ok(s.nodes.size>0);const old=[...s.nodes];s.stop();assert.ok(old.every(n=>n.stopped));}
  s.enabled=false;const starts=context.events.filter(e=>e.action==='start').length;s.festival('firework');assert.equal(context.events.filter(e=>e.action==='start').length,starts);
 });
+
+
+test('sand rustle is short, shares the unlocked context and obeys mute and stop',()=>{
+ const context=fakeContext(),sound=new GameSounds(()=>context);sound.sand();assert.equal(sound.nodes.size,0);sound.unlock();sound.sand();assert.equal(sound.nodes.size,2);assert.ok(context.events.filter(e=>e.action==='stop').every(e=>e.time<10.2));sound.stop();assert.equal(sound.nodes.size,0);sound.enabled=false;sound.sand();assert.equal(sound.nodes.size,0);
+});
