@@ -145,3 +145,14 @@ flowchart LR
 - `music-games.js` / `music-games.css`：音樂教室自由彈奏、聽音辨樂器及引導旋律；`GameSounds.instrument()` 合成四種音色；玩法見 `MUSIC_GAMES.md`。
 
 - `school-gate.js` / `school-gate.css`：熊貓三連點、專心上課鎖定、密碼解鎖與學習路由允許清單；學校雙語選書重用 `deskHTML`。
+
+## 生活與載入優化
+- optimized-images.js：保留原檔的場景WebP對照與尺寸，app.wrap、家庭重繪使用。
+- life-learning.js／css：教材派生的生活複習回合、語言、提示、購物拖曳與操作生命週期。
+- scene-life.js／css：場景裝飾、獨立環境音、停止清理及動態偏好。
+- LIFE_OPTIMIZATION.md：素材尺寸、功能範圍與操作。
+
+## 照片姿勢與分類相簿
+- content/scene-memories.json＋park-memories.json：新舊照片合併，按場景分類。
+- memories.js：memoryAlbum去重合併、memoryTabs分類及照片翻頁畫面；app保存相簿與返回入口。
+- assets/characters/nickson-photo-usage.json、PHOTO_POSES_AND_MEMORIES.md：逐張用途與素材索引。

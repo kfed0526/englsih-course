@@ -1,0 +1,29 @@
+[
+  {
+    "key": "jump",
+    "prompt": "Edit target: the attached image. Task: background removal / identity-preserve. Extract ONLY the foreground boy jumping in midair, both knees bent, white printed T-shirt, light gray shorts, white slip-on shoes, windblown hair as a clean full-body transparent PNG game character cutout. Preserve exactly the child's existing face, hair, expression, body proportions, clothing details, pose and hand/finger positions from the reference. This is a precise cutout, not a new character design. Remove ALL background people, walls, floor, scenery, shadows on the ground and playground equipment. Preserve the complete silhouette and natural hair tips, hands and both shoes. Keep the original warm semi-realistic illustrated rendering. No floor, no scenery, no added props, no text, no white outline, no glow, no sticker border. True transparent RGBA background. Center one character alone, tightly framed with a small uniform transparent margin around the figure.",
+    "tool": "built-in image_gen",
+    "transparent_background": true,
+    "source": "S__30842899_0.jpg",
+    "outputPng": "assets/characters/nickson-jump-20261018.png",
+    "runtimeWebp": "assets/characters/nickson-jump-20261018.webp"
+  },
+  {
+    "key": "crouch",
+    "prompt": "Edit target: the attached image. Task: background removal / identity-preserve. Extract ONLY the boy crouching forward slightly, yellow T-shirt, gray shorts, bright blue sneakers, smiling and looking down, both hands relaxed outward as a clean full-body transparent PNG game character cutout. Preserve exactly the child's existing face, hair, expression, body proportions, clothing details, pose and hand/finger positions from the reference. This is a precise cutout, not a new character design. Remove ALL background people, walls, floor, scenery, shadows on the ground and playground equipment. Preserve the complete silhouette and natural hair tips, hands and both shoes. Keep the original warm semi-realistic illustrated rendering. No floor, no scenery, no added props, no text, no white outline, no glow, no sticker border. True transparent RGBA background. Center one character alone, tightly framed with a small uniform transparent margin around the figure.",
+    "tool": "built-in image_gen",
+    "transparent_background": true,
+    "source": "S__30842895_0.jpg",
+    "outputPng": "assets/characters/nickson-crouch-20261018.png",
+    "runtimeWebp": "assets/characters/nickson-crouch-20261018.webp"
+  },
+  {
+    "key": "point",
+    "prompt": "Edit target: the attached image. Task: background removal / identity-preserve. Extract ONLY the standing boy in gray open jacket, black and white striped shirt, navy trousers, bright blue shoes, one hand reaching forward toward viewer as a clean full-body transparent PNG game character cutout. Preserve exactly the child's existing face, hair, expression, body proportions, clothing details, pose and hand/finger positions from the reference. This is a precise cutout, not a new character design. Remove ALL background people, walls, floor, scenery, shadows on the ground and playground equipment. Preserve the complete silhouette and natural hair tips, hands and both shoes. Keep the original warm semi-realistic illustrated rendering. No floor, no scenery, no added props, no text, no white outline, no glow, no sticker border. True transparent RGBA background. Center one character alone, tightly framed with a small uniform transparent margin around the figure.",
+    "tool": "built-in image_gen",
+    "transparent_background": true,
+    "source": "S__30842900_0.jpg",
+    "outputPng": "assets/characters/nickson-point-20261018.png",
+    "runtimeWebp": "assets/characters/nickson-point-20261018.webp"
+  }
+]

@@ -1,0 +1,106 @@
+{
+  "albums": {
+    "school": {
+      "sceneName": "學校",
+      "photos": [
+        {
+          "id": "learning-20261018",
+          "src": "assets/memories/school/learning-20261018.webp",
+          "title": "專心探索的小時光",
+          "caption": "坐在桌前操作彩色玩具電腦，認真研究每個按鍵。",
+          "alt": "Nickson 穿黑白條紋上衣，在教室桌前操作玩具電腦"
+        }
+      ]
+    },
+    "park": {
+      "sceneName": "公園",
+      "photos": [
+        {
+          "id": "tunnel-20261018",
+          "src": "assets/memories/park/tunnel-20261018.webp",
+          "title": "遊戲洞裡比個耶",
+          "caption": "坐在藍色遊具的圓洞裡，伸出手比個耶。",
+          "alt": "Nickson 坐在公園藍色遊具圓洞中，抬腿並比耶"
+        },
+        {
+          "id": "climb-20261018",
+          "src": "assets/memories/park/climb-20261018.webp",
+          "title": "和爸爸一起玩遊具",
+          "caption": "握著黃色欄杆，和爸爸一起記錄公園裡的時光。",
+          "alt": "Nickson 握著公園遊具的黃色欄杆，爸爸在旁邊合照"
+        },
+        {
+          "id": "jump-20261018",
+          "src": "assets/memories/park/jump-20261018.webp",
+          "title": "跳起來的瞬間",
+          "caption": "在跳跳床上跳起來，雙腳離地、頭髮也飛了起來。",
+          "alt": "Nickson 穿白色圖案上衣與灰色短褲，在公園跳跳床上彎腿躍起"
+        }
+      ]
+    },
+    "family": {
+      "sceneName": "親子館・活動時光",
+      "photos": [
+        {
+          "id": "crouch-20261018",
+          "src": "assets/memories/family/crouch-20261018.webp",
+          "title": "彎彎膝蓋，準備動一動",
+          "caption": "張開雙手、彎彎膝蓋，記錄充滿活力的姿勢。",
+          "alt": "Nickson 穿黃色上衣、灰色短褲，彎膝前傾微笑"
+        }
+      ]
+    },
+    "home": {
+      "sceneName": "家裡・生活點滴",
+      "photos": [
+        {
+          "id": "turtle-20261018",
+          "src": "assets/memories/home/turtle-20261018.webp",
+          "title": "我的烏龜好朋友",
+          "caption": "抱著綠色烏龜玩偶，留下今天的小小合照。",
+          "alt": "Nickson 戴黑色帽子，穿黃色上衣，抱著綠色烏龜玩偶比耶"
+        },
+        {
+          "id": "point-20261018",
+          "src": "assets/memories/home/point-20261018.webp",
+          "title": "跟著我一起出發",
+          "caption": "伸出一隻手，像在邀請大家一起探索。",
+          "alt": "Nickson 穿灰色外套、黑白條紋上衣、深藍長褲與藍鞋，向前伸手"
+        },
+        {
+          "id": "giggle-20261018",
+          "src": "assets/memories/home/giggle-20261018.webp",
+          "title": "藏不住的笑容",
+          "caption": "雙手遮住嘴巴，眼睛笑得彎彎的。",
+          "alt": "Nickson 穿棕色上衣與淺藍長褲，雙手遮嘴開心微笑"
+        },
+        {
+          "id": "snack-20261018",
+          "src": "assets/memories/home/snack-20261018.webp",
+          "title": "拿著點心比個耶",
+          "caption": "帶著一小袋點心，向鏡頭比個耶。",
+          "alt": "Nickson 穿白色上衣與淺色短褲，拿著點心袋比耶"
+        },
+        {
+          "id": "breakfast-20261018",
+          "src": "assets/memories/home/breakfast-20261018.webp",
+          "title": "餐桌前的小小合照",
+          "caption": "餐桌上有早餐，Nickson 伸出手留下開心的時刻。",
+          "alt": "Nickson 坐在餐桌前伸手比耶，桌上有牛奶、碗盤與早餐"
+        }
+      ]
+    },
+    "world": {
+      "sceneName": "出遊",
+      "photos": [
+        {
+          "id": "helmet-20261018",
+          "src": "assets/memories/world/helmet-20261018.webp",
+          "title": "戴好安全帽，準備出發",
+          "caption": "戴上粉紅色安全帽，舉起手準備出門。",
+          "alt": "Nickson 戴粉紅色安全帽，穿黃色上衣與灰色短褲，舉起手"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "source": "S__30842901.jpg",
+    "scene": "school",
+    "use": "保留完整教室與玩具，收錄學校回憶",
+    "memory": "assets/memories/school/learning-20261018.webp"
+  },
+  {
+    "source": "S__30842895_0.jpg",
+    "scene": "family",
+    "use": "去背：舞蹈節奏拍拍；原照收錄親子館活動回憶",
+    "memory": "assets/memories/family/crouch-20261018.webp"
+  },
+  {
+    "source": "S__30842896_0.jpg",
+    "scene": "park",
+    "use": "腳與遊具相連、姿勢依賴圓洞支撐，保留公園回憶",
+    "memory": "assets/memories/park/tunnel-20261018.webp"
+  },
+  {
+    "source": "S__30842898_0.jpg",
+    "scene": "home",
+    "use": "保留家裡／生活回憶；未硬套入現有遊戲",
+    "memory": "assets/memories/home/turtle-20261018.webp"
+  },
+  {
+    "source": "S__30842900_0.jpg",
+    "scene": "home",
+    "use": "去背：生活遊戲指引；原照收錄家裡／生活回憶",
+    "memory": "assets/memories/home/point-20261018.webp"
+  },
+  {
+    "source": "S__30842891_0.jpg",
+    "scene": "home",
+    "use": "保留家裡／生活回憶；可作未來情緒或躲貓貓參考",
+    "memory": "assets/memories/home/giggle-20261018.webp"
+  },
+  {
+    "source": "S__30842892_0.jpg",
+    "scene": "home",
+    "use": "保留家裡／生活回憶",
+    "memory": "assets/memories/home/snack-20261018.webp"
+  },
+  {
+    "source": "S__30842893_0.jpg",
+    "scene": "home",
+    "use": "保留家裡／生活回憶；完整餐桌構圖比單獨人物更合適",
+    "memory": "assets/memories/home/breakfast-20261018.webp"
+  },
+  {
+    "source": "S__30842894_0.jpg",
+    "scene": "park",
+    "use": "人物依賴欄杆，保留親子同框的公園回憶",
+    "memory": "assets/memories/park/climb-20261018.webp"
+  },
+  {
+    "source": "S__30842897_0.jpg",
+    "scene": "world",
+    "use": "保留出遊回憶；目前沒有對應騎乘遊戲",
+    "memory": "assets/memories/world/helmet-20261018.webp"
+  },
+  {
+    "source": "S__30842899_0.jpg",
+    "scene": "park",
+    "use": "去背：跳跳床空中姿勢／舞蹈跳躍；原照收錄公園回憶",
+    "memory": "assets/memories/park/jump-20261018.webp"
+  }
+]
