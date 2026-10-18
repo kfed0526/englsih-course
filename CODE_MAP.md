@@ -85,3 +85,5 @@ flowchart LR
 - `kpop.js`：歌曲選單、可見官方 YouTube IFrame Player、Nickson 自由律動。播放狀態控制動畫；切分頁或捲離影片會暫停，離開教室銷毀播放器。只在點歌曲後載入 IFrame API；沒有下載、拆出或另存歌曲音訊。
 - `kpop.css`：繪本舞台、三種動作與手機／iPad 橫向版面。
 - `tests/kpop.test.mjs`：播放、暫停、離開、載入失敗與過期回呼。
+
+- K-pop 歌曲由 `KPOP_SONGS` 統一管理；歌曲卡片、標題、來源連結與 `KpopSession` 都使用所選歌曲。第二首為 SOYEON〈I’m gonna TOESA〉MBC MusicCore 舞台版（6MTxeUvX7VI），保留原 Queencard。
