@@ -1,0 +1,5 @@
+{
+  "tool": "built-in image_gen",
+  "reference": "assets/home-bath-watercolor.png",
+  "prompt": "Edit target: this existing bathroom illustration. Make an AFTER-RINSING variant while preserving precisely the same composition, boy identity, face, pose, tub, duck, tile wall, lighting and watercolor style. Remove shampoo foam from the boy's hair and small soap marks on his cheeks; show clean shiny damp dark hair. Turn off shower stream and remove floating bubbles in air. Keep the thick opaque foam and high white tub rim covering EVERYTHING BELOW the neck exactly as before, do NOT expose any torso or lower body. Only face and tops of shoulders remain visible. No nudity, no change of camera or other furniture. No text or UI. Same 4:3 image dimensions and object alignment for game crossfade."
+}

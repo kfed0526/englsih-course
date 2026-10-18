@@ -1,0 +1,5 @@
+{
+  "tool": "built-in image_gen",
+  "reference": "assets/park-nickson-bench-watercolor.png",
+  "prompt": "Reference image is the existing park illustration, used for the same warm semi-realistic watercolor storybook style and lighting. Create a detailed wide landscape 16:9 backdrop for a side-scrolling children's forest platform game. Dense layered woodland with softly lit trees, realistic painted bark, ferns, tiny wildflowers, distant misty hills, blue-green sky visible through canopy, shafts of gentle afternoon sunlight, warm sage greens and cream gold, painterly texture. Wide flat open foreground across bottom 25% for separately drawn game ground and platforms; keep the central lower half clear enough for a small character to be readable. NO people, NO animals, NO platforms, NO game objects, NO text, NO buildings, NO UI. Left and right edges should have similar continuous foliage, panorama composition without a single main focal point. Beautiful refined painted background, not flat vector shapes."
+}

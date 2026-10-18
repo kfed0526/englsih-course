@@ -131,3 +131,7 @@ flowchart LR
 - `slide.js` / `slide.css`：公園滑梯貝茲路徑、三顆星檢查點、暫停清理與響應式介面；`tests/slide.test.mjs` 驗證停靠、收集及抵達流程。
 
 - `trampoline.js` / `trampoline.css`：跳跳床蓄力與拋物線模型、逐步摘星、觸控／鍵盤操作、暫停及事件清理。
+
+- `home-activities.js`：家裡洗澡／抱抱狀態、拖曳搓洗與中文語音、依 canonical catalog 選英文／日文課本。
+- `home-platformer.js`：電視星光森林關卡、平台碰撞、雙段跳、收集與檢查點；`home-play.css` 共用家裡版面。
+- `HOME_INTERACTIONS.md`：家裡第一版玩法、操作與新圖片／完整提示索引。

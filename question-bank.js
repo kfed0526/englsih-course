@@ -1,7 +1,7 @@
-import {japaneseArt} from './japanese-art.js?v=20261018.v11';
-import {illustration} from './illustrations.js?v=20261018.v11';
-import {shapeSVG,colors} from './game.js?v=20261018.v11';
-import {questionFor,answersFor} from './lesson-text.js?v=20261018.v11';
+import {japaneseArt} from './japanese-art.js?v=20261018.v12';
+import {illustration} from './illustrations.js?v=20261018.v12';
+import {shapeSVG,colors} from './game.js?v=20261018.v12';
+import {questionFor,answersFor} from './lesson-text.js?v=20261018.v12';
 const escape=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const types={shapes:'聽音找形狀／顏色形狀',memory:'教室物品翻翻配',roles:'角色辨認',map:'學校地圖探索','face-count':'臉部數數','body-touch':'身體點點樂','robot-matching':'Robot Matching','senses-link':'五感連連看','ja-listen':'日文教室尋寶','ja-bento':'日文便當','ja-colors':'日文彩色花園'};
 function rules(unit){

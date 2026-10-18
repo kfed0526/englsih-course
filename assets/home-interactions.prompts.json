@@ -1,0 +1,32 @@
+{
+  "tool": "built-in image_gen",
+  "images": [
+    {
+      "id": "home-interactive",
+      "prompt": "Edit target: existing warm home family watercolor image. Create a wider cozy dollhouse cutaway interior for a children's interactive game, 16:9 landscape. Preserve the same warm semi-realistic watercolor storybook style, wood tones, family likeness, glasses. Four clear readable zones with no labels or text: left 0-50% living room with green sofa and the same mother father and young boy together, TV prominent lower-left at x15% y65%; central lower area x55% y70% wooden study desk with open books pencils and chair; upper right quadrant x78% y25% a separate bathroom with mint tiles, white tub, shower, towels and bath toys, EMPTY; lower right quadrant x82% y72% a separate bedroom with low bed pale duvet, bedside lamp and pillows, EMPTY. Architectural wall dividers and doorways clearly connect rooms; coherent dollhouse perspective, not a collage of panels. TV and desk clearly identifiable for clicking, full view of all four zones. No text, no icons, no baked UI, no watermarks.",
+      "reference": [
+        "H:/project/panda-school/assets/home-family-watercolor.png"
+      ],
+      "source": "C:/Users/kfed/.codex/generated_images/01a14a28-effe-7471-86cf-8002cd123317/exec-ca972d82-d330-4b23-be7b-dda01eb68df4.png",
+      "output": "home-interactive-watercolor.png"
+    },
+    {
+      "id": "home-hug",
+      "prompt": "Reference: supplied family portrait for likeness of mother and young boy Nickson only. Create a warm semi-realistic watercolor storybook illustration in a cozy bedroom, 4:3 landscape. Mother with recognizable round glasses and gentle face, dark hair, now wearing a simple comfortable long-sleeved cream house top (no cap/hood). Same young boy Nickson black bowl hair wearing comfortable blue pajamas. Mother sits on low bed and gives her child a warm, natural affectionate hug, child nestled happily in her arms. Both fully clothed, natural hands/anatomy. Soft bedside lamp, warm wood, pale linen bedding, potted plant, peaceful evening. Two people only, no father. Both faces clearly visible, upper body centered with space around for hearts overlay. No text or UI.",
+      "reference": [
+        "C:/Users/kfed/Downloads/S__30834720.jpg"
+      ],
+      "source": "C:/Users/kfed/.codex/generated_images/01a14a28-effe-7471-86cf-8002cd123317/exec-cbeb3c31-a80d-486e-a959-11443b775469.png",
+      "output": "home-hug-watercolor.png"
+    },
+    {
+      "id": "home-bath",
+      "prompt": "Reference: supplied Nickson boy for face and black bowl haircut. Create a warm semi-realistic watercolor storybook bathroom game illustration, landscape 4:3. Same cheerful boy washing in white tub, ONLY FACE AND TOP OF SHOULDERS visible ABOVE thick opaque bubbles; EVERYTHING BELOW neck completely hidden by dense bubbles and high tub rim. Family-friendly children's hygiene illustration. Front view, boy face center x50% y40%, dark hair fully visible for shampoo overlay. Mint tiled wall, brass shower on right, towel rack, wooden bath stool, rubber duck on tub. Tub occupies lower half; no visible torso, no nudity, no other people, no text, no UI. Clean soft colors with ample visible tiled area around boy for bubbles and sparkles.",
+      "reference": [
+        "H:/project/panda-school/assets/characters/nickson-guide-watercolor.png"
+      ],
+      "source": "C:/Users/kfed/.codex/generated_images/01a14a28-effe-7471-86cf-8002cd123317/exec-baf3d26e-4253-4826-ad6f-8b783ef5121f.png",
+      "output": "home-bath-watercolor.png"
+    }
+  ]
+}

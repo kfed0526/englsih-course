@@ -19,7 +19,7 @@ export function release(root = process.cwd(), now = new Date()) {
   const index = path.join(root,'index.html');
   let html = fs.readFileSync(index,'utf8');
   html = html.replace(/<html\b([^>]*)>/,(_,attributes)=>`<html${attributes.replace(/\sdata-version="[^"]*"/,'')} data-version="${result.version}">`);
-  html = html.replace(/href="(style|storybook|body|adventure|festival|tablet|kpop|sandpit|swing|slide|trampoline)\.css(?:\?v=[^"]*)?"/g,(_,name)=>`href="${name}.css?v=${result.version}"`);
+  html = html.replace(/href="(style|storybook|body|adventure|festival|tablet|kpop|sandpit|swing|slide|trampoline|home-play)\.css(?:\?v=[^"]*)?"/g,(_,name)=>`href="${name}.css?v=${result.version}"`);
   html = html.replace(/href="((?:assets\/icons\/[^"?]+\.(?:png|svg)|site\.webmanifest))(?:\?v=[^"]*)?"/g,(_,file)=>`href="${file}?v=${result.version}"`);
   html = html.replace(/src="app\.js(?:\?v=[^"]*)?"/,`src="app.js?v=${result.version}"`);
   fs.writeFileSync(index,html);
