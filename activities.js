@@ -1,7 +1,7 @@
-import {campusHTML,campusRoute} from './campus.js?v=20261018.v9';
-import {shuffle} from './game.js?v=20261018.v9';
-import {illustration} from './illustrations.js?v=20261018.v9';
-import {companion} from './characters.js?v=20261018.v9';
+import {campusHTML,campusRoute} from './campus.js?v=20261018.v10';
+import {shuffle} from './game.js?v=20261018.v10';
+import {illustration} from './illustrations.js?v=20261018.v10';
+import {companion} from './characters.js?v=20261018.v10';
 
 // One controller per round. A revision prevents interrupted speech or timers
 // from changing a later page or a newly started round.
