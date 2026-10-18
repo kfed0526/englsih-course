@@ -1,5 +1,7 @@
 # panda-school
 
+**新電腦／另一個Codex接手請先讀 [START_HERE.md](START_HERE.md)**；當前開發狀態見 [DEVELOPMENT_STATUS.md](DEVELOPMENT_STATUS.md)，跨平台啟動與檢查見 [DEVELOPMENT.md](DEVELOPMENT.md)。下方部分段落保留早期功能沿革，最新範圍以狀態表為準。
+
 Nickson 的學習小冒險 · 河馬學校 Panda 班。
 
 兩本英文課、三個日文主題、八場景大地圖與九個節日／生日慶典遊戲。純 HTML／CSS／JavaScript，正常遊玩無套件依賴、登入、付費或外部追蹤。慶典日期、玩法與資料來源見 [FESTIVALS.md](FESTIVALS.md)。

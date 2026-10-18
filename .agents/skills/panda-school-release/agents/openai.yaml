@@ -1,0 +1,6 @@
+interface:
+  display_name: "Panda School 發布與交接"
+  short_description: "Verify offline packs and separate handoff from deployment"
+  default_prompt: "Use $panda-school-release to handle the requested Panda School task using the repository rules."
+policy:
+  allow_implicit_invocation: true

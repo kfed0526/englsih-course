@@ -1,0 +1,1270 @@
+{
+  "version": "20261019.v1",
+  "totalBytes": 57406280,
+  "files": [
+    {
+      "url": "activities.js",
+      "bytes": 8527
+    },
+    {
+      "url": "adventure-map.js",
+      "bytes": 13383
+    },
+    {
+      "url": "adventure.css",
+      "bytes": 17327
+    },
+    {
+      "url": "app.js",
+      "bytes": 60015
+    },
+    {
+      "url": "audio-controls.js",
+      "bytes": 877
+    },
+    {
+      "url": "body-activities.js",
+      "bytes": 9441
+    },
+    {
+      "url": "body-art.js",
+      "bytes": 7593
+    },
+    {
+      "url": "body.css",
+      "bytes": 9054
+    },
+    {
+      "url": "campus.js",
+      "bytes": 2264
+    },
+    {
+      "url": "characters.js",
+      "bytes": 1916
+    },
+    {
+      "url": "dance-games.css",
+      "bytes": 5324
+    },
+    {
+      "url": "dance-games.js",
+      "bytes": 11367
+    },
+    {
+      "url": "festival-art.js",
+      "bytes": 10159
+    },
+    {
+      "url": "festival-calendar.js",
+      "bytes": 4278
+    },
+    {
+      "url": "festival-games.js",
+      "bytes": 11076
+    },
+    {
+      "url": "festival.css",
+      "bytes": 6055
+    },
+    {
+      "url": "game.js",
+      "bytes": 1469
+    },
+    {
+      "url": "home-activities.js",
+      "bytes": 10552
+    },
+    {
+      "url": "home-platformer.js",
+      "bytes": 15082
+    },
+    {
+      "url": "home-play.css",
+      "bytes": 9554
+    },
+    {
+      "url": "illustrations.js",
+      "bytes": 3355
+    },
+    {
+      "url": "japanese-activities.js",
+      "bytes": 4537
+    },
+    {
+      "url": "japanese-art.js",
+      "bytes": 3882
+    },
+    {
+      "url": "kpop.css",
+      "bytes": 9639
+    },
+    {
+      "url": "kpop.js",
+      "bytes": 8688
+    },
+    {
+      "url": "lesson-text.js",
+      "bytes": 429
+    },
+    {
+      "url": "life-learning.css",
+      "bytes": 3256
+    },
+    {
+      "url": "life-learning.js",
+      "bytes": 16988
+    },
+    {
+      "url": "lunar-year-data.js",
+      "bytes": 1779
+    },
+    {
+      "url": "mascot.js",
+      "bytes": 2384
+    },
+    {
+      "url": "memories.js",
+      "bytes": 2742
+    },
+    {
+      "url": "music-games.css",
+      "bytes": 6748
+    },
+    {
+      "url": "music-games.js",
+      "bytes": 14948
+    },
+    {
+      "url": "offline.js",
+      "bytes": 3123
+    },
+    {
+      "url": "optimized-images.js",
+      "bytes": 2435
+    },
+    {
+      "url": "parent-tools.js",
+      "bytes": 7104
+    },
+    {
+      "url": "question-bank.js",
+      "bytes": 6500
+    },
+    {
+      "url": "sandpit.css",
+      "bytes": 5971
+    },
+    {
+      "url": "sandpit.js",
+      "bytes": 20903
+    },
+    {
+      "url": "scene-life.css",
+      "bytes": 2582
+    },
+    {
+      "url": "scene-life.js",
+      "bytes": 2989
+    },
+    {
+      "url": "school-gate.css",
+      "bytes": 2526
+    },
+    {
+      "url": "school-gate.js",
+      "bytes": 2983
+    },
+    {
+      "url": "school-story.js",
+      "bytes": 1308
+    },
+    {
+      "url": "slide.css",
+      "bytes": 4674
+    },
+    {
+      "url": "slide.js",
+      "bytes": 6825
+    },
+    {
+      "url": "sounds.js",
+      "bytes": 5918
+    },
+    {
+      "url": "speech.js",
+      "bytes": 5575
+    },
+    {
+      "url": "storybook.css",
+      "bytes": 12385
+    },
+    {
+      "url": "style.css",
+      "bytes": 29303
+    },
+    {
+      "url": "swing.css",
+      "bytes": 3976
+    },
+    {
+      "url": "swing.js",
+      "bytes": 6029
+    },
+    {
+      "url": "table-game.js",
+      "bytes": 5324
+    },
+    {
+      "url": "tablet.css",
+      "bytes": 9094
+    },
+    {
+      "url": "trampoline.css",
+      "bytes": 4229
+    },
+    {
+      "url": "trampoline.js",
+      "bytes": 8511
+    },
+    {
+      "url": "index.html",
+      "bytes": 1861
+    },
+    {
+      "url": "site.webmanifest",
+      "bytes": 564
+    },
+    {
+      "url": "release.json",
+      "bytes": 104
+    },
+    {
+      "url": "content/all-about-my-body.json",
+      "bytes": 11748
+    },
+    {
+      "url": "content/festival-audio.json",
+      "bytes": 3395
+    },
+    {
+      "url": "content/festivals.json",
+      "bytes": 2786
+    },
+    {
+      "url": "content/index.json",
+      "bytes": 100
+    },
+    {
+      "url": "content/japanese-school.json",
+      "bytes": 7320
+    },
+    {
+      "url": "content/my-school.json",
+      "bytes": 9094
+    },
+    {
+      "url": "content/park-memories.json",
+      "bytes": 349
+    },
+    {
+      "url": "content/scene-memories.json",
+      "bytes": 4114
+    },
+    {
+      "url": "content/school-stories.json",
+      "bytes": 1263
+    },
+    {
+      "url": "assets/adventure-maps.prompts.json",
+      "bytes": 3280
+    },
+    {
+      "url": "assets/audio/body/week-1-0.wav",
+      "bytes": 307312
+    },
+    {
+      "url": "assets/audio/body/week-1-1.wav",
+      "bytes": 67934
+    },
+    {
+      "url": "assets/audio/body/week-1-10.wav",
+      "bytes": 128340
+    },
+    {
+      "url": "assets/audio/body/week-1-11.wav",
+      "bytes": 97696
+    },
+    {
+      "url": "assets/audio/body/week-1-12.wav",
+      "bytes": 99460
+    },
+    {
+      "url": "assets/audio/body/week-1-13.wav",
+      "bytes": 97916
+    },
+    {
+      "url": "assets/audio/body/week-1-14.wav",
+      "bytes": 100562
+    },
+    {
+      "url": "assets/audio/body/week-1-15.wav",
+      "bytes": 92180
+    },
+    {
+      "url": "assets/audio/body/week-1-16.wav",
+      "bytes": 71020
+    },
+    {
+      "url": "assets/audio/body/week-1-17.wav",
+      "bytes": 61980
+    },
+    {
+      "url": "assets/audio/body/week-1-2.wav",
+      "bytes": 70798
+    },
+    {
+      "url": "assets/audio/body/week-1-3.wav",
+      "bytes": 72784
+    },
+    {
+      "url": "assets/audio/body/week-1-4.wav",
+      "bytes": 72564
+    },
+    {
+      "url": "assets/audio/body/week-1-5.wav",
+      "bytes": 66388
+    },
+    {
+      "url": "assets/audio/body/week-1-6.wav",
+      "bytes": 128562
+    },
+    {
+      "url": "assets/audio/body/week-1-7.wav",
+      "bytes": 128780
+    },
+    {
+      "url": "assets/audio/body/week-1-8.wav",
+      "bytes": 132970
+    },
+    {
+      "url": "assets/audio/body/week-1-9.wav",
+      "bytes": 132968
+    },
+    {
+      "url": "assets/audio/body/week-2-0.wav",
+      "bytes": 335522
+    },
+    {
+      "url": "assets/audio/body/week-2-1.wav",
+      "bytes": 72784
+    },
+    {
+      "url": "assets/audio/body/week-2-2.wav",
+      "bytes": 81822
+    },
+    {
+      "url": "assets/audio/body/week-2-3.wav",
+      "bytes": 81160
+    },
+    {
+      "url": "assets/audio/body/week-2-4.wav",
+      "bytes": 71462
+    },
+    {
+      "url": "assets/audio/body/week-2-5.wav",
+      "bytes": 98798
+    },
+    {
+      "url": "assets/audio/body/week-2-6.wav",
+      "bytes": 114012
+    },
+    {
+      "url": "assets/audio/body/week-2-7.wav",
+      "bytes": 117978
+    },
+    {
+      "url": "assets/audio/body/week-2-8.wav",
+      "bytes": 116654
+    },
+    {
+      "url": "assets/audio/body/week-2-9.wav",
+      "bytes": 107176
+    },
+    {
+      "url": "assets/audio/body/week-3-0.wav",
+      "bytes": 572064
+    },
+    {
+      "url": "assets/audio/body/week-3-1.wav",
+      "bytes": 72564
+    },
+    {
+      "url": "assets/audio/body/week-3-10.wav",
+      "bytes": 153472
+    },
+    {
+      "url": "assets/audio/body/week-3-11.wav",
+      "bytes": 157440
+    },
+    {
+      "url": "assets/audio/body/week-3-12.wav",
+      "bytes": 163614
+    },
+    {
+      "url": "assets/audio/body/week-3-13.wav",
+      "bytes": 157444
+    },
+    {
+      "url": "assets/audio/body/week-3-14.wav",
+      "bytes": 157662
+    },
+    {
+      "url": "assets/audio/body/week-3-15.wav",
+      "bytes": 161852
+    },
+    {
+      "url": "assets/audio/body/week-3-16.wav",
+      "bytes": 167806
+    },
+    {
+      "url": "assets/audio/body/week-3-17.wav",
+      "bytes": 280416
+    },
+    {
+      "url": "assets/audio/body/week-3-2.wav",
+      "bytes": 76532
+    },
+    {
+      "url": "assets/audio/body/week-3-3.wav",
+      "bytes": 75428
+    },
+    {
+      "url": "assets/audio/body/week-3-4.wav",
+      "bytes": 83146
+    },
+    {
+      "url": "assets/audio/body/week-3-5.wav",
+      "bytes": 112024
+    },
+    {
+      "url": "assets/audio/body/week-3-6.wav",
+      "bytes": 114668
+    },
+    {
+      "url": "assets/audio/body/week-3-7.wav",
+      "bytes": 116214
+    },
+    {
+      "url": "assets/audio/body/week-3-8.wav",
+      "bytes": 124370
+    },
+    {
+      "url": "assets/audio/body/week-3-9.wav",
+      "bytes": 153254
+    },
+    {
+      "url": "assets/audio/body/week-4-0.wav",
+      "bytes": 360214
+    },
+    {
+      "url": "assets/audio/body/week-4-1.wav",
+      "bytes": 64626
+    },
+    {
+      "url": "assets/audio/body/week-4-10.wav",
+      "bytes": 111144
+    },
+    {
+      "url": "assets/audio/body/week-4-11.wav",
+      "bytes": 105410
+    },
+    {
+      "url": "assets/audio/body/week-4-12.wav",
+      "bytes": 110040
+    },
+    {
+      "url": "assets/audio/body/week-4-13.wav",
+      "bytes": 109820
+    },
+    {
+      "url": "assets/audio/body/week-4-14.wav",
+      "bytes": 112688
+    },
+    {
+      "url": "assets/audio/body/week-4-15.wav",
+      "bytes": 116874
+    },
+    {
+      "url": "assets/audio/body/week-4-2.wav",
+      "bytes": 65726
+    },
+    {
+      "url": "assets/audio/body/week-4-3.wav",
+      "bytes": 77856
+    },
+    {
+      "url": "assets/audio/body/week-4-4.wav",
+      "bytes": 77194
+    },
+    {
+      "url": "assets/audio/body/week-4-5.wav",
+      "bytes": 70360
+    },
+    {
+      "url": "assets/audio/body/week-4-6.wav",
+      "bytes": 107178
+    },
+    {
+      "url": "assets/audio/body/week-4-7.wav",
+      "bytes": 109602
+    },
+    {
+      "url": "assets/audio/body/week-4-8.wav",
+      "bytes": 112912
+    },
+    {
+      "url": "assets/audio/body/week-4-9.wav",
+      "bytes": 113352
+    },
+    {
+      "url": "assets/audio/festivals/11e81813ded94dff.wav",
+      "bytes": 300482
+    },
+    {
+      "url": "assets/audio/festivals/1544bd7477f67213.wav",
+      "bytes": 296514
+    },
+    {
+      "url": "assets/audio/festivals/18b9343662c1688e.wav",
+      "bytes": 292322
+    },
+    {
+      "url": "assets/audio/festivals/1ece9645b07dab30.wav",
+      "bytes": 404092
+    },
+    {
+      "url": "assets/audio/festivals/3448ba732e475028.wav",
+      "bytes": 294086
+    },
+    {
+      "url": "assets/audio/festivals/39a2cfa1e2529b94.wav",
+      "bytes": 287918
+    },
+    {
+      "url": "assets/audio/festivals/413ea8e94df6fde5.wav",
+      "bytes": 270738
+    },
+    {
+      "url": "assets/audio/festivals/45dee5473c4a052d.wav",
+      "bytes": 299386
+    },
+    {
+      "url": "assets/audio/festivals/4b6ae4e64c23a87e.wav",
+      "bytes": 293864
+    },
+    {
+      "url": "assets/audio/festivals/50808716af11174d.wav",
+      "bytes": 285278
+    },
+    {
+      "url": "assets/audio/festivals/556a8b594dde3485.wav",
+      "bytes": 279778
+    },
+    {
+      "url": "assets/audio/festivals/58e0f8add218c900.wav",
+      "bytes": 307762
+    },
+    {
+      "url": "assets/audio/festivals/66f2308d113b9055.wav",
+      "bytes": 277352
+    },
+    {
+      "url": "assets/audio/festivals/6dc362bfa9583f35.wav",
+      "bytes": 319878
+    },
+    {
+      "url": "assets/audio/festivals/7353305cef596df6.wav",
+      "bytes": 266548
+    },
+    {
+      "url": "assets/audio/festivals/7f930a0ed5fbd0e6.wav",
+      "bytes": 391754
+    },
+    {
+      "url": "assets/audio/festivals/a64f1a3ec3f1968f.wav",
+      "bytes": 295860
+    },
+    {
+      "url": "assets/audio/festivals/ac7e251f377eb5d5.wav",
+      "bytes": 291884
+    },
+    {
+      "url": "assets/audio/festivals/ae2f093d6d76ff3a.wav",
+      "bytes": 330020
+    },
+    {
+      "url": "assets/audio/festivals/b0cdef705c5e0b63.wav",
+      "bytes": 338400
+    },
+    {
+      "url": "assets/audio/festivals/b6f45c15db4f8c1d.wav",
+      "bytes": 424810
+    },
+    {
+      "url": "assets/audio/festivals/b878fc9b6f5bc37c.wav",
+      "bytes": 328694
+    },
+    {
+      "url": "assets/audio/festivals/b9d603ffe3267625.wav",
+      "bytes": 301590
+    },
+    {
+      "url": "assets/audio/festivals/c3bdc7c967cfd222.wav",
+      "bytes": 300046
+    },
+    {
+      "url": "assets/audio/festivals/d9cee0170e1d30e0.wav",
+      "bytes": 365296
+    },
+    {
+      "url": "assets/audio/festivals/df736a079c4fb516.wav",
+      "bytes": 322740
+    },
+    {
+      "url": "assets/audio/festivals/e6118accd034affb.wav",
+      "bytes": 508364
+    },
+    {
+      "url": "assets/audio/japanese/blue.mp3",
+      "bytes": 11232
+    },
+    {
+      "url": "assets/audio/japanese/chair.mp3",
+      "bytes": 11232
+    },
+    {
+      "url": "assets/audio/japanese/crayon.mp3",
+      "bytes": 11232
+    },
+    {
+      "url": "assets/audio/japanese/desk.mp3",
+      "bytes": 11232
+    },
+    {
+      "url": "assets/audio/japanese/fish.mp3",
+      "bytes": 11232
+    },
+    {
+      "url": "assets/audio/japanese/green.mp3",
+      "bytes": 11232
+    },
+    {
+      "url": "assets/audio/japanese/meat.mp3",
+      "bytes": 11232
+    },
+    {
+      "url": "assets/audio/japanese/normalization.json",
+      "bytes": 4933
+    },
+    {
+      "url": "assets/audio/japanese/normalized/blue.mp3",
+      "bytes": 23372
+    },
+    {
+      "url": "assets/audio/japanese/normalized/chair.mp3",
+      "bytes": 23372
+    },
+    {
+      "url": "assets/audio/japanese/normalized/crayon.mp3",
+      "bytes": 23372
+    },
+    {
+      "url": "assets/audio/japanese/normalized/desk.mp3",
+      "bytes": 23372
+    },
+    {
+      "url": "assets/audio/japanese/normalized/fish.mp3",
+      "bytes": 23372
+    },
+    {
+      "url": "assets/audio/japanese/normalized/green.mp3",
+      "bytes": 23372
+    },
+    {
+      "url": "assets/audio/japanese/normalized/meat.mp3",
+      "bytes": 23372
+    },
+    {
+      "url": "assets/audio/japanese/normalized/pencil.mp3",
+      "bytes": 24812
+    },
+    {
+      "url": "assets/audio/japanese/normalized/red.mp3",
+      "bytes": 23372
+    },
+    {
+      "url": "assets/audio/japanese/normalized/rice.mp3",
+      "bytes": 23372
+    },
+    {
+      "url": "assets/audio/japanese/normalized/vegetables.mp3",
+      "bytes": 23372
+    },
+    {
+      "url": "assets/audio/japanese/normalized/yellow.mp3",
+      "bytes": 23372
+    },
+    {
+      "url": "assets/audio/japanese/pencil.mp3",
+      "bytes": 11952
+    },
+    {
+      "url": "assets/audio/japanese/red.mp3",
+      "bytes": 11232
+    },
+    {
+      "url": "assets/audio/japanese/rice.mp3",
+      "bytes": 11232
+    },
+    {
+      "url": "assets/audio/japanese/topic-classroom-intro.wav",
+      "bytes": 236332
+    },
+    {
+      "url": "assets/audio/japanese/topic-colors-intro.wav",
+      "bytes": 243392
+    },
+    {
+      "url": "assets/audio/japanese/topic-food-intro.wav",
+      "bytes": 263448
+    },
+    {
+      "url": "assets/audio/japanese/vegetables.mp3",
+      "bytes": 11232
+    },
+    {
+      "url": "assets/audio/japanese/yellow.mp3",
+      "bytes": 11232
+    },
+    {
+      "url": "assets/audio/life-english/blue.wav",
+      "bytes": 65288
+    },
+    {
+      "url": "assets/audio/life-english/chair.wav",
+      "bytes": 71462
+    },
+    {
+      "url": "assets/audio/life-english/crayon.wav",
+      "bytes": 80060
+    },
+    {
+      "url": "assets/audio/life-english/desk.wav",
+      "bytes": 78296
+    },
+    {
+      "url": "assets/audio/life-english/fish.wav",
+      "bytes": 75872
+    },
+    {
+      "url": "assets/audio/life-english/green.wav",
+      "bytes": 73886
+    },
+    {
+      "url": "assets/audio/life-english/meat.wav",
+      "bytes": 68374
+    },
+    {
+      "url": "assets/audio/life-english/pencil.wav",
+      "bytes": 76088
+    },
+    {
+      "url": "assets/audio/life-english/red.wav",
+      "bytes": 66168
+    },
+    {
+      "url": "assets/audio/life-english/rice.wav",
+      "bytes": 72784
+    },
+    {
+      "url": "assets/audio/life-english/vegetables.wav",
+      "bytes": 84468
+    },
+    {
+      "url": "assets/audio/life-english/yellow.wav",
+      "bytes": 71240
+    },
+    {
+      "url": "assets/audio/line-0.wav",
+      "bytes": 75650
+    },
+    {
+      "url": "assets/audio/line-1.wav",
+      "bytes": 80060
+    },
+    {
+      "url": "assets/audio/line-10.wav",
+      "bytes": 83804
+    },
+    {
+      "url": "assets/audio/line-11.wav",
+      "bytes": 88656
+    },
+    {
+      "url": "assets/audio/line-12.wav",
+      "bytes": 95046
+    },
+    {
+      "url": "assets/audio/line-13.wav",
+      "bytes": 369484
+    },
+    {
+      "url": "assets/audio/line-14.wav",
+      "bytes": 97462
+    },
+    {
+      "url": "assets/audio/line-2.wav",
+      "bytes": 86010
+    },
+    {
+      "url": "assets/audio/line-3.wav",
+      "bytes": 77634
+    },
+    {
+      "url": "assets/audio/line-4.wav",
+      "bytes": 110262
+    },
+    {
+      "url": "assets/audio/line-5.wav",
+      "bytes": 103870
+    },
+    {
+      "url": "assets/audio/line-6.wav",
+      "bytes": 102326
+    },
+    {
+      "url": "assets/audio/line-7.wav",
+      "bytes": 114454
+    },
+    {
+      "url": "assets/audio/line-8.wav",
+      "bytes": 98800
+    },
+    {
+      "url": "assets/audio/line-9.wav",
+      "bytes": 84686
+    },
+    {
+      "url": "assets/audio/roles-people-intro.wav",
+      "bytes": 231268
+    },
+    {
+      "url": "assets/audio/shapes-companion-intro.wav",
+      "bytes": 364636
+    },
+    {
+      "url": "assets/audio/stories/body-team.wav",
+      "bytes": 991134
+    },
+    {
+      "url": "assets/audio/stories/panda-morning.wav",
+      "bytes": 980536
+    },
+    {
+      "url": "assets/audio/stories/robot-visitor.wav",
+      "bytes": 1079964
+    },
+    {
+      "url": "assets/audio/week-2-0.wav",
+      "bytes": 71462
+    },
+    {
+      "url": "assets/audio/week-2-1.wav",
+      "bytes": 71902
+    },
+    {
+      "url": "assets/audio/week-2-2.wav",
+      "bytes": 86014
+    },
+    {
+      "url": "assets/audio/week-2-3.wav",
+      "bytes": 69036
+    },
+    {
+      "url": "assets/audio/week-2-4.wav",
+      "bytes": 68374
+    },
+    {
+      "url": "assets/audio/week-2-answer-0.wav",
+      "bytes": 92184
+    },
+    {
+      "url": "assets/audio/week-2-answer-1.wav",
+      "bytes": 91962
+    },
+    {
+      "url": "assets/audio/week-2-answer-2.wav",
+      "bytes": 104972
+    },
+    {
+      "url": "assets/audio/week-2-answer-3.wav",
+      "bytes": 87112
+    },
+    {
+      "url": "assets/audio/week-2-answer-4.wav",
+      "bytes": 86670
+    },
+    {
+      "url": "assets/audio/week-2-intro.wav",
+      "bytes": 212526
+    },
+    {
+      "url": "assets/audio/week-2-question.wav",
+      "bytes": 82704
+    },
+    {
+      "url": "assets/audio/week-3-0.wav",
+      "bytes": 76530
+    },
+    {
+      "url": "assets/audio/week-3-1.wav",
+      "bytes": 79176
+    },
+    {
+      "url": "assets/audio/week-3-2.wav",
+      "bytes": 88214
+    },
+    {
+      "url": "assets/audio/week-3-3.wav",
+      "bytes": 69036
+    },
+    {
+      "url": "assets/audio/week-3-answer-0.wav",
+      "bytes": 100560
+    },
+    {
+      "url": "assets/audio/week-3-answer-1.wav",
+      "bytes": 97472
+    },
+    {
+      "url": "assets/audio/week-3-answer-2.wav",
+      "bytes": 114668
+    },
+    {
+      "url": "assets/audio/week-3-answer-3.wav",
+      "bytes": 90860
+    },
+    {
+      "url": "assets/audio/week-3-intro.wav",
+      "bytes": 285054
+    },
+    {
+      "url": "assets/audio/week-3-question.wav",
+      "bytes": 82042
+    },
+    {
+      "url": "assets/audio/week-4-0.wav",
+      "bytes": 82482
+    },
+    {
+      "url": "assets/audio/week-4-1.wav",
+      "bytes": 91524
+    },
+    {
+      "url": "assets/audio/week-4-2.wav",
+      "bytes": 82484
+    },
+    {
+      "url": "assets/audio/week-4-3.wav",
+      "bytes": 84910
+    },
+    {
+      "url": "assets/audio/week-4-answer-0.wav",
+      "bytes": 110922
+    },
+    {
+      "url": "assets/audio/week-4-answer-1.wav",
+      "bytes": 111144
+    },
+    {
+      "url": "assets/audio/week-4-answer-2.wav",
+      "bytes": 99014
+    },
+    {
+      "url": "assets/audio/week-4-answer-3.wav",
+      "bytes": 103646
+    },
+    {
+      "url": "assets/audio/week-4-intro.wav",
+      "bytes": 248020
+    },
+    {
+      "url": "assets/audio/week-4-question.wav",
+      "bytes": 81380
+    },
+    {
+      "url": "assets/characters/bus-driver-watercolor.png",
+      "bytes": 1517525
+    },
+    {
+      "url": "assets/characters/cook-watercolor.png",
+      "bytes": 1826442
+    },
+    {
+      "url": "assets/characters/friends-watercolor.png",
+      "bytes": 1824471
+    },
+    {
+      "url": "assets/characters/nickson-20261018-cutouts.prompts.json",
+      "bytes": 3740
+    },
+    {
+      "url": "assets/characters/nickson-celebrate-watercolor.png",
+      "bytes": 2138063
+    },
+    {
+      "url": "assets/characters/nickson-crouch-20261018.png",
+      "bytes": 1188356
+    },
+    {
+      "url": "assets/characters/nickson-crouch-20261018.webp",
+      "bytes": 117840
+    },
+    {
+      "url": "assets/characters/nickson-guide-watercolor.png",
+      "bytes": 1746908
+    },
+    {
+      "url": "assets/characters/nickson-jump-20261018.png",
+      "bytes": 1096956
+    },
+    {
+      "url": "assets/characters/nickson-jump-20261018.webp",
+      "bytes": 120512
+    },
+    {
+      "url": "assets/characters/nickson-panda-home.png",
+      "bytes": 1635478
+    },
+    {
+      "url": "assets/characters/nickson-photo-usage.json",
+      "bytes": 2165
+    },
+    {
+      "url": "assets/characters/nickson-point-20261018.png",
+      "bytes": 980776
+    },
+    {
+      "url": "assets/characters/nickson-point-20261018.webp",
+      "bytes": 91178
+    },
+    {
+      "url": "assets/characters/nickson-red-swing.png",
+      "bytes": 1237712
+    },
+    {
+      "url": "assets/characters/nickson-red-swing.prompts.json",
+      "bytes": 921
+    },
+    {
+      "url": "assets/characters/nickson-slide-watercolor.png",
+      "bytes": 1816395
+    },
+    {
+      "url": "assets/characters/nickson-slide.prompts.json",
+      "bytes": 938
+    },
+    {
+      "url": "assets/characters/prompts.json",
+      "bytes": 10333
+    },
+    {
+      "url": "assets/characters/school-girl-watercolor.png",
+      "bytes": 2061514
+    },
+    {
+      "url": "assets/characters/teacher-watercolor.png",
+      "bytes": 2235042
+    },
+    {
+      "url": "assets/dance-studio-watercolor.webp",
+      "bytes": 171388
+    },
+    {
+      "url": "assets/dance-studio.prompts.json",
+      "bytes": 1549
+    },
+    {
+      "url": "assets/family-center-watercolor.webp",
+      "bytes": 220944
+    },
+    {
+      "url": "assets/family-center.prompts.json",
+      "bytes": 311
+    },
+    {
+      "url": "assets/festival-actors-watercolor.webp",
+      "bytes": 168308
+    },
+    {
+      "url": "assets/festival.prompts.json",
+      "bytes": 2517
+    },
+    {
+      "url": "assets/home-bath-clean-watercolor.webp",
+      "bytes": 158824
+    },
+    {
+      "url": "assets/home-bath-clean.prompts.json",
+      "bytes": 799
+    },
+    {
+      "url": "assets/home-bath-watercolor.webp",
+      "bytes": 179318
+    },
+    {
+      "url": "assets/home-family-watercolor.webp",
+      "bytes": 283332
+    },
+    {
+      "url": "assets/home-hug-watercolor.webp",
+      "bytes": 212692
+    },
+    {
+      "url": "assets/home-interactions.prompts.json",
+      "bytes": 3563
+    },
+    {
+      "url": "assets/home-interactive-watercolor.webp",
+      "bytes": 301316
+    },
+    {
+      "url": "assets/home-scene.prompts.json",
+      "bytes": 442
+    },
+    {
+      "url": "assets/home-tv-forest-watercolor.webp",
+      "bytes": 527638
+    },
+    {
+      "url": "assets/home-tv-forest.prompts.json",
+      "bytes": 1017
+    },
+    {
+      "url": "assets/icons/panda-180.png",
+      "bytes": 11922
+    },
+    {
+      "url": "assets/icons/panda-192.png",
+      "bytes": 12536
+    },
+    {
+      "url": "assets/icons/panda-32.png",
+      "bytes": 1557
+    },
+    {
+      "url": "assets/icons/panda-512.png",
+      "bytes": 32085
+    },
+    {
+      "url": "assets/icons/panda-maskable-512.png",
+      "bytes": 31005
+    },
+    {
+      "url": "assets/icons/panda.svg",
+      "bytes": 1295
+    },
+    {
+      "url": "assets/memories/family/crouch-20261018.webp",
+      "bytes": 240176
+    },
+    {
+      "url": "assets/memories/home/breakfast-20261018.webp",
+      "bytes": 151752
+    },
+    {
+      "url": "assets/memories/home/giggle-20261018.webp",
+      "bytes": 175348
+    },
+    {
+      "url": "assets/memories/home/point-20261018.webp",
+      "bytes": 212772
+    },
+    {
+      "url": "assets/memories/home/snack-20261018.webp",
+      "bytes": 223660
+    },
+    {
+      "url": "assets/memories/home/turtle-20261018.webp",
+      "bytes": 193722
+    },
+    {
+      "url": "assets/memories/park/climb-20261018.webp",
+      "bytes": 265608
+    },
+    {
+      "url": "assets/memories/park/jump-20261018.webp",
+      "bytes": 436582
+    },
+    {
+      "url": "assets/memories/park/tunnel-20261018.webp",
+      "bytes": 192066
+    },
+    {
+      "url": "assets/memories/school/learning-20261018.webp",
+      "bytes": 144732
+    },
+    {
+      "url": "assets/memories/world/helmet-20261018.webp",
+      "bytes": 196906
+    },
+    {
+      "url": "assets/memory-table-watercolor.webp",
+      "bytes": 181622
+    },
+    {
+      "url": "assets/music-classroom-watercolor.webp",
+      "bytes": 226270
+    },
+    {
+      "url": "assets/music-classroom.prompts.json",
+      "bytes": 1592
+    },
+    {
+      "url": "assets/neighborhood-festival-watercolor.webp",
+      "bytes": 547536
+    },
+    {
+      "url": "assets/neighborhood-map-watercolor.webp",
+      "bytes": 603398
+    },
+    {
+      "url": "assets/park-nickson-bench-watercolor.webp",
+      "bytes": 431096
+    },
+    {
+      "url": "assets/park-scene.prompts.json",
+      "bytes": 3148
+    },
+    {
+      "url": "assets/roles-theater-watercolor.webp",
+      "bytes": 213370
+    },
+    {
+      "url": "assets/school-map-watercolor.webp",
+      "bytes": 427068
+    },
+    {
+      "url": "assets/shapes-veranda-watercolor.webp",
+      "bytes": 279424
+    },
+    {
+      "url": "assets/storybook-scenes.prompts.json",
+      "bytes": 3657
+    },
+    {
+      "url": "assets/taiwan-japan-watercolor.webp",
+      "bytes": 378918
+    }
+  ]
+}

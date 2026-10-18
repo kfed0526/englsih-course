@@ -1,6 +1,6 @@
 # panda-school 程式圖譜
 
-此圖譜先於第二本遊戲實作建立，現已同步至完成的實作。專案為靜態 HTML／CSS／JavaScript，沒有後端。
+更新至20261019.v1，包含離線包、生活遊戲、家長工具與跨機Codex接手入口。早期功能區塊保留沿革；最上方圖為目前總覽。專案為靜態 HTML／CSS／JavaScript，沒有後端。
 
 ```mermaid
 flowchart TD
@@ -11,7 +11,7 @@ flowchart TD
   MANIFEST --> SCHOOL["content/my-school.json · 第一本四週"]
   MANIFEST --> BODY["content/all-about-my-body.json · 第二本四週"]
   MANIFEST --> JAPANESE["content/japanese-school.json · 三主題／五欄單字"]
-  APP --> ADVENTURE["adventure-map.js · 八個場景／台日飛行"]
+  APP --> ADVENTURE["adventure-map.js · 八個場景／台日韓飛行"]
   APP --> FESTIVALCAL["festival-calendar.js · 台北年度／農曆換算／慶典清單"]
   FESTIVALCAL --> FESTIVALDATA["content/festivals.json · 九個節日與生日"]
   APP --> FESTIVALGAME["festival-games.js · 七種玩法／九個入口"]
@@ -41,6 +41,32 @@ flowchart TD
   APP --> STORAGE["localStorage · book.id/unit.id 分開紀錄"]
   SPEECH --> WAV["assets/audio/ · 教材與故事備援"]
   CHARACTERS --> PNG["assets/characters/ · 去背人物"]
+  APP --> LIFE["life-learning.js · 三題複習／洗澡／花園／餵魚／超市清單"]
+  LIFE --> MANIFEST
+  LIFE --> REVIEW["panda-school-extras · 日期／提示／1、3、7天間隔"]
+  APP --> TABLE["table-game.js · 九件餐具／點選與拖曳"]
+  APP --> PARK["sandpit + swing + slide + trampoline · 公園四遊戲"]
+  APP --> HOUSE["home-activities + home-platformer · 洗澡／抱抱／電視闖關"]
+  APP --> STUDIOS["dance-games + music-games · 舞蹈與音樂教室"]
+  APP --> MEMORIES["memories.js + scene-memories.json · 分類相簿／放大／故事"]
+  APP --> PARENTS["parent-tools.js · 備份／還原／休息提醒"]
+  APP --> GATE["school-gate.js · 三下熊貓／本機PIN"]
+  APP --> VOLUME["audio-controls + sounds + scene-life · 三個音量通道"]
+  APP --> OFFLINE["offline.js · 下載／查詢／移除"]
+  OFFLINE --> WORKER["sw.js · scope與版本快取／Range音檔"]
+  WORKER --> PACK["offline-manifest.json · 靜態資源清單"]
+  BUILD["scripts/release.mjs · 臺北日期版本"] --> HTML
+  BUILD --> PACKBUILD["scripts/offline-manifest.mjs"]
+  PACKBUILD --> PACK
+  subgraph HANDOFF["另一台電腦與Codex"]
+    START["START_HERE.md · 人與Codex入口"] --> RULES["AGENTS.md · 規則與授權邊界"]
+    START --> STATUS["DEVELOPMENT_STATUS.md · 正式版與開發進度"]
+    START --> GUIDE["DEVELOPMENT.md + SCRIPTS.md · 環境與指令"]
+    RULES --> SKILLS[".agents/skills · 遊戲／教材素材／發布交接"]
+    GUIDE --> CHECK["scripts/project-check.mjs · 跨機檢查與完整測試"]
+  end
+  CHECK -. "驗證" .-> APP
+
 ```
 
 ```mermaid
@@ -168,3 +194,10 @@ flowchart LR
 - `memories.js`：縮圖、相簿文字覆寫；`app.js`：放大原生對話框及手勢、照片故事儲存、備份操作與提醒訊息。
 - `school-gate.js`：預設PIN及驗證目前PIN後修改；PIN獨立於備份。
 - `tests/parent-tools.test.mjs`、控制器新增整合測試；功能說明見`FAMILY_TOOLS.md`。
+
+### 離線、生活與間隔複習
+- `offline.js`：家長下載／查詢／移除介面。`sw.js`：scope與版本快取、完成標記、下載續傳、導航與音檔Range回應。
+- `scripts/offline-manifest.mjs`／`offline-manifest.json`：離線檔案清單，release自動重新產生。
+- `table-game.js`：九件餐具的狀態模型、SVG餐具、點選／拖曳與清理。
+- `life-learning.js`：水池餵魚、超市清單、三題加權抽取及1／3／7天複習；`adventure-map.js`接圖上入口。
+- `tests/offline-life.test.mjs`及controller整合涵蓋；說明見`OFFLINE_LIFE.md`。

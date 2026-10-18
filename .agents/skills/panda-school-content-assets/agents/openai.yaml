@@ -1,0 +1,6 @@
+interface:
+  display_name: "Panda School 教材與素材"
+  short_description: "Maintain canonical lessons, speech, photos, and assets"
+  default_prompt: "Use $panda-school-content-assets to handle the requested Panda School task using the repository rules."
+policy:
+  allow_implicit_invocation: true

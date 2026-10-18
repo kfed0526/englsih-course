@@ -1,3 +1,4 @@
+import {buildOfflineManifest} from './offline-manifest.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import {pathToFileURL} from 'node:url';
@@ -29,6 +30,7 @@ export function release(root = process.cwd(), now = new Date()) {
     fs.writeFileSync(moduleFile,source.replace(/(\bfrom\s+['"])(\.\/[^'"?]+\.js)(?:\?v=[^'"]*)?(['"])/g,(_,prefix,file,quote)=>`${prefix}${file}?v=${result.version}${quote}`));
   }
   fs.writeFileSync(file,JSON.stringify(result,null,2)+'\n');
+  buildOfflineManifest(root);
   return result;
 }
 

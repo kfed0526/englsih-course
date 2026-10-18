@@ -1,0 +1,6 @@
+interface:
+  display_name: "Panda School 遊戲開發"
+  short_description: "Build scene games with safe touch and audio lifecycles"
+  default_prompt: "Use $panda-school-game-dev to handle the requested Panda School task using the repository rules."
+policy:
+  allow_implicit_invocation: true
