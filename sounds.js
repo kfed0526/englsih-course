@@ -94,6 +94,19 @@ export class GameSounds {
     try { this.clap(0, .035); this.clap(.04, .02); } catch { this.stop(); }
   }
 
+  instrument(kind, note = 0) {
+    if (!this.ready() || !['piano','xylophone','drum','shaker'].includes(kind) || !Number.isInteger(note) || note < 0 || note > 7) return false;
+    try {
+      if (this.nodes.size > 48) this.stop();
+      const frequency = [261.63,293.66,329.63,349.23,392,440,493.88,523.25][note];
+      if (kind === 'piano') { this.tone(frequency,0,.65,.17,'triangle');this.tone(frequency*2,0,.26,.035); }
+      else if (kind === 'xylophone') { this.tone(frequency*2,0,.42,.17);this.tone(frequency*5.51,0,.13,.025); }
+      else if (kind === 'drum') { this.tone(95+note*55,0,.21,.19,'sine',45+note*25);this.clap(.015,.045+note*.015); }
+      else { this.clap(0,.07);this.clap(.07+note*.012,.045); }
+      return true;
+    } catch { this.stop(); return false; }
+  }
+
   festival(kind) {
     this.stop();
     if (!this.ready()) return;

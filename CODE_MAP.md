@@ -135,3 +135,13 @@ flowchart LR
 - `home-activities.js`：家裡洗澡／抱抱狀態、拖曳搓洗與中文語音、依 canonical catalog 選英文／日文課本。
 - `home-platformer.js`：電視星光森林關卡、平台碰撞、雙段跳、收集與檢查點；`home-play.css` 共用家裡版面。
 - `HOME_INTERACTIONS.md`：家裡第一版玩法、操作與新圖片／完整提示索引。
+
+- `adventure-map.js` 的 `danceSceneHTML()`：大地圖舞蹈教室入口與擬真室內場景，圖片／提示來源見 `assets/DANCE_STUDIO_ASSETS.md`。
+
+- `adventure-map.js` 的 `musicSceneHTML()`：大地圖音樂教室入口與樂器教室場景，素材／完整提示見 `assets/MUSIC_CLASSROOM_ASSETS.md`。
+
+- `dance-games.js` / `dance-games.css`：舞蹈教室模仿、記憶及節奏三種玩法，接圖上練舞區；玩法與生命週期見 `DANCE_GAMES.md`。
+
+- `music-games.js` / `music-games.css`：音樂教室自由彈奏、聽音辨樂器及引導旋律；`GameSounds.instrument()` 合成四種音色；玩法見 `MUSIC_GAMES.md`。
+
+- `school-gate.js` / `school-gate.css`：熊貓三連點、專心上課鎖定、密碼解鎖與學習路由允許清單；學校雙語選書重用 `deskHTML`。

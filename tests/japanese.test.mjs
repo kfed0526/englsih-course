@@ -37,7 +37,7 @@ test('reduced motion arrives without the flight delay; background cannot auto-na
  const inactive=new JapanFlight({delay:async()=>true,active:()=>false,arrive:()=>arrivals++,render:()=>{}});await inactive.begin();assert.equal(arrivals,1);
 });
 test('eight destinations, Japan route and real image assets remain available',()=>{
- assert.deepEqual(SCENES.map(s=>s.name),['家裡','學校','公園','親子館','舞蹈教室','音樂教室','世界地圖','慶典廣場']);assert.equal(new Set(SCENES.map(s=>s.id)).size,8);assert.match(homeMapHTML(),/data-destination="school"/);assert.match(worldMapHTML({phase:'flying'}),/is-flying/);
+ assert.deepEqual(SCENES.map(s=>s.name),['溫暖的家','學校','公園','親子館','舞蹈教室','音樂教室','世界地圖','慶典廣場']);assert.equal(new Set(SCENES.map(s=>s.id)).size,8);assert.match(homeMapHTML(),/data-destination="school"/);assert.match(worldMapHTML({phase:'flying'}),/is-flying/);
  for(const file of ADVENTURE_ASSETS){const data=fs.readFileSync(file);assert.equal(data.toString('ascii',1,4),'PNG');}
 });
 test('parent bank derives all Japanese columns from JSON and has no invented formal question',()=>{
