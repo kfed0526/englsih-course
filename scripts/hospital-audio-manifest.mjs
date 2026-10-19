@@ -1,0 +1,12 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {createHash} from 'node:crypto';
+import {hospitalVoiceTexts} from '../hospital-voice.js';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const book=JSON.parse(fs.readFileSync(path.join(root,'content/all-about-my-body.json'),'utf8'));
+const words=book.units.flatMap(unit=>unit.words||[]),parts=['ears','nose','mouth'].map(id=>words.find(word=>word.id===id));
+if(parts.some(part=>!part?.zh))throw Error('Hospital voice prompts require canonical body part labels.');
+const audio=Object.fromEntries(hospitalVoiceTexts(parts).map(text=>[text,'assets/audio/hospital/'+createHash('sha256').update(text).digest('hex').slice(0,16)+'.wav']));
+fs.writeFileSync(path.join(root,'content/hospital-audio.json'),JSON.stringify({language:'zh-TW',source:'Microsoft Hanhan Desktop，Rate=-1；開發時產生的中文合成語音，非真人錄音。',audio},null,2)+'\n');
+console.log(Object.keys(audio).length+' short hospital instruction clips mapped (no audio generated).');

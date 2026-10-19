@@ -14,3 +14,8 @@ test('offline worker does not intercept YouTube or other project scopes',async()
 test('offline manifest includes shipped assets and excludes replaced large PNGs',()=>{const m=JSON.parse(fs.readFileSync('offline-manifest.json'));assert.ok(m.files.some(x=>x.url==='table-game.js'));assert.ok(m.files.some(x=>x.url==='content/japanese-school.json'));assert.ok(m.files.some(x=>x.url==='assets/characters/nickson-celebrate-watercolor.png'));assert.ok(m.files.every(x=>fs.existsSync(x.url)&&!x.url.includes('.local-assets')));assert.equal(m.files.some(x=>x.url==='assets/park-nickson-bench-watercolor.png'),false);assert.equal(m.totalBytes,m.files.reduce((n,f)=>n+f.bytes,0));});
 
 test('clearing offline files affects only this app scope and leaves other caches alone',async()=>{const h=swHarness(async()=>new Response(''));await h.caches.open('other-site-cache');await h.caches.open('panda-school-offline-%2Fpanda-school%2F-old');assert.equal((await h.message('CLEAR')).at(-1).type,'cleared');assert.deepEqual(await h.caches.keys(),['other-site-cache']);});
+test('hospital offline assets include playable modules and WebPs but omit duplicate source PNGs',()=>{
+ const files=new Set(JSON.parse(fs.readFileSync('offline-manifest.json')).files.map(file=>file.url));
+ for(const file of ['hospital.js','hospital.css','assets/hospital.prompts.json'])assert.ok(files.has(file));
+ for(const room of ['lobby','dental','ent']){assert.ok(files.has(`assets/hospital-${room}-watercolor.webp`));assert.equal(files.has(`assets/hospital-${room}-watercolor.png`),false);}
+});

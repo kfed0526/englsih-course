@@ -1,0 +1,28 @@
+{
+  "language": "zh-TW",
+  "source": "Microsoft Hanhan Desktop，Rate=-1；開發時產生的中文合成語音，非真人錄音。",
+  "audio": {
+    "選牙齒，或選耳朵。一起去看看！": "assets/audio/hospital/1c5ddfd4454cfa13.wav",
+    "先拿一張號碼牌。": "assets/audio/hospital/ff01df39919bc8f1.wav",
+    "你的號碼是十二。找找一樣的號碼。": "assets/audio/hospital/b63d0600c3f1199f.wav",
+    "你的號碼是二十一。找找一樣的號碼。": "assets/audio/hospital/b10fa13995c305f7.wav",
+    "號碼一樣！按綠色箭頭，進診間。": "assets/audio/hospital/b9c2d8bcd5bac952.wav",
+    "現在心情怎麼樣？點笑臉，或點小熊。": "assets/audio/hospital/090ebda9f4bd4f3b.wav",
+    "準備好了！按綠色箭頭，看工具。": "assets/audio/hospital/391c250e55c12e78.wav",
+    "緊張也沒關係。我們慢慢來。按箭頭，看工具。": "assets/audio/hospital/b4866d86fc1ed7d9.wav",
+    "找找小鏡子。醫生用它看看牙齒。": "assets/audio/hospital/9ed2afc50472e0a3.wav",
+    "找找檢查燈，幫醫生照亮。": "assets/audio/hospital/3533642024b7cc60.wav",
+    "找到了！按綠色箭頭，一起玩。": "assets/audio/hospital/01ffcbe5618591ea.wav",
+    "點點牙齒上的小斑點，也可以滑動刷。": "assets/audio/hospital/3a84a19186102b3c.wav",
+    "刷好了！按綠色箭頭，謝謝醫生。": "assets/audio/hospital/9e1d864286f48b04.wav",
+    "找到了！按小燈，請醫生看看。": "assets/audio/hospital/7324ef4e3f653cba.wav",
+    "都找到了！按綠色箭頭，謝謝醫生。": "assets/audio/hospital/8fc235f28a5c9ffa.wav",
+    "謝謝醫生！真的刷牙，記得請大人幫忙。": "assets/audio/hospital/50a42d1310fb56a9.wav",
+    "看診小冒險完成！謝謝醫生。": "assets/audio/hospital/b5dcb2a5661adbe2.wav",
+    "再試一次，慢慢來。": "assets/audio/hospital/4048bff1b601721c.wav",
+    "請大人幫忙，重新打開遊戲。": "assets/audio/hospital/b31f1f60aef7f447.wav",
+    "點點耳朵。": "assets/audio/hospital/203c471d7bec1ca8.wav",
+    "點點鼻子。": "assets/audio/hospital/4cb2d820fea2c3d3.wav",
+    "點點嘴巴。": "assets/audio/hospital/2d71e0d55ba605df.wav"
+  }
+}

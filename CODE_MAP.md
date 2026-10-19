@@ -1,5 +1,9 @@
 # panda-school 程式圖譜
 
+20261019.v3醫院擴充：`hospital.js`的`HospitalVisit`／`HospitalSession`負責掛號、心情、工具、刷牙模型與耳鼻口辨識；`hospitalParts(catalog)`從正式教材派生標籤，`body-art.js`提供臉部圖。`app.js`的`hospital`路由接入返回、stop、背景、共享音訊與專心鎖，`hospital.css`提供響應版面；三張新內景見 [HOSPITAL.md](HOSPITAL.md)。狀態只在記憶體，不寫正式課程紀錄。
+
+醫院短句語音：`hospital-voice.js`提供純狀態→短句對應，`HospitalSession.narrate`自動播放及取消佇列；`app.js`載入`content/hospital-audio.json`，透過LessonSpeech連接裝置中文或`assets/audio/hospital/`的22段WAV。`scripts/hospital-audio-manifest.mjs`從短句及正式教材派生映射，`scripts/generate-hospital-audio.ps1`只補醫院缺少錄音。
+
 20261019.v2新增第二張地圖：`town-map.js` 統一六個地點、醫院科別與百貨店舖；由 `adventure-map.js` 的 `homeMapHTML`／`sceneHTML` 接入，`app.js` 新增 `town` 路由與返回動線。詳細範圍與素材來源見 [LIFE_TOWN.md](LIFE_TOWN.md)。
 
 20261019.v2兒童樂園：`amusement-park.js` 包含獨立 `AmusementVisit` 模型及 `AmusementSession`，提供摩天輪、木馬、火車與煙火；`app.js` 的 `amusement` 路由接入stop、背景、音效與專心鎖；`amusement-park.css` 負責互動SVG／CSS與響應版面。詳見 [AMUSEMENT_PARK.md](AMUSEMENT_PARK.md)。

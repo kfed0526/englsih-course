@@ -11,6 +11,8 @@
 | node scripts/offline-manifest.mjs | 重建離線資源清單與總大小 | 寫offline-manifest.json，不改版本 |
 | node scripts/release.mjs | 真正發布前更新版本、HTML／模組快取網址及離線清單 | 改多個檔案；每次正式發布只跑一次 |
 | node scripts/festival-audio-manifest.mjs | 根據慶典instruction產生音檔映射 | 寫content/festival-audio.json；**不會產生聲音檔** |
+| node scripts/hospital-audio-manifest.mjs | 根據醫院短句與正式教材部位產生映射 | 寫content/hospital-audio.json；不產生聲音檔 |
+| powershell -NoProfile -File scripts/generate-hospital-audio.ps1 | 只補醫院缺少的短句WAV | 開發用Windows System.Speech／Microsoft Hanhan Desktop；不覆寫既有檔案、不連線，非啟動需求 |
 | powershell -File generate-unit-audio.ps1 | 第一冊部分WAV生成 | Windows System.Speech；產生音檔，非必要啟動步驟 |
 | powershell -File generate-content-audio.ps1 | 教材缺少的WAV生成 | Windows System.Speech；先讀腳本確認輸出 |
 | python scripts/generate-japanese-audio.py | 日文單字MP3生成 | 開發用edge-tts、需要網路；正常遊玩不呼叫 |

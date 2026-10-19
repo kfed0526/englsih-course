@@ -1,0 +1,28 @@
+{
+  "tool": "built-in image_gen",
+  "created": "2026-10-19",
+  "usage": "Hospital interior backgrounds; interactive controls remain HTML/SVG. Original generated PNGs preserved, WebP quality88 used by game and offline pack.",
+  "images": [
+    {
+      "id": "lobby",
+      "prompt": "Use case: illustration-story. Asset type: Panda School hospital game interior background, landscape 1536x1024. Primary request: A welcoming pediatric hospital reception lobby, small wooden reception desk with tooth and ear pictogram cards, two clinic doors with simple tooth and ear pictograms, cozy waiting chairs, plant, daylight window, spacious middle floor. Style: soft hand-painted watercolor children's storybook, textured cream paper, pale teal, warm honey wood, cream, gentle sage and peach accents, rounded approachable furniture. Eye-level wide room view, coherent perspective, detailed but calm edges, clear space in center for separate interactive interface. No text, no letters, no numbers, no logos, no watermark. No needles, blood, surgery, drilling, medication, frightening imagery or human characters. Full illustrated background, not a UI mockup.",
+      "source": "Built-in image_gen; original generated PNG preserved in this repository.",
+      "original": "assets/hospital-lobby-watercolor.png",
+      "webp": "assets/hospital-lobby-watercolor.webp"
+    },
+    {
+      "id": "dental",
+      "prompt": "Use case: illustration-story. Asset type: Panda School hospital game interior background, landscape 1536x1024. Primary request: A welcoming pediatric dental examination room, child-sized teal dental chair, overhead exam lamp, little mirror safely resting on a clinician tray, oversized teaching tooth model on a low table, daylight window and plant. No patient and no clinician. Style: soft hand-painted watercolor children's storybook, textured cream paper, pale teal, warm honey wood, cream, gentle sage and peach accents, rounded approachable furniture. Eye-level wide room view, coherent perspective, detailed but calm edges, clear space in center for separate interactive interface. No text, no letters, no numbers, no logos, no watermark. No needles, blood, surgery, drilling, medication, frightening imagery or human characters. Full illustrated background, not a UI mockup.",
+      "source": "Built-in image_gen; original generated PNG preserved in this repository.",
+      "original": "assets/hospital-dental-watercolor.png",
+      "webp": "assets/hospital-dental-watercolor.webp"
+    },
+    {
+      "id": "ent",
+      "prompt": "Use case: illustration-story. Asset type: Panda School hospital game interior background, landscape 1536x1024. Primary request: A welcoming pediatric ear nose and throat examination room, comfortable teal exam chair, rounded exam lamp, otoscope safely resting on a clinician tray, simple friendly ear nose mouth anatomical pictograms on wall, daylight window and plant. No patient and no clinician. Style: soft hand-painted watercolor children's storybook, textured cream paper, pale teal, warm honey wood, cream, gentle sage and peach accents, rounded approachable furniture. Eye-level wide room view, coherent perspective, detailed but calm edges, clear space in center for separate interactive interface. No text, no letters, no numbers, no logos, no watermark. No needles, blood, surgery, drilling, medication, frightening imagery or human characters. Full illustrated background, not a UI mockup.",
+      "source": "Built-in image_gen; original generated PNG preserved in this repository.",
+      "original": "assets/hospital-ent-watercolor.png",
+      "webp": "assets/hospital-ent-watercolor.webp"
+    }
+  ]
+}

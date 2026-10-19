@@ -1,6 +1,6 @@
 {
-  "version": "20261019.v2",
-  "totalBytes": 58767740,
+  "version": "20261019.v3",
+  "totalBytes": 63942738,
   "files": [
     {
       "url": "activities.js",
@@ -24,7 +24,7 @@
     },
     {
       "url": "app.js",
-      "bytes": 61348
+      "bytes": 62738
     },
     {
       "url": "audio-controls.js",
@@ -91,6 +91,18 @@
       "bytes": 9554
     },
     {
+      "url": "hospital-voice.js",
+      "bytes": 2090
+    },
+    {
+      "url": "hospital.css",
+      "bytes": 7430
+    },
+    {
+      "url": "hospital.js",
+      "bytes": 22317
+    },
+    {
       "url": "illustrations.js",
       "bytes": 3355
     },
@@ -148,7 +160,7 @@
     },
     {
       "url": "optimized-images.js",
-      "bytes": 2685
+      "bytes": 2858
     },
     {
       "url": "parent-tools.js",
@@ -240,7 +252,7 @@
     },
     {
       "url": "index.html",
-      "bytes": 1925
+      "bytes": 1983
     },
     {
       "url": "site.webmanifest",
@@ -261,6 +273,10 @@
     {
       "url": "content/festivals.json",
       "bytes": 2786
+    },
+    {
+      "url": "content/hospital-audio.json",
+      "bytes": 2226
     },
     {
       "url": "content/index.json",
@@ -653,6 +669,94 @@
     {
       "url": "assets/audio/festivals/e6118accd034affb.wav",
       "bytes": 508364
+    },
+    {
+      "url": "assets/audio/hospital/01ffcbe5618591ea.wav",
+      "bytes": 210044
+    },
+    {
+      "url": "assets/audio/hospital/090ebda9f4bd4f3b.wav",
+      "bytes": 258816
+    },
+    {
+      "url": "assets/audio/hospital/1c5ddfd4454cfa13.wav",
+      "bytes": 226512
+    },
+    {
+      "url": "assets/audio/hospital/203c471d7bec1ca8.wav",
+      "bytes": 85730
+    },
+    {
+      "url": "assets/audio/hospital/2d71e0d55ba605df.wav",
+      "bytes": 87902
+    },
+    {
+      "url": "assets/audio/hospital/3533642024b7cc60.wav",
+      "bytes": 168530
+    },
+    {
+      "url": "assets/audio/hospital/391c250e55c12e78.wav",
+      "bytes": 223710
+    },
+    {
+      "url": "assets/audio/hospital/3a84a19186102b3c.wav",
+      "bytes": 216292
+    },
+    {
+      "url": "assets/audio/hospital/4048bff1b601721c.wav",
+      "bytes": 129092
+    },
+    {
+      "url": "assets/audio/hospital/4cb2d820fea2c3d3.wav",
+      "bytes": 84332
+    },
+    {
+      "url": "assets/audio/hospital/50a42d1310fb56a9.wav",
+      "bytes": 258592
+    },
+    {
+      "url": "assets/audio/hospital/7324ef4e3f653cba.wav",
+      "bytes": 211396
+    },
+    {
+      "url": "assets/audio/hospital/8fc235f28a5c9ffa.wav",
+      "bytes": 239954
+    },
+    {
+      "url": "assets/audio/hospital/9e1d864286f48b04.wav",
+      "bytes": 228466
+    },
+    {
+      "url": "assets/audio/hospital/9ed2afc50472e0a3.wav",
+      "bytes": 226282
+    },
+    {
+      "url": "assets/audio/hospital/b10fa13995c305f7.wav",
+      "bytes": 230012
+    },
+    {
+      "url": "assets/audio/hospital/b31f1f60aef7f447.wav",
+      "bytes": 177066
+    },
+    {
+      "url": "assets/audio/hospital/b4866d86fc1ed7d9.wav",
+      "bytes": 323474
+    },
+    {
+      "url": "assets/audio/hospital/b5dcb2a5661adbe2.wav",
+      "bytes": 211046
+    },
+    {
+      "url": "assets/audio/hospital/b63d0600c3f1199f.wav",
+      "bytes": 218960
+    },
+    {
+      "url": "assets/audio/hospital/b9c2d8bcd5bac952.wav",
+      "bytes": 225502
+    },
+    {
+      "url": "assets/audio/hospital/ff01df39919bc8f1.wav",
+      "bytes": 115640
     },
     {
       "url": "assets/audio/japanese/blue.mp3",
@@ -1169,6 +1273,22 @@
     {
       "url": "assets/home-tv-forest.prompts.json",
       "bytes": 1017
+    },
+    {
+      "url": "assets/hospital-dental-watercolor.webp",
+      "bytes": 256098
+    },
+    {
+      "url": "assets/hospital-ent-watercolor.webp",
+      "bytes": 288846
+    },
+    {
+      "url": "assets/hospital-lobby-watercolor.webp",
+      "bytes": 233358
+    },
+    {
+      "url": "assets/hospital.prompts.json",
+      "bytes": 3662
     },
     {
       "url": "assets/icons/panda-180.png",
