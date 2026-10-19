@@ -1,6 +1,6 @@
 {
-  "version": "20261019.v3",
-  "totalBytes": 63942738,
+  "version": "20261019.v4",
+  "totalBytes": 63966306,
   "files": [
     {
       "url": "activities.js",
@@ -8,7 +8,7 @@
     },
     {
       "url": "adventure-map.js",
-      "bytes": 13769
+      "bytes": 14021
     },
     {
       "url": "adventure.css",
@@ -24,7 +24,7 @@
     },
     {
       "url": "app.js",
-      "bytes": 62738
+      "bytes": 65499
     },
     {
       "url": "audio-controls.js",
@@ -81,6 +81,14 @@
     {
       "url": "home-activities.js",
       "bytes": 10552
+    },
+    {
+      "url": "home-dog.css",
+      "bytes": 3876
+    },
+    {
+      "url": "home-dog.js",
+      "bytes": 5712
     },
     {
       "url": "home-platformer.js",
@@ -220,7 +228,7 @@
     },
     {
       "url": "style.css",
-      "bytes": 29303
+      "bytes": 33935
     },
     {
       "url": "swing.css",
@@ -251,8 +259,12 @@
       "bytes": 8511
     },
     {
+      "url": "world-time.js",
+      "bytes": 6277
+    },
+    {
       "url": "index.html",
-      "bytes": 1983
+      "bytes": 2041
     },
     {
       "url": "site.webmanifest",

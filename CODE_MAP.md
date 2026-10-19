@@ -1,5 +1,9 @@
 # panda-school 程式圖譜
 
+家裡小狗：`home-dog.js`提供dogSVG、dogHTML與DogSession，`home-dog.css`處理四動作及響應版面；`adventure-map.js`加入客廳熱點／工具入口，`app.js`的home-dog路由接stop、visibility、共享語音／音效與專心鎖。狀態只在session記憶體。
+
+本機日夜／營業時間：`world-time.js`集中Asia/Taipei、日夜階段、場所營業表、WorldClock、地圖標示與休息頁。`app.js`入口／go／前景／操作共用檢查，跨21:00走stop銷毀活動；`style.css`只對底畫調光。詳見[WORLD_TIME.md](WORLD_TIME.md)。
+
 20261019.v3醫院擴充：`hospital.js`的`HospitalVisit`／`HospitalSession`負責掛號、心情、工具、刷牙模型與耳鼻口辨識；`hospitalParts(catalog)`從正式教材派生標籤，`body-art.js`提供臉部圖。`app.js`的`hospital`路由接入返回、stop、背景、共享音訊與專心鎖，`hospital.css`提供響應版面；三張新內景見 [HOSPITAL.md](HOSPITAL.md)。狀態只在記憶體，不寫正式課程紀錄。
 
 醫院短句語音：`hospital-voice.js`提供純狀態→短句對應，`HospitalSession.narrate`自動播放及取消佇列；`app.js`載入`content/hospital-audio.json`，透過LessonSpeech連接裝置中文或`assets/audio/hospital/`的22段WAV。`scripts/hospital-audio-manifest.mjs`從短句及正式教材派生映射，`scripts/generate-hospital-audio.ps1`只補醫院缺少錄音。
