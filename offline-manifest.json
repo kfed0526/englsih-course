@@ -1,6 +1,6 @@
 {
-  "version": "20261019.v1",
-  "totalBytes": 57406280,
+  "version": "20261019.v2",
+  "totalBytes": 58767740,
   "files": [
     {
       "url": "activities.js",
@@ -8,15 +8,23 @@
     },
     {
       "url": "adventure-map.js",
-      "bytes": 13383
+      "bytes": 13769
     },
     {
       "url": "adventure.css",
-      "bytes": 17327
+      "bytes": 22244
+    },
+    {
+      "url": "amusement-park.css",
+      "bytes": 8681
+    },
+    {
+      "url": "amusement-park.js",
+      "bytes": 18667
     },
     {
       "url": "app.js",
-      "bytes": 60015
+      "bytes": 61348
     },
     {
       "url": "audio-controls.js",
@@ -140,7 +148,7 @@
     },
     {
       "url": "optimized-images.js",
-      "bytes": 2435
+      "bytes": 2685
     },
     {
       "url": "parent-tools.js",
@@ -219,6 +227,10 @@
       "bytes": 9094
     },
     {
+      "url": "town-map.js",
+      "bytes": 4375
+    },
+    {
       "url": "trampoline.css",
       "bytes": 4229
     },
@@ -228,7 +240,7 @@
     },
     {
       "url": "index.html",
-      "bytes": 1861
+      "bytes": 1925
     },
     {
       "url": "site.webmanifest",
@@ -277,6 +289,14 @@
     {
       "url": "assets/adventure-maps.prompts.json",
       "bytes": 3280
+    },
+    {
+      "url": "assets/amusement-park.prompts.json",
+      "bytes": 2146
+    },
+    {
+      "url": "assets/amusement-twilight-watercolor.webp",
+      "bytes": 562344
     },
     {
       "url": "assets/audio/body/week-1-0.wav",
@@ -1173,6 +1193,14 @@
     {
       "url": "assets/icons/panda.svg",
       "bytes": 1295
+    },
+    {
+      "url": "assets/life-town-watercolor.webp",
+      "bytes": 755282
+    },
+    {
+      "url": "assets/life-town.prompts.json",
+      "bytes": 3015
     },
     {
       "url": "assets/memories/family/crouch-20261018.webp",

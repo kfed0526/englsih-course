@@ -1,6 +1,6 @@
-import {shuffle} from './game.js?v=20261019.v1';
-import {bodyArt,faceSVG,robotSVG} from './body-art.js?v=20261019.v1';
-import {questionFor,answersFor} from './lesson-text.js?v=20261019.v1';
+import {shuffle} from './game.js?v=20261019.v2';
+import {bodyArt,faceSVG,robotSVG} from './body-art.js?v=20261019.v2';
+import {questionFor,answersFor} from './lesson-text.js?v=20261019.v2';
 
 export const BODY_TYPES=['face-count','body-touch','robot-matching','senses-link'];
 const escape=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));

@@ -1,5 +1,9 @@
 # panda-school 程式圖譜
 
+20261019.v2新增第二張地圖：`town-map.js` 統一六個地點、醫院科別與百貨店舖；由 `adventure-map.js` 的 `homeMapHTML`／`sceneHTML` 接入，`app.js` 新增 `town` 路由與返回動線。詳細範圍與素材來源見 [LIFE_TOWN.md](LIFE_TOWN.md)。
+
+20261019.v2兒童樂園：`amusement-park.js` 包含獨立 `AmusementVisit` 模型及 `AmusementSession`，提供摩天輪、木馬、火車與煙火；`app.js` 的 `amusement` 路由接入stop、背景、音效與專心鎖；`amusement-park.css` 負責互動SVG／CSS與響應版面。詳見 [AMUSEMENT_PARK.md](AMUSEMENT_PARK.md)。
+
 更新至20261019.v1，包含離線包、生活遊戲、家長工具與跨機Codex接手入口。早期功能區塊保留沿革；最上方圖為目前總覽。專案為靜態 HTML／CSS／JavaScript，沒有後端。
 
 ```mermaid

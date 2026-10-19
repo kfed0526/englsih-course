@@ -39,3 +39,42 @@ button:not(:disabled):active{filter:brightness(.92);box-shadow:inset 0 2px 5px #
 @media(prefers-reduced-motion:reduce){.park-picture button[class*="hotspot"]{animation:none!important}}
 
 .scene-still .park-picture button[class*="hotspot"]{animation:none!important}
+
+/* The second neighborhood shares the first map's painted paths and touch controls. */
+.map-navigation{display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch;gap:8px;max-width:800px;margin:0 auto 14px}
+.map-navigation>button,.map-navigation>span{display:flex;justify-content:center;align-items:center;min-height:64px;flex:1;padding:10px 16px;border:2px solid #c4b38d;border-radius:18px;background:#faf3e2;color:#66543d;font-size:15px;line-height:1.5;text-align:center}
+.map-navigation>[aria-current]{background:#e5ebd7;border-color:#93a57a;font-weight:700}
+.map-navigation>button:disabled{opacity:.5}
+.map-connection{max-width:800px;margin:16px auto 0;padding:16px 20px;border:1px solid #cdbb95;border-radius:22px;background:#f7f0de;text-align:center}
+.map-connection>span{font-size:26px}.map-connection p{font-size:14px;line-height:1.7;margin:6px 0 12px}
+.map-connection button,.town-return button{min-height:64px;padding:10px 20px;font-size:15px;background:#e4e9d2;border:2px solid #a9b48a;border-radius:18px;color:#4f6240}
+.town-neighborhood .town-destination{width:164px;height:64px;min-height:64px}
+.town-place{max-width:900px;margin:16px auto;text-align:center}.town-place h1{font-size:36px;margin:12px 0}.town-place-note{font-size:16px;line-height:1.8}
+.town-place-picture{width:min(100%,680px);height:240px;margin:20px auto;border:3px solid #d1bd91;border-radius:24px;background-image:url('assets/life-town-watercolor.webp');background-size:200% 300%;background-position:var(--town-art-x) var(--town-art-y);box-shadow:0 5px 0 #ded3b7}
+.town-place h2{font-size:24px}.town-choices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;max-width:680px;margin:18px auto}
+.town-choices button{display:flex;flex-direction:column;align-items:center;gap:10px;padding:22px 16px;border:2px solid #c5b68f;border-radius:24px;background:#fff8e9;color:#66543d;min-width:0;min-height:190px}
+.town-choices button>span:first-child{font-size:38px}.town-choices strong{font-size:24px}.town-choices small{font-size:14px;line-height:1.7}.town-choice-link{font-size:14px;color:#597047}
+.town-preparing{max-width:680px;margin:20px auto;padding:20px;border-radius:24px;background:#f1eedb}.town-preparing>span{font-size:32px}.town-preparing p{font-size:15px;line-height:1.8}
+.town-return{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin-top:20px}
+.town-home h1:focus,.town-place h1:focus{outline:none}
+@media(max-width:600px){
+ .map-navigation{gap:6px;margin-bottom:12px}.map-navigation>button,.map-navigation>span{padding:8px 6px;font-size:12px;border-radius:14px;min-width:0}
+ .town-home .map-title h1{font-size:27px}.town-home .map-title .eyebrow{font-size:9px;letter-spacing:1px}.town-home .map-nickson{width:50px;height:80px}
+ .town-neighborhood .town-destination{width:112px;font-size:14px;padding:6px;gap:4px;border-radius:15px}
+ .map-connection{padding:14px 10px}.map-connection button{font-size:13px;padding:10px}.town-place h1{font-size:29px}.town-place-note{font-size:14px}
+ .town-place-picture{height:160px}.town-choices{gap:10px}.town-choices button{padding:16px 10px}.town-choices strong{font-size:22px}.town-choices small{font-size:12px}
+ .town-preparing{padding:16px 12px}.town-preparing h2{font-size:22px}.town-return button{width:100%}
+}
+@media(min-width:768px) and (min-height:560px) and (max-height:1000px) and (orientation:landscape){
+ .page-home .map-navigation{margin-bottom:8px}.page-home .map-navigation>button,.page-home .map-navigation>span{font-size:13px}
+ .page-home .adventure-home .neighborhood{width:min(100%,calc(100svh - 316px))}
+ .town-home{display:grid;grid-template-columns:minmax(280px,.75fr) minmax(0,1fr);gap:14px 28px;max-width:1080px;align-items:center}
+ .town-home .map-title{grid-column:1;grid-row:1;margin:0;width:100%;align-self:end}.town-home .map-title h1{font-size:30px}.town-home .map-title p{font-size:14px}
+ .town-home .map-navigation{grid-column:1;grid-row:2;margin:0;width:100%}.town-home .map-navigation>button,.town-home .map-navigation>span{font-size:13px;padding:10px}
+ .town-home .town-neighborhood{grid-column:2;grid-row:1/5;width:min(100%,calc(100svh - 160px))}
+ .town-home .map-connection{grid-column:1;grid-row:3;margin:0;width:100%;align-self:start;box-sizing:border-box}.town-home .map-connection button{width:100%}
+ .town-place{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px 26px;align-items:center;max-width:1050px;margin:6px auto}
+ .town-place>.eyebrow,.town-place>h1,.town-place>.town-place-note,.town-place>h2,.town-place>.town-choices,.town-place>.town-preparing,.town-place>.town-return{grid-column:2;margin:4px 0}
+ .town-place>.town-place-picture{grid-column:1;grid-row:1/9;height:350px;width:100%;margin:0;background-size:230% 320%}
+ .town-place .town-choices{gap:12px}.town-place .town-choices button{min-height:180px;padding:16px 10px}.town-place .town-choices small{font-size:12px}
+}
