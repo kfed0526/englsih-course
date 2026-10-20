@@ -20,6 +20,12 @@ test('celebration schedules rhythm, claps and slides within nine seconds; skip c
  context.state='suspended';s.unlock();assert.equal(context.state,'running');assert.equal(context.resumes,2);
 });
 test('unsupported Web Audio does not block the game',()=>{const s=new GameSounds(()=>{throw Error('unsupported');});assert.doesNotThrow(()=>s.unlock());assert.equal(s.correct(),0);assert.doesNotThrow(()=>s.dance(9));});
+
+test('salon effects share the context and volume, reject unknown tools and obey mute and cancellation',()=>{
+ const context=fakeContext(),sound=new GameSounds(()=>context);assert.equal(sound.salon('scissors'),false);sound.unlock();sound.setVolume(.3);assert.equal(sound.output.gain.value,.135);
+ for(const tool of ['scissors','comb','dryer','finish']){assert.equal(sound.salon(tool),true);assert.ok(sound.nodes.size>0);const old=[...sound.nodes];sound.stop();assert.ok(old.every(n=>n.stopped));}
+ assert.equal(sound.salon('bad'),false);sound.enabled=false;assert.equal(sound.salon('scissors'),false);assert.equal(sound.nodes.size,0);
+});
 test('festival effects use the shared mute and cancellation controls',()=>{
  const context=fakeContext(),s=new GameSounds(()=>context);s.unlock();
  for(const effect of ['pop','firework','drum','row','bite','rustle','wish','correct']){s.festival(effect);assert.ok(s.nodes.size>0);const old=[...s.nodes];s.stop();assert.ok(old.every(n=>n.stopped));}

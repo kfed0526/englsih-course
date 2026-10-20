@@ -1,6 +1,6 @@
 {
-  "version": "20261020.v1",
-  "totalBytes": 69176692,
+  "version": "20261020.v2",
+  "totalBytes": 72132623,
   "files": [
     {
       "url": "activities.js",
@@ -24,7 +24,7 @@
     },
     {
       "url": "app.js",
-      "bytes": 67000
+      "bytes": 68091
     },
     {
       "url": "audio-controls.js",
@@ -188,7 +188,7 @@
     },
     {
       "url": "optimized-images.js",
-      "bytes": 3038
+      "bytes": 3729
     },
     {
       "url": "parent-tools.js",
@@ -197,6 +197,26 @@
     {
       "url": "question-bank.js",
       "bytes": 6500
+    },
+    {
+      "url": "salon-art.js",
+      "bytes": 3457
+    },
+    {
+      "url": "salon-model.js",
+      "bytes": 3656
+    },
+    {
+      "url": "salon-voice.js",
+      "bytes": 771
+    },
+    {
+      "url": "salon.css",
+      "bytes": 10700
+    },
+    {
+      "url": "salon.js",
+      "bytes": 16850
     },
     {
       "url": "sandpit.css",
@@ -236,7 +256,7 @@
     },
     {
       "url": "sounds.js",
-      "bytes": 5918
+      "bytes": 6442
     },
     {
       "url": "speech.js",
@@ -280,11 +300,11 @@
     },
     {
       "url": "world-time.js",
-      "bytes": 6331
+      "bytes": 6369
     },
     {
       "url": "index.html",
-      "bytes": 2108
+      "bytes": 2163
     },
     {
       "url": "site.webmanifest",
@@ -329,6 +349,10 @@
     {
       "url": "content/park-memories.json",
       "bytes": 349
+    },
+    {
+      "url": "content/salon-audio.json",
+      "bytes": 1124
     },
     {
       "url": "content/scene-memories.json",
@@ -1111,6 +1135,50 @@
       "bytes": 231268
     },
     {
+      "url": "assets/audio/salon/2588d1619bd68e1a.wav",
+      "bytes": 234200
+    },
+    {
+      "url": "assets/audio/salon/5507a71754cd2525.wav",
+      "bytes": 147320
+    },
+    {
+      "url": "assets/audio/salon/5604ead5b553bf00.wav",
+      "bytes": 162392
+    },
+    {
+      "url": "assets/audio/salon/6d1354faab54e3e1.wav",
+      "bytes": 146936
+    },
+    {
+      "url": "assets/audio/salon/6ed53bc7ae3eea0c.wav",
+      "bytes": 122766
+    },
+    {
+      "url": "assets/audio/salon/75eee598303a7053.wav",
+      "bytes": 185564
+    },
+    {
+      "url": "assets/audio/salon/7e56243a1d681b6c.wav",
+      "bytes": 154246
+    },
+    {
+      "url": "assets/audio/salon/8c6313dc5dcda17e.wav",
+      "bytes": 178030
+    },
+    {
+      "url": "assets/audio/salon/9b290cce5ed30319.wav",
+      "bytes": 159328
+    },
+    {
+      "url": "assets/audio/salon/c7e783075dd32e56.wav",
+      "bytes": 274222
+    },
+    {
+      "url": "assets/audio/salon/fb60a6d3f6133b4a.wav",
+      "bytes": 149116
+    },
+    {
       "url": "assets/audio/shapes-companion-intro.wav",
       "bytes": 364636
     },
@@ -1300,7 +1368,7 @@
     },
     {
       "url": "assets/characters/nickson-photo-usage.json",
-      "bytes": 2165
+      "bytes": 2692
     },
     {
       "url": "assets/characters/nickson-point-20261018.png",
@@ -1317,6 +1385,22 @@
     {
       "url": "assets/characters/nickson-red-swing.prompts.json",
       "bytes": 921
+    },
+    {
+      "url": "assets/characters/nickson-salon-20261020.webp",
+      "bytes": 208076
+    },
+    {
+      "url": "assets/characters/nickson-salon-ghibli-short-v3.webp",
+      "bytes": 178904
+    },
+    {
+      "url": "assets/characters/nickson-salon-ghibli-v3.webp",
+      "bytes": 219814
+    },
+    {
+      "url": "assets/characters/nickson-salon-short-v2.webp",
+      "bytes": 175868
     },
     {
       "url": "assets/characters/nickson-slide-watercolor.png",
@@ -1541,6 +1625,14 @@
     {
       "url": "assets/roles-theater-watercolor.webp",
       "bytes": 213370
+    },
+    {
+      "url": "assets/salon-hair-texture.webp",
+      "bytes": 208820
+    },
+    {
+      "url": "assets/salon.prompts.json",
+      "bytes": 10845
     },
     {
       "url": "assets/school-map-watercolor.webp",

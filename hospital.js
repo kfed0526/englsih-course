@@ -1,5 +1,5 @@
-import {faceSVG} from './body-art.js?v=20261020.v1';
-import {hospitalCue,HOSPITAL_CUES} from './hospital-voice.js?v=20261020.v1';
+import {faceSVG} from './body-art.js?v=20261020.v2';
+import {hospitalCue,HOSPITAL_CUES} from './hospital-voice.js?v=20261020.v2';
 
 export const HOSPITAL_ROOMS={dental:{name:'牙科',icon:'🦷',ticket:'12',tool:'mirror',toolName:'小鏡子',asset:'assets/hospital-dental-watercolor.webp'},ent:{name:'耳鼻喉科',icon:'👂',ticket:'21',tool:'light',toolName:'檢查燈',asset:'assets/hospital-ent-watercolor.webp'}};
 export const HOSPITAL_STEPS=['掛號候診','說說心情','認識工具','一起練習','謝謝醫生'];

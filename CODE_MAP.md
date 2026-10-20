@@ -1,5 +1,7 @@
 # panda-school 程式圖譜
 
+20261020.v2理髮店（V3修飾人像）：`salon-model.js`的SalonVisit管理可剪髮束／工具／比較，`salon.js`的SalonSession管理pointer插值、語音、效果排程與雙照片重試；`salon-art.js`以連續遮罩繪製一次長髮圖髮絲，剪短後露出配對短髮底圖；V3僅切換為吉卜力風格臉部素材，保留V2互動與原素材，共用同一修飾後臉部／圍布層。`salon.css`提供人物輕微呼吸、剪刀開合及手機固定工具列，拖曳時固定人物避免命中偏移。這是2D照片互動，不是真正3D髮絲模擬。`salon-voice.js`及content/salon-audio.json對應11段WAV。app.js新salon路由串接日夜／營業時間、專心鎖、背景與stop。來源及限制見[SALON.md](SALON.md)。
+
 家裡小狗：`home-dog.js`提供dogSVG、dogHTML與DogSession，`home-dog.css`處理四動作及響應版面；`adventure-map.js`加入客廳熱點／工具入口，`app.js`的home-dog路由接stop、visibility、共享語音／音效與專心鎖。狀態只在session記憶體。
 
 20261019.v4日夜／營業時間：`world-time.js`集中Asia/Taipei、日夜階段、場所營業表、WorldClock、地圖標示與休息頁。`app.js`入口／go／前景／操作共用檢查，跨21:00走stop銷毀活動；`style.css`只對底畫調光。詳見[WORLD_TIME.md](WORLD_TIME.md)。

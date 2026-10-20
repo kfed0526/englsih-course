@@ -3,4 +3,9 @@ optimizedImages['assets/life-town-watercolor.png']={src:'assets/life-town-waterc
 optimizedImages['assets/amusement-twilight-watercolor.png']={src:'assets/amusement-twilight-watercolor.webp',width:1536,height:1024};
 for(const room of ['lobby','dental','ent'])optimizedImages[`assets/hospital-${room}-watercolor.png`]={src:`assets/hospital-${room}-watercolor.webp`,width:1536,height:1024};
 for(const room of ['lobby','market','bakery'])optimizedImages[`assets/department-${room}-watercolor.png`]={src:`assets/department-${room}-watercolor.webp`,width:1536,height:1024};
+optimizedImages['assets/characters/nickson-salon-20261020.png']={src:'assets/characters/nickson-salon-20261020.webp',width:900,height:1201};
+optimizedImages['assets/characters/nickson-salon-short-v2.png']={src:'assets/characters/nickson-salon-short-v2.webp',width:900,height:1200};
+optimizedImages['assets/characters/nickson-salon-ghibli-v3.png']={src:'assets/characters/nickson-salon-ghibli-v3.webp',width:900,height:1200};
+optimizedImages['assets/characters/nickson-salon-ghibli-short-v3.png']={src:'assets/characters/nickson-salon-ghibli-short-v3.webp',width:900,height:1200};
+optimizedImages['assets/salon-hair-texture.png']={src:'assets/salon-hair-texture.webp',width:768,height:1025};
 export function optimizeImages(html){return html.replace(/<img\b[^>]*>/g,tag=>tag.replace(/src="([^"]+)"/,(_,src)=>{const a=optimizedImages[src];return a?`src="${a.src}" width="${a.width}" height="${a.height}" decoding="async"`:`src="${src}"`; }));}

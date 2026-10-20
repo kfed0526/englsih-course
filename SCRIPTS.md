@@ -14,6 +14,8 @@
 | node scripts/hospital-audio-manifest.mjs | 根據醫院短句與正式教材部位產生映射 | 寫content/hospital-audio.json；不產生聲音檔 |
 | powershell -NoProfile -File scripts/generate-hospital-audio.ps1 | 只補醫院缺少的短句WAV | 開發用Windows System.Speech／Microsoft Hanhan Desktop；不覆寫既有檔案、不連線，非啟動需求 |
 | node scripts/department-audio-manifest.mjs | 從百貨短句與正式教材商品中文派生映射 | 寫content/department-audio.json；不生成聲音檔 |
+| node scripts/salon-audio-manifest.mjs | 從理髮店短句產生11段映射 | 寫content/salon-audio.json；不產生音檔或改正式教材 |
+| powershell -NoProfile -File scripts/generate-salon-audio.ps1 | 只補理髮店缺少的短句WAV | 開發用System.Speech／Hanhan；僅限assets/audio/salon，不覆寫其他錄音、不連線，非啟動需求 |
 | powershell -NoProfile -File scripts/generate-department-audio.ps1 | 只補百貨缺少的短句WAV | 開發用Windows System.Speech／Microsoft Hanhan Desktop；不覆寫既有檔案、不連線，非啟動需求 |
 | powershell -File generate-unit-audio.ps1 | 第一冊部分WAV生成 | Windows System.Speech；產生音檔，非必要啟動步驟 |
 | powershell -File generate-content-audio.ps1 | 教材缺少的WAV生成 | Windows System.Speech；先讀腳本確認輸出 |

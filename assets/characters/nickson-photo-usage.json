@@ -64,5 +64,13 @@
     "scene": "park",
     "use": "去背：跳跳床空中姿勢／舞蹈跳躍；原照收錄公園回憶",
     "memory": "assets/memories/park/jump-20261018.webp"
+  },
+  {
+    "source": "S__30883921.jpg",
+    "scene": "salon",
+    "use": "V3依家長要求將臉部修飾成柔和吉卜力動畫風格，保留Nickson特徵及擬真髮絲／圍布；搭配相同畫風短髮底圖，獨立Canvas遮罩剪短，不加入相簿。原照與V1／V2素材保留。",
+    "asset": "assets/characters/nickson-salon-ghibli-v3.webp",
+    "originalSha256": "2d58c7078f22e046229e2cc4d1f1349fcd2bc84e327e026cd5733abf4cbf7d41",
+    "hairUnderlay": "assets/characters/nickson-salon-ghibli-short-v3.webp"
   }
 ]

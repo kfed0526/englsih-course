@@ -97,6 +97,18 @@ export class GameSounds {
     try { this.clap(0, .035); this.clap(.04, .02); } catch { this.stop(); }
   }
 
+  salon(tool) {
+    if (!this.ready() || !['scissors','comb','dryer','finish'].includes(tool)) return false;
+    try {
+      if (this.nodes.size > 36) this.stop();
+      if (tool === 'finish') { this.tone(659,0,.18,.1);this.tone(880,.12,.22,.1); }
+      else if (tool === 'scissors') { this.clap(0,.055);this.tone(1800,.025,.055,.025,'triangle',850); }
+      else if (tool === 'comb') this.clap(0,.025);
+      else { this.clap(0,.022);this.clap(.08,.018); }
+      return true;
+    } catch { this.stop();return false; }
+  }
+
   instrument(kind, note = 0) {
     if (!this.ready() || !['piano','xylophone','drum','shaker'].includes(kind) || !Number.isInteger(note) || note < 0 || note > 7) return false;
     try {

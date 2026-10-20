@@ -1,0 +1,102 @@
+{
+  "created": "2026-10-20",
+  "status": "Included in the explicitly authorized 20261020.v2 release. Original JPG remains local and ignored.",
+  "tool": "Built-in image_gen, followed by WebP resizing/encoding only; original generated PNGs preserved.",
+  "source": {
+    "filename": "S__30883921.jpg",
+    "sha256": "2d58c7078f22e046229e2cc4d1f1349fcd2bc84e327e026cd5733abf4cbf7d41",
+    "original": "Preserved unchanged in the ignored .local-assets/nickson-references/ folder; original JPG is not a public website asset."
+  },
+  "assets": [
+    {
+      "useCase": "background-extraction / identity-preserve",
+      "inputRole": "Edit target",
+      "png": "assets/characters/nickson-salon-20261020.png",
+      "pngSize": {
+        "width": 1086,
+        "height": 1449
+      },
+      "webp": "assets/characters/nickson-salon-20261020.webp",
+      "webpSize": {
+        "width": 900,
+        "height": 1201
+      },
+      "transparentBackground": true,
+      "prompt": "Use case: background-extraction / identity-preserve. Edit target: the supplied real photograph of Nickson, a young boy with a short dark brown fringe, facing the camera wearing a black barber cape. Project-bound asset: a photographic transparent-background cutout for a child's pretend hair salon game. Remove ONLY the entire environment, all background people, railing, and the large out-of-focus hand/forearm across the bottom. Keep this exact child's facial identity, natural photographic skin texture, face proportions, expression, eye gaze, ears, current haircut and camera/head tilt unchanged. Do NOT beautify, redraw, make cartoon, enlarge eyes, change age, or stylize the face. Retain the full existing hair silhouette including fine flyaway hairs, head, neck and shoulders/cape. Complete only the small lower cape area formerly obscured by the hand with the same plain dark barber cape, with no hands or props. Centered isolated head-and-shoulders portrait, all hair visible, with margin above head, lower cape extends to bottom edge. Truly transparent alpha surrounding the portrait, not white or checkerboard pixels. No text, logos, tools, other people, room, chair, jewelry or decorations. Preserve the real-photo appearance, not an illustration.",
+      "notes": "AI-assisted extraction preserves photographic likeness, not a promise of pixel-identical face reconstruction. In-game operations never edit this base image; all cutting is on a separate transparent Canvas."
+    },
+    {
+      "useCase": "photorealistic-natural",
+      "inputRole": "Reference only for hair tone and strand texture",
+      "png": "assets/salon-hair-texture.png",
+      "pngSize": {
+        "width": 1086,
+        "height": 1449
+      },
+      "webp": "assets/salon-hair-texture.webp",
+      "webpSize": {
+        "width": 768,
+        "height": 1025
+      },
+      "transparentBackground": false,
+      "prompt": "Use case: photorealistic-natural. Asset type: a seamless-looking rectangular macro texture of real hair for an interactive hair-cutting game's Canvas layer, NOT a portrait. Input image role: reference ONLY for the exact dark warm brown tone, smooth straight natural hair strands and soft photographic sheen of the boy's hair. Primary request: fill the ENTIRE image edge to edge with densely layered real straight dark brown hair flowing vertically DOWNWARD with slight organic bends, highly detailed individual slender hairs, natural brown shadow and muted tan highlights, soft diffuse indoor lighting. Flat frontal macro view of the hair surface. No hairline, no roots with skin, no parting scalp, no head shape or wig silhouette, no face, no ears, no person, no skin, no tools, no text, no borders, no gaps or background. The texture must be suitable for sampling narrow long strips from any region to paint curved individual locks over the existing portrait. Keep the brown tone natural, not black paint, bright orange, glossy plastic, cartoon or illustration. Portrait or square texture frame.",
+      "notes": "V1 hair texture retained for source history; V2 no longer loads this texture in the live salon."
+    },
+    {
+      "useCase": "precise-object-edit / identity-preserve",
+      "inputRole": "Edit target: assets/characters/nickson-salon-20261020.png",
+      "png": "assets/characters/nickson-salon-short-v2.png",
+      "pngSize": {
+        "width": 1086,
+        "height": 1448
+      },
+      "webp": "assets/characters/nickson-salon-short-v2.webp",
+      "webpSize": {
+        "width": 900,
+        "height": 1200
+      },
+      "bytes": 175868,
+      "transparentBackground": true,
+      "prompt": "Use case: precise-object-edit / identity-preserve. Edit target: the attached transparent photographic portrait of Nickson wearing a dotted black barber cape. This is the short-hair underlay for an interactive haircut simulation, paired with the EXACT SAME portrait as the long-hair overlay. Make ONE change only: give this same boy a natural very short crew cut, closely cropped dark brown hair (about 6-10 mm) following his real scalp shape and natural hairline, NO long bangs, no overhanging fringe. Preserve some soft natural short hair, not bald skin. Photoreal individual short hairs and realistic roots. CRITICAL REGISTRATION: Preserve the original 3:4 canvas, framing, head position, head tilt, face size, ear positions, shoulders and cape exactly so both images can be aligned by simply scaling to the same dimensions. Keep ALL facial features, gaze, expression, skin details, age, face shape, ears and cape unchanged; edit only the hair/scalp ABOVE the forehead and temples. Do not retouch or beautify the face or re-pose the child. Keep the full hair and head visible. True transparent background as in the original. No room, props, chair, hands, other people, text, checkerboard pixels or logos. This must remain a photographic portrait of this specific child, not a cartoon, drawing or different child.",
+      "notes": "AI-edited short-hair underlay; unchanged original portrait's face/cape are composited above it. Original long-hair photograph is used only through a separate editable hair matte. Local only, not 3D."
+    },
+    {
+      "useCase": "style-transfer / identity-preserve",
+      "inputRole": "Edit target: assets/characters/nickson-salon-20261020.png",
+      "png": "assets/characters/nickson-salon-ghibli-v3.png",
+      "pngSize": {
+        "width": 1086,
+        "height": 1448
+      },
+      "webp": "assets/characters/nickson-salon-ghibli-v3.webp",
+      "webpSize": {
+        "width": 900,
+        "height": 1200
+      },
+      "bytes": 219814,
+      "transparentBackground": true,
+      "prompt": "Use case: style-transfer / identity-preserve. Edit target: attached transparent cutout portrait of Nickson with long brown fringe and black dotted barber cape. Primary request from the parent: gently embellish Nick's FACE in Studio Ghibli animation style for his haircut game. Make the face a warm hand-painted Japanese animated-film portrait with delicate clean pencil contours, soft cel shading and watercolor-like skin, natural warm cheeks, expressive but modestly stylized dark eyes. He must still be recognizably this same little boy: retain face outline, cheek shape, ear positions, eyebrows, eye spacing, nose and slightly open lips, gaze, expression and age. NOT a generic anime boy, not huge eyes, not chibi. CRITICAL REGISTRATION: preserve exactly the existing 3:4 canvas, head tilt, head size, face feature positions, top-of-hair location, silhouette, shoulders, margins and cape to align with an existing haircut overlay at the same dimensions. Change only the face/ears/visible skin into the gentle Ghibli-inspired hand-drawn style, with a softly integrated hairline. Preserve the original photographic brown hairstyle, individual strands, long fringe silhouette and dotted black cape intact: no haircut in this image. No body repositioning, no extra people, no props, no text, no new background. Keep actual transparent alpha outside the original head/cape silhouette. Output one transparent portrait, no collage, no comparison panels, no checkerboard pixels.",
+      "notes": "V3 gentle Ghibli-inspired hand-painted face. New sibling asset, original photo and V1/V2 preserved. Long and short styles share the same frame; game uses the long variant's stylized face/cape on both."
+    },
+    {
+      "useCase": "style-transfer / identity-preserve",
+      "inputRole": "Edit target: assets/characters/nickson-salon-ghibli-v3.png; haircut geometry reference: assets/characters/nickson-salon-short-v2.png",
+      "png": "assets/characters/nickson-salon-ghibli-short-v3.png",
+      "pngSize": {
+        "width": 1086,
+        "height": 1448
+      },
+      "webp": "assets/characters/nickson-salon-ghibli-short-v3.webp",
+      "webpSize": {
+        "width": 900,
+        "height": 1200
+      },
+      "bytes": 178904,
+      "transparentBackground": true,
+      "prompt": "Use case: precise-object-edit / identity-preserve. Image 1 is the EDIT TARGET: transparent portrait of Nickson with a gently hand-painted Studio Ghibli-inspired face, long brown fringe and black dotted barber cape. Image 2 is supporting HAIRCUT GEOMETRY reference only: the same boy's short crew cut in the existing paired game asset. Make only one change to image 1: replace the long hair above the forehead and temples with a natural closely cropped dark brown crew cut, 6-10mm, as in image 2. Reveal the forehead using the exact same warm hand-painted soft cel-shaded skin style as image 1, not photographic skin from image 2. Keep image 1's stylized face, facial features, eyes, skin colors, expression, gaze, nose, ears, lips, dotted cape, framing, transparent background and head tilt UNCHANGED. Registration is essential: same 3:4 canvas, exactly same head position, scale, shoulders and margins; this short underlay must align with image 1 simply by scaling to the same dimensions. Soft detailed short brown hairs, no long fringe, not bald, no crown of leftover long hair. Preserve this child's likeness and natural proportions; no huge anime eyes, no chibi. No background, text, tools, additional characters, checkerboard pixels or extra body parts. One isolated transparent portrait, not a split panel or collage.",
+      "notes": "V3 gentle Ghibli-inspired hand-painted face. New sibling asset, original photo and V1/V2 preserved. Long and short styles share the same frame; game uses the long variant's stylized face/cape on both."
+    }
+  ],
+  "updated": "2026-10-20",
+  "rendering": "V3 uses a gently hand-painted Ghibli-inspired face derived from Nickson's photo, with detailed brown hair and dotted cape. Both long and short styles use aligned 900x1200 transparent WebP assets. V2 continuous hair matte, cutting, breathing and scissors remain; original photo and all V1/V2 variants are preserved. No generation at runtime."
+}
