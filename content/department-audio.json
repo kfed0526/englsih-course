@@ -1,0 +1,29 @@
+{
+  "language": "zh-TW",
+  "source": "Microsoft Hanhan Desktop，Rate=-1；開發時產生的中文合成語音，非真人錄音。",
+  "audio": {
+    "點購物籃，或點麵包。一起逛逛！": "assets/audio/department/11a7703c02d5ee92.wav",
+    "請大人幫忙，重新打開遊戲。": "assets/audio/department/b31f1f60aef7f447.wav",
+    "今天先找清單上的東西。": "assets/audio/department/9d63e5ed4079929f.wav",
+    "拖到購物籃，或點一下商品。": "assets/audio/department/f837fb14d0e24c6d.wav",
+    "三樣都找到了！按箭頭，去結帳。": "assets/audio/department/b4612d354c5d0af5.wav",
+    "點點商品，幫它們掃描。": "assets/audio/department/d056cf881d59a0b2.wav",
+    "掃描好了！按箭頭，練習付款。": "assets/audio/department/7cacb957d535a787.wav",
+    "點三枚星星幣，練習付款。": "assets/audio/department/aeccca6d74412a43.wav",
+    "付好了！按箭頭，帶回家。": "assets/audio/department/a89e6bbc7a6cf17a.wav",
+    "購物完成！記得帶上購物袋。": "assets/audio/department/1590b8f5af72bf78.wav",
+    "點點麵團，揉一揉。": "assets/audio/department/a53d2248a633bab5.wav",
+    "揉好了！按箭頭，選個形狀。": "assets/audio/department/afd39898bb43e51a.wav",
+    "選一個喜歡的麵包形狀。": "assets/audio/department/d2f0589d0e15b289.wav",
+    "真可愛！按箭頭，請店員幫忙。": "assets/audio/department/e96e490b7f6c5971.wav",
+    "點烤箱，請店員幫你烤。": "assets/audio/department/ea3ede8abe41ffc4.wav",
+    "麵包放涼了！按箭頭，準備裝袋。": "assets/audio/department/c2e4eb302da1c8c4.wav",
+    "點三個麵包，裝進袋子。": "assets/audio/department/8af6b950411d0c46.wav",
+    "裝好了！按箭頭，謝謝店員。": "assets/audio/department/bdce94fe4c43810f.wav",
+    "麵包完成！真的烤箱，要請大人幫忙。": "assets/audio/department/7ee5df06c6f0e037.wav",
+    "找找白飯，放進籃子。": "assets/audio/department/6d2d2c6cb6677652.wav",
+    "找找菜，放進籃子。": "assets/audio/department/6c362a0dc0b96215.wav",
+    "找找肉，放進籃子。": "assets/audio/department/331fe0d83b7f6347.wav",
+    "找找魚，放進籃子。": "assets/audio/department/aac415128d3aeb21.wav"
+  }
+}

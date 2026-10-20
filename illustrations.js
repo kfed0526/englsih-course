@@ -1,6 +1,6 @@
-import {bodyArt} from './body-art.js?v=20261019.v4';
-import {CHARACTERS,characterImage} from './characters.js?v=20261019.v4';
-import {shapeSVG} from './game.js?v=20261019.v4';
+import {bodyArt} from './body-art.js?v=20261020.v1';
+import {CHARACTERS,characterImage} from './characters.js?v=20261020.v1';
+import {shapeSVG} from './game.js?v=20261020.v1';
 const ink='#685239';
 let paintedId=0;
 const details={

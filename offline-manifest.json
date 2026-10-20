@@ -1,6 +1,6 @@
 {
-  "version": "20261019.v4",
-  "totalBytes": 63966306,
+  "version": "20261020.v1",
+  "totalBytes": 69176692,
   "files": [
     {
       "url": "activities.js",
@@ -24,7 +24,7 @@
     },
     {
       "url": "app.js",
-      "bytes": 65499
+      "bytes": 67000
     },
     {
       "url": "audio-controls.js",
@@ -57,6 +57,26 @@
     {
       "url": "dance-games.js",
       "bytes": 11367
+    },
+    {
+      "url": "department-art.js",
+      "bytes": 1539
+    },
+    {
+      "url": "department-model.js",
+      "bytes": 3956
+    },
+    {
+      "url": "department-store.css",
+      "bytes": 12834
+    },
+    {
+      "url": "department-store.js",
+      "bytes": 19052
+    },
+    {
+      "url": "department-voice.js",
+      "bytes": 1882
     },
     {
       "url": "festival-art.js",
@@ -168,7 +188,7 @@
     },
     {
       "url": "optimized-images.js",
-      "bytes": 2858
+      "bytes": 3038
     },
     {
       "url": "parent-tools.js",
@@ -228,7 +248,7 @@
     },
     {
       "url": "style.css",
-      "bytes": 33935
+      "bytes": 33980
     },
     {
       "url": "swing.css",
@@ -260,11 +280,11 @@
     },
     {
       "url": "world-time.js",
-      "bytes": 6277
+      "bytes": 6331
     },
     {
       "url": "index.html",
-      "bytes": 2041
+      "bytes": 2108
     },
     {
       "url": "site.webmanifest",
@@ -277,6 +297,10 @@
     {
       "url": "content/all-about-my-body.json",
       "bytes": 11748
+    },
+    {
+      "url": "content/department-audio.json",
+      "bytes": 2281
     },
     {
       "url": "content/festival-audio.json",
@@ -573,6 +597,98 @@
     {
       "url": "assets/audio/body/week-4-9.wav",
       "bytes": 113352
+    },
+    {
+      "url": "assets/audio/department/11a7703c02d5ee92.wav",
+      "bytes": 226506
+    },
+    {
+      "url": "assets/audio/department/1590b8f5af72bf78.wav",
+      "bytes": 203522
+    },
+    {
+      "url": "assets/audio/department/331fe0d83b7f6347.wav",
+      "bytes": 130480
+    },
+    {
+      "url": "assets/audio/department/6c362a0dc0b96215.wav",
+      "bytes": 131872
+    },
+    {
+      "url": "assets/audio/department/6d2d2c6cb6677652.wav",
+      "bytes": 142760
+    },
+    {
+      "url": "assets/audio/department/7cacb957d535a787.wav",
+      "bytes": 213830
+    },
+    {
+      "url": "assets/audio/department/7ee5df06c6f0e037.wav",
+      "bytes": 250672
+    },
+    {
+      "url": "assets/audio/department/8af6b950411d0c46.wav",
+      "bytes": 156652
+    },
+    {
+      "url": "assets/audio/department/9d63e5ed4079929f.wav",
+      "bytes": 155858
+    },
+    {
+      "url": "assets/audio/department/a53d2248a633bab5.wav",
+      "bytes": 134672
+    },
+    {
+      "url": "assets/audio/department/a89e6bbc7a6cf17a.wav",
+      "bytes": 194986
+    },
+    {
+      "url": "assets/audio/department/aac415128d3aeb21.wav",
+      "bytes": 130094
+    },
+    {
+      "url": "assets/audio/department/aeccca6d74412a43.wav",
+      "bytes": 167352
+    },
+    {
+      "url": "assets/audio/department/afd39898bb43e51a.wav",
+      "bytes": 200732
+    },
+    {
+      "url": "assets/audio/department/b31f1f60aef7f447.wav",
+      "bytes": 177066
+    },
+    {
+      "url": "assets/audio/department/b4612d354c5d0af5.wav",
+      "bytes": 226074
+    },
+    {
+      "url": "assets/audio/department/bdce94fe4c43810f.wav",
+      "bytes": 203134
+    },
+    {
+      "url": "assets/audio/department/c2e4eb302da1c8c4.wav",
+      "bytes": 220932
+    },
+    {
+      "url": "assets/audio/department/d056cf881d59a0b2.wav",
+      "bytes": 161222
+    },
+    {
+      "url": "assets/audio/department/d2f0589d0e15b289.wav",
+      "bytes": 149884
+    },
+    {
+      "url": "assets/audio/department/e96e490b7f6c5971.wav",
+      "bytes": 217976
+    },
+    {
+      "url": "assets/audio/department/ea3ede8abe41ffc4.wav",
+      "bytes": 158834
+    },
+    {
+      "url": "assets/audio/department/f837fb14d0e24c6d.wav",
+      "bytes": 173680
     },
     {
       "url": "assets/audio/festivals/11e81813ded94dff.wav",
@@ -1229,6 +1345,22 @@
     {
       "url": "assets/dance-studio.prompts.json",
       "bytes": 1549
+    },
+    {
+      "url": "assets/department-bakery-watercolor.webp",
+      "bytes": 357094
+    },
+    {
+      "url": "assets/department-lobby-watercolor.webp",
+      "bytes": 322622
+    },
+    {
+      "url": "assets/department-market-watercolor.webp",
+      "bytes": 354054
+    },
+    {
+      "url": "assets/department.prompts.json",
+      "bytes": 4435
     },
     {
       "url": "assets/family-center-watercolor.webp",

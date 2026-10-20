@@ -1,0 +1,12 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {createHash} from 'node:crypto';
+import {departmentCatalog} from '../department-model.js';
+import {departmentVoiceTexts} from '../department-voice.js';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const catalog=['my-school','japanese-school'].map(id=>JSON.parse(fs.readFileSync(path.join(root,'content/'+id+'.json'),'utf8')));
+const {goods}=departmentCatalog(catalog);if(goods.length!==4)throw Error('Department voice requires the canonical food labels.');
+const audio=Object.fromEntries(departmentVoiceTexts(goods).map(text=>[text,'assets/audio/department/'+createHash('sha256').update(text).digest('hex').slice(0,16)+'.wav']));
+fs.writeFileSync(path.join(root,'content/department-audio.json'),JSON.stringify({language:'zh-TW',source:'Microsoft Hanhan Desktop，Rate=-1；開發時產生的中文合成語音，非真人錄音。',audio},null,2)+'\n');
+console.log(Object.keys(audio).length+' department clips mapped (no audio generated).');

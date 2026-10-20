@@ -1,0 +1,28 @@
+{
+  "tool": "built-in image_gen",
+  "created": "2026-10-19",
+  "usage": "Department store lobby, supermarket and bakery interior backgrounds. Interactive props remain HTML/SVG; existing Nickson character reused. Original generated PNGs preserved, WebP quality88 used by game and offline pack.",
+  "images": [
+    {
+      "id": "lobby",
+      "prompt": "Use case: illustration-story. Asset type: Panda School department store game interior background, landscape 1536x1024. Primary request: A cozy small department store atrium lobby. Two inviting shop entrances open into the scene: a supermarket with baskets and colorful food shelves, and a bakery with bread displays. Simple basket and loaf pictograms above the entrances. Rounded wooden information desk, cushioned bench, potted plants, sunny tall windows. Wide clear central walkway. Style: gentle richly detailed hand-painted watercolor children's storybook, warm cream paper texture, pale teal, honey-colored wood, sage green and soft peach. Eye-level wide room perspective, rounded inviting furniture, calm edges, comfortably clear middle area reserved for separately rendered game controls. Full illustrated scene, not a UI mockup. No text, no letters, no numbers, no brands, no logos or watermark, no people or foreground characters (existing Nickson cutout is added separately). No flames, sharp blades, hot exposed equipment, scary elements, advertising, payment card details or real currency.",
+      "source": "Built-in image_gen; original generated PNG preserved in this repository.",
+      "original": "assets/department-lobby-watercolor.png",
+      "webp": "assets/department-lobby-watercolor.webp"
+    },
+    {
+      "id": "market",
+      "prompt": "Use case: illustration-story. Asset type: Panda School department store game interior background, landscape 1536x1024. Primary request: A cozy supermarket interior inside a small family department store, colorful vegetable display along the left side, simple packages of rice and groceries on low wooden shelves, chilled food case along the rear, little shopping baskets and a friendly checkout counter on the right. Spacious central aisle and no painted foreground merchandise blocking the interactive area. Style: gentle richly detailed hand-painted watercolor children's storybook, warm cream paper texture, pale teal, honey-colored wood, sage green and soft peach. Eye-level wide room perspective, rounded inviting furniture, calm edges, comfortably clear middle area reserved for separately rendered game controls. Full illustrated scene, not a UI mockup. No text, no letters, no numbers, no brands, no logos or watermark, no people or foreground characters (existing Nickson cutout is added separately). No flames, sharp blades, hot exposed equipment, scary elements, advertising, payment card details or real currency.",
+      "source": "Built-in image_gen; original generated PNG preserved in this repository.",
+      "original": "assets/department-market-watercolor.png",
+      "webp": "assets/department-market-watercolor.webp"
+    },
+    {
+      "id": "bakery",
+      "prompt": "Use case: illustration-story. Asset type: Panda School department store game interior background, landscape 1536x1024. Primary request: A cozy bakery interior inside a small family department store. Wooden shelves with round bread and long loaves, glass bread display on one side, a kneading counter and wooden board, closed bakery oven safely behind the staff counter, paper bread bags near the register. Warm morning sunlight and a clear central area for a separate interactive board. Style: gentle richly detailed hand-painted watercolor children's storybook, warm cream paper texture, pale teal, honey-colored wood, sage green and soft peach. Eye-level wide room perspective, rounded inviting furniture, calm edges, comfortably clear middle area reserved for separately rendered game controls. Full illustrated scene, not a UI mockup. No text, no letters, no numbers, no brands, no logos or watermark, no people or foreground characters (existing Nickson cutout is added separately). No flames, sharp blades, hot exposed equipment, scary elements, advertising, payment card details or real currency.",
+      "source": "Built-in image_gen; original generated PNG preserved in this repository.",
+      "original": "assets/department-bakery-watercolor.png",
+      "webp": "assets/department-bakery-watercolor.webp"
+    }
+  ]
+}

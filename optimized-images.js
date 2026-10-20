@@ -2,4 +2,5 @@ export const optimizedImages={"assets/dance-studio-watercolor.png": {"src": "ass
 optimizedImages['assets/life-town-watercolor.png']={src:'assets/life-town-watercolor.webp',width:1254,height:1254};
 optimizedImages['assets/amusement-twilight-watercolor.png']={src:'assets/amusement-twilight-watercolor.webp',width:1536,height:1024};
 for(const room of ['lobby','dental','ent'])optimizedImages[`assets/hospital-${room}-watercolor.png`]={src:`assets/hospital-${room}-watercolor.webp`,width:1536,height:1024};
+for(const room of ['lobby','market','bakery'])optimizedImages[`assets/department-${room}-watercolor.png`]={src:`assets/department-${room}-watercolor.webp`,width:1536,height:1024};
 export function optimizeImages(html){return html.replace(/<img\b[^>]*>/g,tag=>tag.replace(/src="([^"]+)"/,(_,src)=>{const a=optimizedImages[src];return a?`src="${a.src}" width="${a.width}" height="${a.height}" decoding="async"`:`src="${src}"`; }));}
