@@ -1,8 +1,8 @@
-import {optimizeImages} from './optimized-images.js?v=20261021.v1';
-import {shuffle} from './game.js?v=20261021.v1';
-import {bodyArt} from './body-art.js?v=20261021.v1';
-import {japaneseArt} from './japanese-art.js?v=20261021.v1';
-import {questionFor,answersFor} from './lesson-text.js?v=20261021.v1';
+import {optimizeImages} from './optimized-images.js?v=20261021.v2';
+import {shuffle} from './game.js?v=20261021.v2';
+import {bodyArt} from './body-art.js?v=20261021.v2';
+import {japaneseArt} from './japanese-art.js?v=20261021.v2';
+import {questionFor,answersFor} from './lesson-text.js?v=20261021.v2';
 export function reviewWeight(item,records={},reviews={},now=Date.now()){
  const key=`${item.book.id}/${item.unit.id}/${item.word.id}`,recent=reviews[key];
  if(recent){const days=recent.date?Math.max(0,(now-Date.parse(recent.date))/86400000):0;const due=Number.isFinite(days)&&days>=Number(recent.interval||1);return (recent.hint||recent.misses?5:1)+(due?4:0);}

@@ -1,6 +1,6 @@
 {
-  "version": "20261021.v1",
-  "totalBytes": 83311540,
+  "version": "20261021.v2",
+  "totalBytes": 89461991,
   "files": [
     {
       "url": "activities.js",
@@ -24,7 +24,7 @@
     },
     {
       "url": "app.js",
-      "bytes": 69274
+      "bytes": 70339
     },
     {
       "url": "audio-controls.js",
@@ -93,6 +93,26 @@
     {
       "url": "festival.css",
       "bytes": 6055
+    },
+    {
+      "url": "fire-art.js",
+      "bytes": 4161
+    },
+    {
+      "url": "fire-model.js",
+      "bytes": 2329
+    },
+    {
+      "url": "fire-station.css",
+      "bytes": 8139
+    },
+    {
+      "url": "fire-station.js",
+      "bytes": 12894
+    },
+    {
+      "url": "fire-voice.js",
+      "bytes": 2355
     },
     {
       "url": "game.js",
@@ -188,7 +208,7 @@
     },
     {
       "url": "optimized-images.js",
-      "bytes": 3994
+      "bytes": 4253
     },
     {
       "url": "parent-tools.js",
@@ -288,7 +308,7 @@
     },
     {
       "url": "style.css",
-      "bytes": 34025
+      "bytes": 34070
     },
     {
       "url": "swing.css",
@@ -308,7 +328,7 @@
     },
     {
       "url": "town-map.js",
-      "bytes": 4402
+      "bytes": 4414
     },
     {
       "url": "trampoline.css",
@@ -324,7 +344,7 @@
     },
     {
       "url": "index.html",
-      "bytes": 2229
+      "bytes": 2293
     },
     {
       "url": "site.webmanifest",
@@ -349,6 +369,10 @@
     {
       "url": "content/festivals.json",
       "bytes": 2786
+    },
+    {
+      "url": "content/fire-audio.json",
+      "bytes": 2724
     },
     {
       "url": "content/hospital-audio.json",
@@ -845,6 +869,114 @@
     {
       "url": "assets/audio/festivals/e6118accd034affb.wav",
       "bytes": 508364
+    },
+    {
+      "url": "assets/audio/fire/13a4c16bc31d2213.wav",
+      "bytes": 154252
+    },
+    {
+      "url": "assets/audio/fire/15ebbbc1798aec17.wav",
+      "bytes": 157256
+    },
+    {
+      "url": "assets/audio/fire/17afb4f02bfaf868.wav",
+      "bytes": 202626
+    },
+    {
+      "url": "assets/audio/fire/281e5b84b9c40c7e.wav",
+      "bytes": 155474
+    },
+    {
+      "url": "assets/audio/fire/2f50cecc31155e57.wav",
+      "bytes": 231240
+    },
+    {
+      "url": "assets/audio/fire/42eda27fa9962c16.wav",
+      "bytes": 217574
+    },
+    {
+      "url": "assets/audio/fire/599352bb3b37d536.wav",
+      "bytes": 172278
+    },
+    {
+      "url": "assets/audio/fire/60033f55952d1c0f.wav",
+      "bytes": 175844
+    },
+    {
+      "url": "assets/audio/fire/76083ebee8ad74c5.wav",
+      "bytes": 219038
+    },
+    {
+      "url": "assets/audio/fire/81b87db0b768f54f.wav",
+      "bytes": 185386
+    },
+    {
+      "url": "assets/audio/fire/8c3cef703754e7da.wav",
+      "bytes": 180638
+    },
+    {
+      "url": "assets/audio/fire/9241001aa8336bdc.wav",
+      "bytes": 311262
+    },
+    {
+      "url": "assets/audio/fire/9796198b145c5598.wav",
+      "bytes": 166754
+    },
+    {
+      "url": "assets/audio/fire/a0e66f83fdb1e649.wav",
+      "bytes": 167748
+    },
+    {
+      "url": "assets/audio/fire/a7ec367b3c89a123.wav",
+      "bytes": 154472
+    },
+    {
+      "url": "assets/audio/fire/ac757a2e03df41ea.wav",
+      "bytes": 159340
+    },
+    {
+      "url": "assets/audio/fire/adb8c11aba72e764.wav",
+      "bytes": 302160
+    },
+    {
+      "url": "assets/audio/fire/ae7efbdf9f4e1c3a.wav",
+      "bytes": 274608
+    },
+    {
+      "url": "assets/audio/fire/b0c4816b12109d51.wav",
+      "bytes": 252234
+    },
+    {
+      "url": "assets/audio/fire/b0f810821fe1ce9a.wav",
+      "bytes": 248260
+    },
+    {
+      "url": "assets/audio/fire/cc30686a0b00b05b.wav",
+      "bytes": 278156
+    },
+    {
+      "url": "assets/audio/fire/ce8d122ecf044df5.wav",
+      "bytes": 155860
+    },
+    {
+      "url": "assets/audio/fire/d36479e7c8ed0924.wav",
+      "bytes": 171878
+    },
+    {
+      "url": "assets/audio/fire/d878ede884a8f4fd.wav",
+      "bytes": 200722
+    },
+    {
+      "url": "assets/audio/fire/e40c36301c2573d8.wav",
+      "bytes": 287884
+    },
+    {
+      "url": "assets/audio/fire/f048dd2b0df148a6.wav",
+      "bytes": 237500
+    },
+    {
+      "url": "assets/audio/fire/f13d8be26d38c601.wav",
+      "bytes": 309370
     },
     {
       "url": "assets/audio/hospital/01ffcbe5618591ea.wav",
@@ -1527,6 +1659,10 @@
       "bytes": 1826442
     },
     {
+      "url": "assets/characters/dalmatian-fire-guide.webp",
+      "bytes": 148190
+    },
+    {
       "url": "assets/characters/friends-watercolor.png",
       "bytes": 1824471
     },
@@ -1661,6 +1797,14 @@
     {
       "url": "assets/festival.prompts.json",
       "bytes": 2517
+    },
+    {
+      "url": "assets/fire-station-watercolor.webp",
+      "bytes": 236308
+    },
+    {
+      "url": "assets/fire.prompts.json",
+      "bytes": 2092
     },
     {
       "url": "assets/home-bath-clean-watercolor.webp",

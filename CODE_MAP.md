@@ -1,5 +1,7 @@
 # panda-school 程式圖譜
 
+20261021.v2消防局：`fire-model.js`的FireVisit管理裝備／紙板水柱靶／消防車準備三任務、待完成動作及印章；`fire-station.js`的FireSession管理原生點選／鍵盤、語音與可取消計時，app.js接fire路由／stop／visibility／專心鎖且夜間開放。`fire-art.js`提供互動SVG道具，`fire-voice.js`與content/fire-audio.json對應27段WAV，fire-station.css處理兩尺寸與減少動態。新水彩／斑斑角色與限制見[FIRE_STATION.md](FIRE_STATION.md)；本次依明確授權發布。
+
 20261021.v1警察局：`police-model.js`的PoliceVisit管理找失物／陪迷路小兔／安全過路三任務、條件守衛與分頁印章；policeCatalog從教材派生書包／形狀標籤。`police-station.js`的PoliceSession管理畫面、焦點、短句語音與唯一過路計時，離場／暫停／換任務拒絕過期回呼。`police-art.js`提供互動道具，`police-voice.js`與content/police-audio.json對應43段WAV與依圖示／剩餘步驟的語音佇列；police-station.css提供平板／手機版面及減少動態。app.js的police路由接stop、背景與專心鎖，維持夜間開放；style.css只調內景日夜亮度。原創拉布拉多隊長與內景素材、卡通靈感及限制見[POLICE_STATION.md](POLICE_STATION.md)。
 
 20261020.v2理髮店（V3修飾人像）：`salon-model.js`的SalonVisit管理可剪髮束／工具／比較，`salon.js`的SalonSession管理pointer插值、語音、效果排程與雙照片重試；`salon-art.js`以連續遮罩繪製一次長髮圖髮絲，剪短後露出配對短髮底圖；V3僅切換為吉卜力風格臉部素材，保留V2互動與原素材，共用同一修飾後臉部／圍布層。`salon.css`提供人物輕微呼吸、剪刀開合及手機固定工具列，拖曳時固定人物避免命中偏移。這是2D照片互動，不是真正3D髮絲模擬。`salon-voice.js`及content/salon-audio.json對應11段WAV。app.js新salon路由串接日夜／營業時間、專心鎖、背景與stop。來源及限制見[SALON.md](SALON.md)。

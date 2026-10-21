@@ -1,7 +1,7 @@
-import {PoliceVisit,POLICE_MISSIONS,BAG_CHOICES,REUNION_CHOICES,CROSS_MILLISECONDS} from './police-model.js?v=20261021.v1';
-import {POLICE_CUES,policeCue,policeGuideLines} from './police-voice.js?v=20261021.v1';
-import {policeBagArt,rabbitArt,roadArt} from './police-art.js?v=20261021.v1';
-export {PoliceVisit,policeCatalog} from './police-model.js?v=20261021.v1';
+import {PoliceVisit,POLICE_MISSIONS,BAG_CHOICES,REUNION_CHOICES,CROSS_MILLISECONDS} from './police-model.js?v=20261021.v2';
+import {POLICE_CUES,policeCue,policeGuideLines} from './police-voice.js?v=20261021.v2';
+import {policeBagArt,rabbitArt,roadArt} from './police-art.js?v=20261021.v2';
+export {PoliceVisit,policeCatalog} from './police-model.js?v=20261021.v2';
 export const POLICE_ASSETS={room:'assets/police-station-watercolor.webp',guide:'assets/characters/labrador-police-guide.webp'};
 const escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const button=(action,value,label,disabled=false,extra='')=>`<button data-police="${action}" data-police-value="${escape(value)}" ${disabled?'disabled':''} ${extra}>${label}</button>`;

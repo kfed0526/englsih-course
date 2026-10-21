@@ -8,7 +8,7 @@ export const TOWN_PLACES=[
   {id:'town-department-bakery',name:'麵包店',icon:'🥐',note:'認識麵包，準備揉麵團與烘烤的小故事'}]},
  {id:'town-salon',name:'理髮店',icon:'💈',x:26,y:54,artY:50,note:'梳梳頭，看看鏡子裡的新髮型'},
  {id:'town-amusement',name:'兒童樂園',icon:'🎡',x:74,y:54,artY:50,note:'摩天輪、旋轉木馬與小火車等你來探索'},
- {id:'town-fire',name:'消防局',icon:'🚒',x:26,y:80,artY:85,note:'認識消防車與幫助大家的消防員'},
+ {id:'town-fire',name:'消防局',icon:'🚒',x:26,y:80,artY:85,note:'和斑斑穿裝備、玩水柱，準備消防車出發'},
  {id:'town-police',name:'警察局',icon:'🚓',x:74,y:80,artY:85,note:'和拉布拉多警犬找失物、陪迷路小兔、練習安全過馬路'}
 ];
 

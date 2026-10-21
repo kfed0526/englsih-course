@@ -1,5 +1,5 @@
-import {festivalArt,boneIcon} from './festival-art.js?v=20261021.v1';
-import {festivalDate} from './festival-calendar.js?v=20261021.v1';
+import {festivalArt,boneIcon} from './festival-art.js?v=20261021.v2';
+import {festivalDate} from './festival-calendar.js?v=20261021.v2';
 const stageSizes={'new-year':[3,4],'dragon-boat':[8,5],'mid-autumn':[3,1],fireworks:[6],skeleton:[4,3],birthday:[3,3,1,1],christmas:[2,1,2,1,2,1]};
 const skeletonParts=[['head','頭骨'],['body','胸骨'],['arms','手臂'],['legs','雙腿']];
 const dancePoses=[['up','雙手舉高'],['side','向兩邊伸手'],['down','蹲低搖一搖']];

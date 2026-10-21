@@ -1,0 +1,16 @@
+{
+  "mode": "built-in image_gen",
+  "created": "2026-10-21",
+  "assets": [
+    {
+      "png": "assets/fire-station-watercolor.png",
+      "webp": "assets/fire-station-watercolor.webp",
+      "prompt": "Use case: illustration-story\nAsset type: background for Panda School preschool fire-station game, landscape 1536x1024.\nPrimary request: A welcoming small-town fire station interior and open training courtyard, warm children's picture-book watercolor with soft pencil details and cream paper texture. A red fire engine parked in a bay at the rear, equipment cubbies with yellow helmet, tan turnout jacket and boots, coiled hose, orange traffic cones. Through the open bay see a sunny green courtyard. Foreground center is uncluttered empty pale floor for interactive game overlays. Cozy and believable architectural proportions, warmly lit, no people or animals. No burning buildings, no smoke, no danger, no sirens or flashing lights. No text, numbers, logos, brands or watermark."
+    },
+    {
+      "png": "assets/characters/dalmatian-fire-guide.png",
+      "webp": "assets/characters/dalmatian-fire-guide.webp",
+      "prompt": "Use case: illustration-story\nAsset type: transparent character cutout for a preschool fire-station game, portrait.\nPrimary request: One original friendly anthropomorphic Dalmatian firefighter guide, full body visible centered with generous margins. White dog with irregular black spots, floppy ears, gentle smiling face and friendly eyes; wearing a warm yellow firefighter helmet with a simple blank shield and tan turnout coat with yellow reflective stripes, dark boots. Standing upright and waving one paw to greet a preschool child, other paw relaxed. Soft hand-painted watercolor and delicate pencil outlines on textured paper within the character only, believable cozy picture-book style, rounded but not toy plastic. Original design, not any TV cartoon character. No equipment in paws, no fire, no text, no numbers, no logos, no watermark. Truly transparent background, clean edges, no white rectangle, no ground plane or cast shadow."
+    }
+  ]
+}

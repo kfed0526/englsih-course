@@ -16,4 +16,4 @@ export function departmentCue(state){
  if(v.step===3)return v.packed.size===3?c.packed:c.pack;return c.bakeryDone;
 }
 export function departmentVoiceTexts(goods){return [...new Set([...Object.values(STORE_CUES),...goods.map(item=>`找找${item.zh}，放進籃子。`)])];}
-import {KNEAD_COUNT} from './department-model.js?v=20261021.v1';
+import {KNEAD_COUNT} from './department-model.js?v=20261021.v2';

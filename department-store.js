@@ -1,8 +1,8 @@
-import {DepartmentVisit,STORE_ROOMS,STORE_STEPS,KNEAD_COUNT,BAKE_MILLISECONDS} from './department-model.js?v=20261021.v1';
-import {departmentCue,STORE_CUES} from './department-voice.js?v=20261021.v1';
-import {japaneseArt} from './japanese-art.js?v=20261021.v1';
-import {breadArt,bagArt,coinArt} from './department-art.js?v=20261021.v1';
-export {DepartmentVisit,departmentCatalog} from './department-model.js?v=20261021.v1';
+import {DepartmentVisit,STORE_ROOMS,STORE_STEPS,KNEAD_COUNT,BAKE_MILLISECONDS} from './department-model.js?v=20261021.v2';
+import {departmentCue,STORE_CUES} from './department-voice.js?v=20261021.v2';
+import {japaneseArt} from './japanese-art.js?v=20261021.v2';
+import {breadArt,bagArt,coinArt} from './department-art.js?v=20261021.v2';
+export {DepartmentVisit,departmentCatalog} from './department-model.js?v=20261021.v2';
 const escape=value=>String(value).replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 const button=(action,value,label,disabled=false,extra='')=>`<button data-department="${action}" data-department-value="${escape(value)}" ${disabled?'disabled':''} ${extra}>${label}</button>`;
 const food=item=>`<span class="ds-food-picture" aria-hidden="true">${japaneseArt(item.id)||''}</span>`;

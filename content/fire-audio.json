@@ -1,0 +1,33 @@
+{
+  "language": "zh-TW",
+  "source": "Microsoft Hanhan Desktop，Rate=-1；開發時產生的中文合成語音，非真人錄音。",
+  "audio": {
+    "Nickson，歡迎來到消防局！和斑斑一起練習。": "assets/audio/fire/ae7efbdf9f4e1c3a.wav",
+    "點消防員穿裝備，點水滴玩水柱，點消防車準備出發。": "assets/audio/fire/f13d8be26d38c601.wav",
+    "點斑斑，再聽一次小提示。": "assets/audio/fire/a0e66f83fdb1e649.wav",
+    "先點黃色消防帽，戴好帽子。": "assets/audio/fire/8c3cef703754e7da.wav",
+    "再點消防衣，穿好外套。": "assets/audio/fire/ce8d122ecf044df5.wav",
+    "最後點靴子，穿好消防靴。": "assets/audio/fire/599352bb3b37d536.wav",
+    "帽子、消防衣、靴子都穿好了！": "assets/audio/fire/81b87db0b768f54f.wav",
+    "看看斑斑的小提示，我們一件一件穿。": "assets/audio/fire/76083ebee8ad74c5.wav",
+    "這是紙板練習靶，沒有真的火。點靶子，噴出水柱！": "assets/audio/fire/9241001aa8336bdc.wav",
+    "點左邊靶子，再噴一次！": "assets/audio/fire/281e5b84b9c40c7e.wav",
+    "點中間靶子，再噴一次！": "assets/audio/fire/15ebbbc1798aec17.wav",
+    "點右邊靶子，再噴一次！": "assets/audio/fire/a7ec367b3c89a123.wav",
+    "真棒！再點一個還站著的靶子。": "assets/audio/fire/d878ede884a8f4fd.wav",
+    "咻！水柱噴出來了。": "assets/audio/fire/ac757a2e03df41ea.wav",
+    "三個紙板靶都倒下了！水柱練習完成。": "assets/audio/fire/b0f810821fe1ce9a.wav",
+    "消防車要出發了。先點捲圈圈，把水帶收好。": "assets/audio/fire/e40c36301c2573d8.wav",
+    "點工具箱，把器材櫃關好。": "assets/audio/fire/d36479e7c8ed0924.wav",
+    "點座椅，把安全帶繫好。": "assets/audio/fire/13a4c16bc31d2213.wav",
+    "都準備好了！點消防車，請消防員開去練習場。": "assets/audio/fire/adb8c11aba72e764.wav",
+    "消防員開車，我們坐好出發！": "assets/audio/fire/60033f55952d1c0f.wav",
+    "到練習場了！謝謝你幫忙準備消防車。": "assets/audio/fire/b0c4816b12109d51.wav",
+    "先把東西收好，再坐好繫安全帶。": "assets/audio/fire/17afb4f02bfaf868.wav",
+    "得到一枚消防小幫手印章！": "assets/audio/fire/9796198b145c5598.wav",
+    "三個任務完成！Nickson 是今天的消防小幫手！": "assets/audio/fire/cc30686a0b00b05b.wav",
+    "點小房子換任務，或點圓箭頭再玩一次。": "assets/audio/fire/f048dd2b0df148a6.wav",
+    "再玩一次！聽聽斑斑的小提示。": "assets/audio/fire/42eda27fa9962c16.wav",
+    "我們回來了！再點一下，接著練習。": "assets/audio/fire/2f50cecc31155e57.wav"
+  }
+}

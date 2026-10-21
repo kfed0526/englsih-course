@@ -1,5 +1,5 @@
-import {dogSVG} from './home-dog.js?v=20261021.v1';
-import {mapNavigationHTML,townMapHTML,townPlaceHTML} from './town-map.js?v=20261021.v1';
+import {dogSVG} from './home-dog.js?v=20261021.v2';
+import {mapNavigationHTML,townMapHTML,townPlaceHTML} from './town-map.js?v=20261021.v2';
 export const ADVENTURE_ASSETS=['assets/neighborhood-festival-watercolor.png','assets/taiwan-japan-watercolor.png','assets/characters/nickson-panda-home.png','assets/park-nickson-bench-watercolor.png','assets/home-family-watercolor.png','assets/family-center-watercolor.png','assets/dance-studio-watercolor.png','assets/music-classroom-watercolor.png'];
 export const SCENES=[
  {id:'home',name:'溫暖的家',x:50,y:50,icon:'🏡',note:'我們的溫暖小屋'},

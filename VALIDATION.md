@@ -1,5 +1,26 @@
 # 驗證紀錄 — 四週遊戲擴充
 
+
+## 2026-10-21：20261021.v2消防局發布
+
+- 本次收到明確「先發佈一版」，fetch確認main的HEAD與origin/main皆c1b4f60；保留stash@{0}，沒有需要合併的遠端改動。npm run release只跑一次，台北當日版號由20261021.v1升至20261021.v2；本批產品、素材、版本及驗證文件納入同一發布提交。
+- 升版後完整324項Node回歸與git diff --check通過；入口data-version、模組import、fire-station.css等樣式與離線清單一致。離線500檔、約85.3MiB，沒有原始照片／忽略目錄／瀏覽器資料。未以本次發布授權擴增新玩法或改家長資料。
+- 發布冒煙使用新Chromium context，1180×714／320×800重跑消防局三任務、錯誤順序不前進、圖上靶／大按鈕、鍵盤／tap、三印章、重玩、手動休息、靜音／減少動態、夜間、背景／離場中斷噴水及出發、專心鎖與資料不變。另測實際WAV、0.875語速／0.7音量、斑斑重聽去重、完成不截前句、無重疊、autoplay受阻後重試及取消。全部27段WAV與新JS／CSS／WebP／JSON資源核對HTTP200及manifest大小，來源PNG不重複下載。
+- 同批既有警察局完整三任務及43段資源檢查；理髮店剪短／比較／長回來、百貨兩店／夜間關門取消、醫院兩科、煙火與家裡小狗四互動另做冒煙。證據在忽略的.local-assets/validation/release-20261021.v2：fire-local／fire-production、voice-local／voice-production、police-local／police-production、local-results.json／production-results.json。
+- 推送後須查本次完整SHA的Pages執行成功，再以相同發布冒煙檢查正式站。部署結論及實際通過以deployment.json與結果檔為準，不把僅push成功視為上線。未宣稱本批停服後整包離線、實體iPad／Safari或揚聲器主觀聽感驗證。
+
+
+## 2026-10-21：斑斑消防局（本機，未發布）
+
+- 基準c1b4f60，先讀AGENTS／START_HERE／DEVELOPMENT_STATUS及game-dev／content-assets／imagegen skills。沒有.codegraph或graphify-out，未建立索引；沒有使用子代理。依功能需求新增消防局，不把歷史警察局發布授權延用到本批。
+- 三任務為逐件穿裝備、三紙板靶各兩次水柱、整理水帶／關櫃／繫安全帶後由消防員開車抵達練習場。純FireVisit守衛順序、重複操作、印章與待完成狀態；FireSession管理原生按鈕、手機下一步可見、語音佇列及水柱550ms／出發1800ms唯一排程。暫停／背景／切任務／重玩／離場皆取消未完成動作；revision拒絕舊回呼，前景須明確繼續並重按。
+- 完整324項Node回歸與git diff --check通過；新增21項fire與3項controller測試，包含無效任務、錯誤／跳步、兩次命中、準備後才能出發、重複完成、三印章與獨立重玩、所有暫停守衛、舊回呼不能完成新的水柱／移除新timer、減少動態、語音去重／失敗／取消／不截前句、原生角色重聽、PNG／WAV／離線映射及路由／夜間／專心鎖／資料不變。原地圖controller消防頁期待更新，未來release的fire-station.css快取更新fixture同步；沒有執行真正release。
+- 內建image_gen生成1536×1024水彩內景與1024×1536透明斑點狗，原PNG與完整兩提示保留於assets/fire.prompts.json；前台WebP分別1536×1024與700×1050，Sharp僅縮放／編碼，角色背景alpha抽樣為0。互動裝備／紙板靶／消防車為code-native SVG。Nickson沿用舊熊貓帽素材，不動原照、不使用特定卡通官方素材。
+- 27段Hanhan Rate=-1中文合成WAV由獨立fire腳本補缺，非真人錄音，不覆寫其他錄音；LessonSpeech沿用家長選聲／語速／音量。Chromium實際WAV currentTime前進、0.875語速／0.7音量，進場圖示、裝備步驟、印章／下一步、紙板靶與出發導引按序播放且無重疊；點斑斑不重啟同一待播佇列，550ms／1800ms動畫完成不截前句，背景與離場停止音訊，故意拒絕首段autoplay後點角色可重試。
+- Chromium 1180×714／320×800（手機模擬觸控）玩完三任務、錯誤不進度、圖上靶／旁邊替代按鈕、鍵盤Space／原生tap、手動休息、重玩與三枚印章。正常動態中途切背景與離場，等待超過動畫時間均不偷完成，前景需重按；手機靜音／減少動態、夜間仍可進入、三連點專心鎖有效，課程／生活／慶典紀錄和設定不變，無水平溢出、pageerror或非預期HTTP錯誤。截圖及results.json／playback-results.json在忽略的.local-assets/validation/fire。
+- 本機離線清單500檔、約85.3MiB，含新JS／CSS／WebP／27WAV與映射，排除重複來源PNG；未做本批停服後整包離線、實體iPad／Safari或揚聲器主觀聽感。release.json與入口版本仍20261021.v1，未升版／commit／push／部署。
+
+
 ## 2026-10-21：20261021.v1警察局與語音導引發布
 
 - 依使用者本次明確「發布」，先fetch核對HEAD與origin/main皆e77733b、無遠端新改動；保留既有stash。台北當日為2026-10-21，npm run release只執行一次產生20261021.v1，HTML、模組import、police-station.css與離線清單同批更新。
