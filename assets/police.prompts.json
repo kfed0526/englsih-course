@@ -1,0 +1,51 @@
+{
+  "created": "2026-10-20",
+  "status": "Included in the explicitly authorized 20261021.v1 release.",
+  "tool": "Built-in image_gen. Generated PNGs preserved; Sharp used only for WebP resizing/encoding.",
+  "inspiration": {
+    "parentRequest": "Police station incorporating the child's enthusiasm for Labrador police cartoons.",
+    "officialReference": "https://www.babybus.com/global/zh-hant/character",
+    "scope": "Original Labrador guide Lala and original pretend-play stories; no official cartoon footage, logo, copied episode, voice clone or affiliation. No new formal textbook content."
+  },
+  "assets": [
+    {
+      "useCase": "illustration-story",
+      "png": "assets/police-station-watercolor.png",
+      "pngSize": {
+        "width": 1536,
+        "height": 1024
+      },
+      "webp": "assets/police-station-watercolor.webp",
+      "webpSize": {
+        "width": 1536,
+        "height": 1024
+      },
+      "bytes": 287364,
+      "transparentBackground": false,
+      "prompt": "Use case: illustration-story. Asset type: background artwork for Panda School's child-friendly pretend police-station game. Create one wide 3:2 warm watercolor and colored-pencil interior illustration, a welcoming small neighborhood police station for a preschool child. Cozy cream plaster walls, pale sage and powder-blue accents, honey wood, rounded reception desk along the back left, tidy lost-and-found cubbies with a small backpack and toy, a simple illustrated town map pinned on the back wall, a window showing a small parked friendly blue-white patrol car and green trees, a bench along the right. Leave a calm open floor through the central foreground for interactive game props layered later. Eye-level storybook room with believable gentle perspective, soft afternoon sunshine, delicate pencil edges, tactile paper grain, soothing warm muted palette. No characters or people; they will be separate game layers. No prison bars, weapons, handcuffs, crime photos, danger, scary imagery, official insignia, red flashing lights, watermarks, logos or text. One continuous finished room painting, not a UI mockup, no buttons or panels, not a collage."
+    },
+    {
+      "useCase": "illustration-story / background-extraction",
+      "png": "assets/characters/labrador-police-guide.png",
+      "pngSize": {
+        "width": 1024,
+        "height": 1536
+      },
+      "webp": "assets/characters/labrador-police-guide.webp",
+      "webpSize": {
+        "width": 700,
+        "height": 1050
+      },
+      "bytes": 147960,
+      "transparentBackground": true,
+      "prompt": "Use case: illustration-story. Asset type: a transparent full-body guide character for Panda School's preschool police-station game. Create an ORIGINAL friendly anthropomorphic cream-white Labrador police dog companion, called Lala in our game, distinct from existing TV characters. Soft floppy golden-cream ears, dark warm round eyes, broad gentle muzzle, rounded black nose, a reassuring small smile. Standing upright in a child-friendly navy and muted teal police uniform, simple teal peaked cap with a small stylized gold paw badge (not real official insignia), navy trousers, brown shoes, small harmless walkie-talkie clipped at belt. One paw lifted in a warm welcoming wave, the other relaxed. Appealing expressive face, cuddly storybook proportions, warm watercolor and fine colored-pencil illustration with subtly modeled volume and paper texture, consistent with cozy children's learning-game room paintings. Entire head, ears, paws and feet visible, centered with small margins. Transparent alpha background outside the character, no room, floor, cast background, text, watermark, weapons, baton, handcuffs or frightening expression. Not a photo, not pixel art, not a sprite sheet, no collage. Do not use any exact BabyBus character design, brand logo or title; this is our own Labrador guide inspired by the child's general love of kind cartoon police dogs.",
+      "edits": [
+        {
+          "inputRole": "Edit target: first generated guide; retained in ignored .local-assets/labrador-police-guide-first.png",
+          "prompt": "Use case: background-extraction. Edit target: the attached original watercolor Labrador police dog guide, full body waving. Remove ONLY the entire blurry dark blue, brown, yellow and cream halo/background around the character, including the glow between the limbs, tail and body. Leave perfectly transparent alpha outside the actual dog, clothing, ears, waving paw, cap, shoes and walkie-talkie silhouettes. Keep the exact same full-body pose, design, face, colors, brushwork, cap badge, framing and dimensions. Do not redraw the dog or crop anything. No drop shadow, no ground, no fog, no replacement background, no checkerboard pixels. The output is a clean transparent game-character cutout that will be placed over a bright cream room; absolutely no dark cloud or light halo around it.",
+          "notes": "Generated alpha verified at background samples. Color in zero-alpha pixels is not a visible background."
+        }
+      ]
+    }
+  ]
+}

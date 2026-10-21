@@ -15,6 +15,8 @@
 | powershell -NoProfile -File scripts/generate-hospital-audio.ps1 | 只補醫院缺少的短句WAV | 開發用Windows System.Speech／Microsoft Hanhan Desktop；不覆寫既有檔案、不連線，非啟動需求 |
 | node scripts/department-audio-manifest.mjs | 從百貨短句與正式教材商品中文派生映射 | 寫content/department-audio.json；不生成聲音檔 |
 | node scripts/salon-audio-manifest.mjs | 從理髮店短句產生11段映射 | 寫content/salon-audio.json；不產生音檔或改正式教材 |
+| node scripts/police-audio-manifest.mjs | 從警察局短句產生43段映射 | 寫content/police-audio.json；不產生音檔或新增正式詞表 |
+| powershell -NoProfile -File scripts/generate-police-audio.ps1 | 只補警察局缺少的中文WAV | 開發用System.Speech／Hanhan，目的地限定assets/audio/police，不覆寫既有音檔；系統限制腳本時可僅對該次程序加ExecutionPolicy Bypass，非啟動依賴或全域設定 |
 | powershell -NoProfile -File scripts/generate-salon-audio.ps1 | 只補理髮店缺少的短句WAV | 開發用System.Speech／Hanhan；僅限assets/audio/salon，不覆寫其他錄音、不連線，非啟動需求 |
 | powershell -NoProfile -File scripts/generate-department-audio.ps1 | 只補百貨缺少的短句WAV | 開發用Windows System.Speech／Microsoft Hanhan Desktop；不覆寫既有檔案、不連線，非啟動需求 |
 | powershell -File generate-unit-audio.ps1 | 第一冊部分WAV生成 | Windows System.Speech；產生音檔，非必要啟動步驟 |

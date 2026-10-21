@@ -9,7 +9,7 @@ export const TOWN_PLACES=[
  {id:'town-salon',name:'理髮店',icon:'💈',x:26,y:54,artY:50,note:'梳梳頭，看看鏡子裡的新髮型'},
  {id:'town-amusement',name:'兒童樂園',icon:'🎡',x:74,y:54,artY:50,note:'摩天輪、旋轉木馬與小火車等你來探索'},
  {id:'town-fire',name:'消防局',icon:'🚒',x:26,y:80,artY:85,note:'認識消防車與幫助大家的消防員'},
- {id:'town-police',name:'警察局',icon:'🚓',x:74,y:80,artY:85,note:'認識警車、交通與幫助大家的警察'}
+ {id:'town-police',name:'警察局',icon:'🚓',x:74,y:80,artY:85,note:'和拉布拉多警犬找失物、陪迷路小兔、練習安全過馬路'}
 ];
 
 export function mapNavigationHTML(area,schoolOnly=false){return `<nav class="map-navigation" aria-label="選擇冒險地圖">${area==='home'?'<span aria-current="page">01 · 我們的社區</span>':'<button data-go="home">← 01 · 我們的社區</button>'}${area==='town'?'<span aria-current="page">02 · 生活小鎮</span>':`<button data-go="town" ${schoolOnly?'disabled':''}>02 · 生活小鎮 →</button>`}</nav>`;}

@@ -1,7 +1,7 @@
-import {SalonVisit,SALON_SIZE} from './salon-model.js?v=20261020.v2';
-import {salonToolSVG,drawSalonHair} from './salon-art.js?v=20261020.v2';
-import {salonCue,SALON_CUES} from './salon-voice.js?v=20261020.v2';
-export {SalonVisit} from './salon-model.js?v=20261020.v2';
+import {SalonVisit,SALON_SIZE} from './salon-model.js?v=20261021.v1';
+import {salonToolSVG,drawSalonHair} from './salon-art.js?v=20261021.v1';
+import {salonCue,SALON_CUES} from './salon-voice.js?v=20261021.v1';
+export {SalonVisit} from './salon-model.js?v=20261021.v1';
 export const SALON_PORTRAIT='assets/characters/nickson-salon-ghibli-v3.webp';
 export const SALON_SHORT_PORTRAIT='assets/characters/nickson-salon-ghibli-short-v3.webp';
 const tools={scissors:'剪刀',comb:'梳子',dryer:'吹風機'};

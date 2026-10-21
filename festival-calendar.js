@@ -1,4 +1,4 @@
-import lunarYearData from './lunar-year-data.js?v=20261020.v2';
+import lunarYearData from './lunar-year-data.js?v=20261021.v1';
 const dateCache=new Map();
 export function taipeiToday(now=new Date()){
  const parts=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Taipei',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(now);

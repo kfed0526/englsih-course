@@ -8,4 +8,6 @@ optimizedImages['assets/characters/nickson-salon-short-v2.png']={src:'assets/cha
 optimizedImages['assets/characters/nickson-salon-ghibli-v3.png']={src:'assets/characters/nickson-salon-ghibli-v3.webp',width:900,height:1200};
 optimizedImages['assets/characters/nickson-salon-ghibli-short-v3.png']={src:'assets/characters/nickson-salon-ghibli-short-v3.webp',width:900,height:1200};
 optimizedImages['assets/salon-hair-texture.png']={src:'assets/salon-hair-texture.webp',width:768,height:1025};
+optimizedImages['assets/police-station-watercolor.png']={src:'assets/police-station-watercolor.webp',width:1536,height:1024};
+optimizedImages['assets/characters/labrador-police-guide.png']={src:'assets/characters/labrador-police-guide.webp',width:700,height:1050};
 export function optimizeImages(html){return html.replace(/<img\b[^>]*>/g,tag=>tag.replace(/src="([^"]+)"/,(_,src)=>{const a=optimizedImages[src];return a?`src="${a.src}" width="${a.width}" height="${a.height}" decoding="async"`:`src="${src}"`; }));}

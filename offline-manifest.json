@@ -1,6 +1,6 @@
 {
-  "version": "20261020.v2",
-  "totalBytes": 72132623,
+  "version": "20261021.v1",
+  "totalBytes": 83311540,
   "files": [
     {
       "url": "activities.js",
@@ -24,7 +24,7 @@
     },
     {
       "url": "app.js",
-      "bytes": 68091
+      "bytes": 69274
     },
     {
       "url": "audio-controls.js",
@@ -188,11 +188,31 @@
     },
     {
       "url": "optimized-images.js",
-      "bytes": 3729
+      "bytes": 3994
     },
     {
       "url": "parent-tools.js",
       "bytes": 7104
+    },
+    {
+      "url": "police-art.js",
+      "bytes": 2197
+    },
+    {
+      "url": "police-model.js",
+      "bytes": 3695
+    },
+    {
+      "url": "police-station.css",
+      "bytes": 8653
+    },
+    {
+      "url": "police-station.js",
+      "bytes": 13478
+    },
+    {
+      "url": "police-voice.js",
+      "bytes": 3855
     },
     {
       "url": "question-bank.js",
@@ -268,7 +288,7 @@
     },
     {
       "url": "style.css",
-      "bytes": 33980
+      "bytes": 34025
     },
     {
       "url": "swing.css",
@@ -288,7 +308,7 @@
     },
     {
       "url": "town-map.js",
-      "bytes": 4375
+      "bytes": 4402
     },
     {
       "url": "trampoline.css",
@@ -304,7 +324,7 @@
     },
     {
       "url": "index.html",
-      "bytes": 2163
+      "bytes": 2229
     },
     {
       "url": "site.webmanifest",
@@ -349,6 +369,10 @@
     {
       "url": "content/park-memories.json",
       "bytes": 349
+    },
+    {
+      "url": "content/police-audio.json",
+      "bytes": 4687
     },
     {
       "url": "content/salon-audio.json",
@@ -1131,6 +1155,178 @@
       "bytes": 84686
     },
     {
+      "url": "assets/audio/police/02225fc33d394815.wav",
+      "bytes": 252280
+    },
+    {
+      "url": "assets/audio/police/0514a2be87fb2426.wav",
+      "bytes": 224980
+    },
+    {
+      "url": "assets/audio/police/06cf55b36eb6a49d.wav",
+      "bytes": 327344
+    },
+    {
+      "url": "assets/audio/police/1e9ad08caff4c41c.wav",
+      "bytes": 164960
+    },
+    {
+      "url": "assets/audio/police/238cd77ed80f552c.wav",
+      "bytes": 215666
+    },
+    {
+      "url": "assets/audio/police/24ecb7a62f5c3948.wav",
+      "bytes": 313658
+    },
+    {
+      "url": "assets/audio/police/2c81fd82a9312b28.wav",
+      "bytes": 183472
+    },
+    {
+      "url": "assets/audio/police/3ae20a56202bca99.wav",
+      "bytes": 229244
+    },
+    {
+      "url": "assets/audio/police/3aeaab415b0788c9.wav",
+      "bytes": 247318
+    },
+    {
+      "url": "assets/audio/police/41713d31db02b659.wav",
+      "bytes": 224984
+    },
+    {
+      "url": "assets/audio/police/446e4f71a7c724eb.wav",
+      "bytes": 221144
+    },
+    {
+      "url": "assets/audio/police/54022672bdcc6301.wav",
+      "bytes": 238282
+    },
+    {
+      "url": "assets/audio/police/5887fa5d900daa35.wav",
+      "bytes": 310262
+    },
+    {
+      "url": "assets/audio/police/59ea612f54dc49d0.wav",
+      "bytes": 271468
+    },
+    {
+      "url": "assets/audio/police/5b7725e750b7d968.wav",
+      "bytes": 246256
+    },
+    {
+      "url": "assets/audio/police/626eb3e4c82eae58.wav",
+      "bytes": 208254
+    },
+    {
+      "url": "assets/audio/police/6a1ca4ca017c8dae.wav",
+      "bytes": 207700
+    },
+    {
+      "url": "assets/audio/police/76e72f06103b94a1.wav",
+      "bytes": 312828
+    },
+    {
+      "url": "assets/audio/police/79038b087d61749f.wav",
+      "bytes": 215398
+    },
+    {
+      "url": "assets/audio/police/7d3ee4da0c1d44f4.wav",
+      "bytes": 286310
+    },
+    {
+      "url": "assets/audio/police/7e2c91e439f8b60c.wav",
+      "bytes": 255400
+    },
+    {
+      "url": "assets/audio/police/7e694bd942d0fdd4.wav",
+      "bytes": 285134
+    },
+    {
+      "url": "assets/audio/police/81373baa6eb0e050.wav",
+      "bytes": 298594
+    },
+    {
+      "url": "assets/audio/police/880311bdc93068ff.wav",
+      "bytes": 221428
+    },
+    {
+      "url": "assets/audio/police/89fc2f985553be35.wav",
+      "bytes": 271660
+    },
+    {
+      "url": "assets/audio/police/8c7e21863c419042.wav",
+      "bytes": 293870
+    },
+    {
+      "url": "assets/audio/police/8ce9f1840788a0fc.wav",
+      "bytes": 187336
+    },
+    {
+      "url": "assets/audio/police/9489a5bdacb825fb.wav",
+      "bytes": 237948
+    },
+    {
+      "url": "assets/audio/police/9662d4e7e07d4d7d.wav",
+      "bytes": 362356
+    },
+    {
+      "url": "assets/audio/police/96f3cd8a8302b045.wav",
+      "bytes": 208040
+    },
+    {
+      "url": "assets/audio/police/9ad95400b3b2bcb7.wav",
+      "bytes": 249542
+    },
+    {
+      "url": "assets/audio/police/9b7e6486c1658866.wav",
+      "bytes": 308594
+    },
+    {
+      "url": "assets/audio/police/9e50e7076fc152a4.wav",
+      "bytes": 197832
+    },
+    {
+      "url": "assets/audio/police/ae4d17ce3f2d1230.wav",
+      "bytes": 208862
+    },
+    {
+      "url": "assets/audio/police/b13caee50f94290d.wav",
+      "bytes": 227108
+    },
+    {
+      "url": "assets/audio/police/b1e2d2cf1f00b35a.wav",
+      "bytes": 302950
+    },
+    {
+      "url": "assets/audio/police/b8505b4517fad8c1.wav",
+      "bytes": 163784
+    },
+    {
+      "url": "assets/audio/police/d2c7e7b875d901bd.wav",
+      "bytes": 290286
+    },
+    {
+      "url": "assets/audio/police/e421d1a32dac0067.wav",
+      "bytes": 314056
+    },
+    {
+      "url": "assets/audio/police/e784f44384821aee.wav",
+      "bytes": 160002
+    },
+    {
+      "url": "assets/audio/police/e95297ab7d057456.wav",
+      "bytes": 245704
+    },
+    {
+      "url": "assets/audio/police/e9ace7a2b84e3830.wav",
+      "bytes": 268124
+    },
+    {
+      "url": "assets/audio/police/eadb09c0bd1bff12.wav",
+      "bytes": 239954
+    },
+    {
       "url": "assets/audio/roles-people-intro.wav",
       "bytes": 231268
     },
@@ -1333,6 +1529,10 @@
     {
       "url": "assets/characters/friends-watercolor.png",
       "bytes": 1824471
+    },
+    {
+      "url": "assets/characters/labrador-police-guide.webp",
+      "bytes": 147960
     },
     {
       "url": "assets/characters/nickson-20261018-cutouts.prompts.json",
@@ -1621,6 +1821,14 @@
     {
       "url": "assets/park-scene.prompts.json",
       "bytes": 3148
+    },
+    {
+      "url": "assets/police-station-watercolor.webp",
+      "bytes": 287364
+    },
+    {
+      "url": "assets/police.prompts.json",
+      "bytes": 5070
     },
     {
       "url": "assets/roles-theater-watercolor.webp",
